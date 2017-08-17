@@ -1,0 +1,9 @@
+@charset "utf-8";
+body,a,a:hover,li,span,strong, table th, table td,h1,h2,h3,h4,h5,input,select {font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;} 
+
+table.tableForm tr th,
+table.tableList tr th,
+table.tableList tr th a{font-size:12px;}
+
+#mainNavi ul li a{font-size:12px;}
+

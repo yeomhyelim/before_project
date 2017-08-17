@@ -1,0 +1,139 @@
+
+/******* 상품 상세정보(SKIN -2) ********************************************************/
+div.mainProdView{padding-bottom:50px;}
+div.selectCategoryWrap{color:#a4a4a4;font-size:11px;}
+div.prodDetail2 dl dd{display:inline-block;vertical-align:top;}
+div.prodDetail2 dl dd.detailImg{width:50%;}
+div.prodDetail2 dl dd.detailInfo{float:right;width:47%;}
+div.prodDetail2 dl dd.detailInfo table{width:100%;}
+div.prodDetail2 dl dd.detailInfo table th{width:100px;height:30px;text-align:left;font-weight:normal;}
+div.prodDetail2 dl dd.detailInfo table th.titleWrap{font-weight:bold;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+div.prodDetail2 dl dd.detailInfo table td.prodInfoTitle{font-size:14px;padding-top:0px;font-weight:bold;border-bottom:1px solid #e5e5e5;}
+div.prodDetail2 dl dd.detailInfo table td{word-break:break-all;}
+div.prodDetail2 dl dd.detailInfo table td span{display:inline-block;width:100px;color:#737373;font-size:11px;}
+
+
+div.prodDetail2 td.prodCntSelect ul.cntInputWrap li{display:inline-block;*zoom:1;*display:inline;}
+div.prodDetail2 td.prodCntSelect input.cntInputForm{width:30px;padding:2px;border:1px solid #bebebe;}
+div.prodDetail2 td.prodCntSelect .btnCntUpDown{vertical-align:top;}
+div.prodDetail2 td.prodCntSelect .btnCntUpDown a{display:block;}
+
+div.detailInfoTabWrap{position:relative;height:30px;margin-top:25px;border-bottom:1px solid #9a9a9a;}
+div.detailInfoTabWrap .tabBox{position:absolute;left:0;bottom:-1px;}
+div.detailInfoTabWrap .tabBox span{float:left;display:inline-block;width:239px;padding:8px 0px;font-weight:bold;text-align:center;border:1px solid #9a9a9a;border-bottom:1px solid #FFF;z-index:999;}
+div.detailInfoTabWrap .tabBox a{float:left;display:inline-block;width:235px;padding:8px 0px;color:#a7a7a7;font-weight:bold;text-align:center;border:1px solid #e1e1e1;border-bottom:none;background:#f2f2f2;}
+div.detailInfoTabWrap .tabBox a.leftLine{border-left:1px solid #9a9a9a;}
+
+/** 옵션**/
+.optionValueWrap{margin-top:10px;}
+.optionWrap{padding: 5px;margin-top:-1px;border:1px solid #ddd;}
+.optionWrap table td{padding:1px 0;}
+.optionWrap table td.optTit{width:50%;}
+.optionWrap table td.mngProd{width:25px;text-align:right;}
+.optionWrap table td  ul.cntInputWrap li{display:inline-block;*zoom:1;*display:inline;vertical-align:middle;}
+.optionWrap table td  ul.cntInputWrap li.btnCntUpDown img{display:block;}
+.optionWrap table td  ul.cntInputWrap li input.cntInputForm{width:30px;text-align:center;border:1px solid #999999;}
+.optionWrap table td.optPrice{text-align:right;}
+
+.optionWrap table td a.btn_prodDel{display:block;width:15px;height:15px;border:1px solid #ddd;background: url(/himg/common/btn_prod_opt_del.png) 6px 6px no-repeat;}
+.optionWrap table td a.btn_prodDel span{display:none;width:15px;height:15px;}
+
+.totalPriceWrap{padding: 10px 0;text-align:right;}
+.totalPriceWrap strong.totalPrice{font-family:verdana;font-size:20px;color:#fe4646;}
+.totalPriceWrap strong.totalPriceTxt{font-size:14px;color:#fe4646;}
+
+.optionWrap table td.optTit{width:35%;}
+.optionWrap table td.optCnt{width:15%;}
+.optionWrap table td.optPrice{width:50%;}
+div.prodDetail2 dl dd.detailInfo table td span{display:inline;}
+
+/** 디테일에서 상품이미지 썸네일**/
+div.detailImageView{text-align:center;}
+div.multyImageListWrap .imgThumbList{display:inline;}
+div.multyImageListWrap img{border:1px solid #e5e5e5}
+
+
+div.orderBtnWrap a.btnProdBuy, div.orderBtnWrap a.btnProdCart, div.orderBtnWrap a.btnProdWish{
+			display:inline-block;
+			width:32%;
+			padding:15px 0;
+			text-align:center;
+			font-weight:bold;
+			color:#FFF;
+			vertical-align:top;
+			}
+a.btnProdBuy{background: #333;}
+a.btnProdCart,
+a.btnProdWish{background: #7b7b7b;}
+
+/** 장바구니/관심상품 팝업 **/
+div.divPopupAlertWrap {position:fixed; width:100%; height:100%; top:0 ; left:0 ; margin:0 ; padding:0 ; background-color:#eee; text-align:center; background: rgba(0, 0, 0, 0.5) !important;
+/*
+IE8이하는 rgba가 동작하지 않기 때문에 배경 투명도 적용을 위해 filter의 gradient을 대체 이용한다.
+컬러값 60000000의 8자리 숫자의 의미: 앞 60 불투명도, 나머지 6자리 컬러값.
+startColorstr와 endColorstr의 색을 같게 하여 배경 투명도 처리를 하는것.
+하지만 원래는 그라데이션 처리하는 기법이기 때문에 같은 60% 투명도라고 해도 약간의 차이는 있다.
+*/
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
+		  zoom: 1; /* 일반적이진 않지만 ie6, 7 에서 적용 안되는경우 선언. */
+		}
+		div.addCartInfoContainer{width:360px;min-height:180px; margin:0 auto; top:400px; margin-top:-100px; }
+		div.addCartInfoBox .titPopBox{padding:5px 10px;height:18px;background: #000;}
+		div.addCartInfoBox .titPopBox strong{float:left;display:block;padding-top:2px;color:#FFF;}
+		div.addCartInfoBox .titPopBox a{float:right;display:block;width:18px;height:18px;background: url(/himg/common/btn_pop_close_white.png) center center no-repeat;text-indent: -9999px;}
+
+		div.addInBox{ top: 300px;  padding-bottom:20px;border:1px solid #a7a7a7;background:#fff;}
+		div.addTxtInfo{margin:20px;padding:20px;text-align:center;border:1px solid #e0e0e0;background: #f8f8f8;}
+		div.addTxtInfo ul li{padding:3px 0;}
+		div.addCartInfoBox .btnPopWrap{text-align:center;}
+		div.addCartInfoBox .btnPopWrap a.btnOn,
+		div.addCartInfoBox .btnPopWrap a.btnOff{display:inline-block;*zoom:1;*display:inline;padding:4px 10px;color:#FFF;}
+		div.addCartInfoBox .btnPopWrap a.btnOn{padding-right:15px;background: #000 url(/himg/common/ico_next_2.gif) right center no-repeat;}
+		div.addCartInfoBox .btnPopWrap a.btnOff{background: #b6c2ca;}
+
+
+		div.prodReviewPopContainer{width:1000px;min-height:650px;border:5px solid #000;}
+		div.prodReviewPopContainer .prodTitle{position:relative;padding:15px 0;font-size:18px;text-align:center;color:#FFF;background: #000;}
+		div.prodReviewPopContainer .prodTitle a{float:right;display:block;width:21px;height:21px;margin-right:20px;background: url(/himg/common/btn_pop_close_white.png) center center no-repeat;text-indent: -9999px;}
+
+/*** 미니샵 ****/
+.partnerInfoWrap{margin-top:20px;border:1px solid #e2e2e2;}
+.partnerInfoWrap .infoWrap{float:left;width:28%;padding:10px;}
+.partnerInfoWrap .infoWrap ul{float:left;margin-left:10px;}
+.partnerInfoWrap .infoWrap ul li.rateWrap span{display:block;width:100px;padding:10px 0 5px;font-weight:normal;color:#666666;}
+.partnerInfoWrap .infoWrap ul li.sendMailWrap a.sendMessage,
+.partnerInfoWrap .infoWrap ul li.sendMailWrap a.sendMail{
+													display:block;
+													height:18px;
+													padding:3px 5px 0 22px;
+													margin-top:2px;
+													border:1px solid #c8c8c8;
+													font-weight:normal;
+													}
+.partnerInfoWrap .infoWrap ul li.sendMailWrap a.sendMessage{background: url(/himg/product/A0001/bg_send_mail.gif) left top no-repeat;}
+.partnerInfoWrap .infoWrap ul li.sendMailWrap a.sendMail{background: url(/himg/product/A0001/bg_send_mail.gif) left -29px no-repeat;}
+.partnerInfoWrap .infoWrap h4,
+.partnerInfoWrap .shopRelatedProd h4{padding:0 0 5px 10px;color:#b20000;background: url(/himg/product/A0001/dot_minishop.gif) left 5px no-repeat;}
+.partnerInfoWrap .infoWrap img.shopPhoto{float:left;border:2px solid #e2e2e2}
+.partnerInfoWrap .shopRelatedProd{float:right;width:65%;padding:10px 10px 28px 20px;border-left:1px solid #e2e2e2;background:#f5f5f5;}
+.partnerInfoWrap .shopRelatedProd dl dd{display:inline-block;*zoom:1;*display:inline;padding-right:8px;vertical-align:top;}
+.partnerInfoWrap .shopRelatedProd dl dd.endProd{padding-right:0px;}
+.partnerInfoWrap .shopRelatedProd dl dd img.prodImg{width:100px;height:105px;}
+
+
+
+/** 우측관련상품 목록형 **/
+div.sideExp{float:left;}
+div.sideRelationList{float:right;width:200px;}
+
+
+/***********/
+div.noListWrap{padding: 30px 0;text-align:center;margin-top:30px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;}
+
+
+
+/** 상품 고시 **/
+div.prodAdInfoWrap{margin:10px 0;}
+div.prodAdInfoWrap table.infoTable{width:100%;}
+div.prodAdInfoWrap table.infoTable tr th{width:30%;padding:10px;text-align:left;font-weight:normal;border:1px solid #ddd;background: #f7f7f7;}
+div.prodAdInfoWrap table.infoTable tr td{width:70%;padding:10px;line-height:18px;border:1px solid #ddd;}

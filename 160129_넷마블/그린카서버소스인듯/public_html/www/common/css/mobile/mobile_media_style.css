@@ -1,0 +1,39 @@
+@media (min-width:320px) and (max-width:470px){	/* 아이폰4 세로 */
+	div.detailInfoTabWrap .tabBox a{width:32.5%;}
+}
+
+
+@media (min-width:480px) and (max-width:640px){ /* 아이폰4 가로 */
+	div.tableCartList .prodInfo .detailProdInfo{width:350px;}	
+	div.subNaviWrap ul li{float:left;width:33.3%;}
+}
+
+
+
+@media (min-width:640px) and (max-width:800px){  /* */
+	div.subNaviWrap ul li{float:left;width:33.3%;}
+}
+
+
+
+
+@media (min-width:800px) and (max-width:1024px){ /* 갤럭시탭10.1 세로, */
+	#topWrap h1 img{max-height:60px;}
+	#topWrap a.cateOpen{top:25px;}
+	#topWrap a.searchBtn{top:25px;}
+	#topWrap a.cateOpen img,
+	#topWrap a.searchBtn img{height:30px;}
+
+	div.subNaviWrap ul li{float:left;width:24.8%;padding:10px 0;}
+
+}
+
+
+@media (min-width:1024px) and (max-width:2048px){ /* 갤럭시탭10.1 가로, */
+	#topWrap h1 img{max-height:60px;}
+
+	div.subNaviWrap ul li{float:left;width:19.9%;padding:10px 0;}
+	div.prodListWrap ul li,
+	div.prodMobileList ul li{float:left;width:25%;}
+
+}

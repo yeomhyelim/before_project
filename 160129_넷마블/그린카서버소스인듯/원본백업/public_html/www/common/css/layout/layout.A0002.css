@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url(/common/css/master.css);
+@import url(/common/css/community/community.basicCss1.css);
+
+/**************** Content Wrap *********************/
+#contentWrap{width:980px;margin:0 auto;}
+
+
+/*** 팝업 스타일 **********************************/
+/*** (1)주소록 ***/
+.popContainer{border:5px solid #8e9da7;background:#FFF;}
+
+.popContainer h2{padding:8px 10px;font-size:12px;border-bottom:1px solid #e5e5e5;}
+
+.popContainer .popTableList{padding:10px;}
+.popContainer .popTableList table{width:100%;}
+.popContainer .popTableList table th{padding: 4px;border:1px solid #c4cacd;background:#f1f4f6;}
+.popContainer .popTableList table th.numDiv{width:50px;}
+.popContainer .popTableList table th.nameDiv{width:100px;}
+.popContainer .popTableList table td{padding: 6px;text-align:center;border:1px solid #c4cacd;}
+.popContainer .popTableList table tr:hover{background:#eaeef1;}
+span.useCouponInfo{display:block;margin:0 auto;margin-top:15px 0;padding:20px;text-align:center;border:2px dotted #ccc;}
+
+/*** (2)팝업높이 ***/
+.popContainer .addrHight{min-height:373px;}
+.popContainer .cancelHight{min-height:294px;}
+.popContainer .couponHight{min-height:372px;}
+
+/** 공통버튼 **/
+a.cancelBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#7e7e7e;font-size:14px;font-weight:bold;background:#e1e1e1;}
+a.wishBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#7e7e7e;font-size:14px;font-weight:bold;background:#e1e1e1;}
+a.prodDelBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#7e7e7e;font-size:14px;font-weight:bold;background:#e1e1e1;}
+a.shoppingBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#7e7e7e;font-size:14px;font-weight:bold;background:#e1e1e1;}
+a.nextBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#FFF;font-size:14px;font-weight:bold;background:#000;}
+a.chkOrderBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#FFF;font-size:14px;font-weight:bold;background:#000;}
+a.okBigBtn{display:inline-block;width:180px;padding:15px 0;text-align:center;color:#FFF;font-size:14px;font-weight:bold;background:#000;}
+
+a.btnAddr{display:inline-block;*zoom:1;*display:inline;padding:2px 10px;color:#FFF;font-size:12px;background: #597689;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;zoom:1;}
+a.btnMemOut{display:inline-block;*zoom:1;*display:inline;padding:2px 10px;color:#FFF;font-size:12px;background: #597689;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;zoom:1;}
+
+a.popSearchBtn{display:inline-block;*xoom:1;*display:inline;padding: 3px 15px;color:#FFF;border:1px solid #ccc;background:#ccc;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;zoom:1;}
+a.popChkOkBtn{display:inline-block;*xoom:1;*display:inline;padding: 3px 15px;color:#FFF;border:1px solid #ccc;background:#ccc;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;zoom:1;}
+a.popOrderCancelBtn{display:inline-block;*xoom:1;*display:inline;padding: 3px 15px;color:#FFF;border:1px solid #ccc;background:#ccc;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;zoom:1;}
+a.popCloeBtn{display:inline-block;*xoom:1;*display:inline;padding: 3px 15px;color:#FFF;border:1px solid #ccc;background:#ccc;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;zoom:1;}
+
+/* 테이블내 버튼*/
+a.cartMovWishBtn, a.cartListDelBtn{display:block;font-size:11px;padding-left:5px;letter-spacing:-1px;background: url(/himg/common/bg_btn_box.gif) left top no-repeat;}
+a.cartMovWishBtn span,  a.cartListDelBtn span{display:block;height:18px;padding:6px 5px 0 0;background: url(/himg/common/bg_btn_box.gif) right top no-repeat;}
+
+a.cartListDelBtn{padding-left:20px;letter-spacing:-1px;background: url(/himg/common/bg_btn_box.gif) left -27px no-repeat;}
+a.cartMovWishBtn, a.cartListDelBtn{color:#6e6e6f}

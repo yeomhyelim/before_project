@@ -1,0 +1,127 @@
+
+/* 이벤트 정의 */
+function goDataWriteActEvent()				{ goDataWwriteAct("dataWrite");										}
+
+
+
+function goDataWriteLocationEvent()			{ goDataWriteLocation("dataWrite");									}
+function goDataWritePopEvent()				{ goDataWritePop("dataWrite");										}
+function goDataWritePopActEvent()			{ goAct("dataWrite");												}
+function goDataWritePopJsonEvent()			{ goJson("dataWrite", "dataWriteCallBack", "write");				}
+function goDataWritePopCloseEvent()			{ self.close();														}
+function goDataListPageJsonEvent(page)		{ goDataListPageJson("dataList", "dataListCallBack",  page);		}
+function goDataViewShowEvent(no)			{ goDataViewShow(no);												}
+function goDataDeleteJsonEvent(no)			{ goDataDeleteJson("dataDelete", "dataDeleteCallBack", no);			}
+function goDataModifyPopLocationEvent(no)	{ goDataModifyPopLocation("dataModify", no);	}
+
+function goDataWriteLocation(mode) {
+	var ub_p_code	= $("#ub_p_code").val();
+	var b_code		= $("#b_code").val();
+	var page		= $("#page").val();
+	location.href	= "./?menuType=community&mode="+mode+"&b_code="+b_code+"&ub_p_code="+ub_p_code+"&page="+page;
+}
+
+function goDataWritePop(mode) {
+	var ub_p_code	= $("#ub_p_code").val();
+	var b_code		= $("#b_code").val();
+	var page		= $("#page").val();
+	var href		= "./?menuType=community&mode="+mode+"&b_code="+b_code+"&ub_p_code="+ub_p_code+"&target=pop&page="+page;
+	var option		= "width=600px, height=550px";
+	window.open(href,'',option);
+}
+
+function goDataListPageJson(mode, callBack, page) {
+//	var ub_p_code	= $("#ub_p_code").val();
+//	var b_code		= $("#b_code").val();
+//	location.href	= "./?menuType=community&mode="+mode+"&b_code="+b_code+"&ub_p_code="+ub_p_code+"&page="+page;
+//	goAct("dataList");
+
+	$("#menuType").val("community");
+	$("#page").val(page);
+	goJson(mode , callBack, false);
+}
+
+function goDataDeleteJson(mode, callBack, no) {
+	if(no){  $("#cm_no").val(no); }
+	var  x = confirm("삭제하시겠습니까?");
+	if (x == true) { 
+		$("#menuType").val("community");
+		$("#ub_no").val(no);
+//		goAct(mode);
+		goJson(mode , callBack, false);
+	}
+}
+
+function goDataModifyPopLocation(mode, no) {
+	var ub_p_code	= $("#ub_p_code").val();
+	var b_code		= $("#b_code").val();
+	var page		= $("#page").val();
+	var href		= "./?menuType=community&mode="+mode+"&b_code="+b_code+"&ub_no="+no+"&ub_p_code="+ub_p_code+"&target=pop&page="+page;
+	var option		= "width=600px, height=550px";
+	window.open(href,'',option);
+}
+
+function dataListCallBack(obj) {
+	if(!obj.mode) {
+		alert("다시 입력해주세요.");
+	} else {
+		$("tr[id^=dataList_]").remove();
+		$("tr[id^=dataView_]").remove();
+
+		var intCnt		= obj.data.length;
+		var list_num	= obj.list_num;
+		for(var i=0;i<intCnt;i++){
+
+			/* 리스트 폼*/
+			var ub_no		= obj.data[i]['UB_NO'];
+			var ub_title	= obj.data[i]['UB_TITLE'];
+			var ub_name		= obj.data[i]['UB_NAME'];
+			var ub_m_id		= obj.data[i]['UB_M_ID'];
+			var ub_reg_dt	= obj.data[i]['UB_REG_DT'];
+			var ub_read		= obj.data[i]['UB_READ'];
+			var code		= $("#list_form").val();
+			code			= $(code).attr("id","dataList_"+ub_no);
+
+			$(code).find("#list_num").text(list_num--);
+			$(code).find("#ub_title").text(ub_title);
+			$(code).find("#ub_name").text(ub_name);
+			$(code).find("#ub_m_id").text(ub_m_id);
+			$(code).find("#ub_reg_dt").text(ub_reg_dt);
+			$(code).find("#ub_read").text(ub_read);
+			$(code).find("a#dataViewShow").attr("href", "javascript:goDataViewShowEvent('"+ub_no+"')");
+			/* 내글 */
+
+			if(obj.data[i]['LOCK']['member'] && obj.data[i]['LOCK']['check']) { }
+			else { }
+			
+			$("table#data_TEST").append(code);
+
+			/* 뷰 폼 */
+			var ub_text	= obj.data[i]['UB_TEXT'];
+			var code		= $("#view_form").val();
+			code			= $(code).attr("id", "dataView_"+ub_no);
+			$(code).find("#ub_text").text(ub_text);
+			$("table#data_TEST").append(code);
+
+		}
+	}
+}
+
+function dataWriteCallBack(obj) {
+	alert(obj.data['ub_text']);
+}
+
+function goDataViewShow(no) {
+	$("tr[id^=dataView_]").css({'display':'none'});
+	$("tr[id=dataView_"+no+"]").css({'display':''});
+}
+
+function dataDeleteCallBack(obj) {
+	if(!obj.mode) {
+		alert("다시 입력해주세요.");
+	} else {
+		no = obj.data['ub_no'];
+		$("tr[id=dataList_"+no+"]").remove();
+		$("tr[id=dataView_"+no+"]").remove();	
+	}
+}

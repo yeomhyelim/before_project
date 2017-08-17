@@ -1,0 +1,1326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+
+<style type="text/css">
+.tbl_search_row {width:1014px; table-layout:fixed;}
+.cont_gray_fix .tbl_search_row {width:998px;}
+
+.tbl_title {padding:20px 30px; font-size:40px; font-weight:bold;}
+</style>
+
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">구매비용 정산</h1>
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">조회</button>
+							<button type="button" class="btn_red_data">저장</button>
+							<button type="button" class="btn_red_data">결재올림</button>
+						</div>
+					</div>
+
+
+					<div class="sub_top_content">
+						<h1 class="subtit">예산관리</h1>
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">저장</button>
+								<button type="button" class="btn_red_data">결재올림</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>
+						</div>
+
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>마케팅 품의서신청</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>마케팅비 예산마스터조회</b></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<!-- [s]width:1014px -->
+					<div class="tbl_title">width:1014px</div>
+
+						<!-- [s]상단3_1 -->
+						<div class="cont_gray_block">
+							<table class="tbl_search_row">
+								<colgroup>
+										<col width="90" />
+										<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">프로젝트명</label></th>
+										<td>
+											<span style="width:193px;" class="input_gray_fix txt_none">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발팀</span>	
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //[e]상단3_1 -->
+
+						<div class="cont_gray_block">
+
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">국가</label></th>
+										<td>
+											<span class="input_gray_block input_ico" style="width:193px;">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+
+						<!-- [s]상단3_1 : 검색영역이 긴경우 -->
+						<div class="cont_gray_block">
+							<table class="tbl_search_row">
+								<colgroup>
+										<col width="90" />
+										<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">출장번호</label></th>
+										<td>
+											<!-- 검색영역 한개밖에 없을 경우 -->
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<span style="width:193px;" class="input_gray_fix txt_none">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발팀</span>	
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //[e]상단3_1 : 검색영역이 긴경우 -->
+
+
+						<!-- [s]상단3_1 : 달력 input 2개 있는 경우 -->
+						<div class="cont_gray_block">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="248" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">처리일자</label></th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">구분</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">해외</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">국내</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">전체</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //[e]상단3_1 : 달력 input 2개 있는 경우 -->
+
+
+						<!-- [s]상단3_2 -->
+						<div class="cont_gray_block">
+
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="248" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">사업유형</label> <span class="star">*</span></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">모바일</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">PC</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">제휴</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">기타</label>
+										</td>
+										<th scope="row"><label for="">게임명</label> <span class="star">*</span></th>
+										<td>
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<span class="input_gray_fix txt_none" style="width:116px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<!-- //[e]상단3_2 -->
+
+
+						<!-- [s]상단3_3 -->
+						<div class="cont_gray_block">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="248" />
+									<col width="90" />
+									<col width="248" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">실행월</label></th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<span class="input_gray_fix txt_none" style="width:116px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발팀</span>		
+										</td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>										
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">귀속일</label></th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>							
+										</td>
+										<th scope="row"><label for="">정기지급<br />마스터</label></th>
+										<td>
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<span class="input_gray_fix txt_none" style="width:116px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발팀</span>		
+										</td>
+										<th scope="row"><label for="">조회구분</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">미처리</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">처리</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">전체</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>		
+						<!-- //[e]상단3_3 -->
+
+
+						<!-- [s]상단4_달력 input 두개일 경우 -->
+						<div class="cont_gray_block">
+							
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="246" />
+									<col width="90" />
+									<col width="136" />
+									<col width="90" />
+									<col width="136" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">등록일자</label></th>
+										<td>
+											<span class="input_gray_fix input_ico" style="width:68px;">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<span class="input_gray_fix input_ico" style="width:68px;">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">귀속조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<th scope="row"><label for="">예산마스터</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<!-- //[e]상단4_달력 input 두개일 경우 -->
+
+
+
+						<!-- [s]상단4 -->
+						<div class="cont_gray_block">
+							
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">등록일자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>			
+										</td>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">귀속조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<th scope="row"><label for="">예산마스터</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<!-- //[e]상단4 -->
+
+						
+						<br /><br />
+
+						<div class="cont_white_fix">
+
+							<!-- [s]하위 테이블  VS 비교 테이블 -->
+							<div class="box_gray_vs">
+								<div class="cont">
+									<table class="tbl_vs_col">
+										<colgroup>
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="">귀속월</label></th>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+													</span>
+												</td>
+												<th scope="row"><label for="">지급일</label></th>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+													</span>	
+												</td>
+												<th scope="row">&nbsp;</th>
+												<td>
+													&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="">거래처</label></th>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>											
+												</td>
+												<th scope="row"><label for="">지급계좌</label></th>
+												<td>
+													<span class="input_gray_block txt_none">자동</span>		
+												</td>
+												<th scope="row"><label for="">지급조건</label></th>
+												<td>
+													<span class="input_gray_block txt_none">자동</span>										
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="">세금계산서</label></th>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<th scope="row"><label for="">부가세유형</label></th>
+												<td>
+													<select disabled="disabled">
+														<option selected="selected" value="">전체</option>
+													</select>
+												</td>
+												<th scope="row">&nbsp;</th>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="">공급가액</label></th>
+												<td>
+													<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>
+												</td>
+												<th scope="row"><label for="">부가세</label></th>
+												<td>
+													<span class="input_gray_block txt_none">자동</span>														
+												</td>
+												<th scope="row"><label for="">지급액</label></th>
+												<td>
+													<span class="input_gray_block txt_none">자동</span>			
+												</td>
+											</tr>
+										</tbody>
+									</table>										
+								</div>					
+							</div>
+							<!-- //[e]하위 테이블 -->	
+						</div>
+
+
+
+					<!-- //[e]width:1014px -->
+
+
+
+
+					<!-- [s]width:1013px -->
+					<div class="cont_white_fix">
+
+
+						<div class="tbl_title">width:1013px</div>
+
+
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="884" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">귀속일</th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+			
+
+
+
+						<br /><br />
+
+
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="268" />
+									<col width="130" />
+									<col width="486" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">출장제목</th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row">출장번호</th>
+										<td>1234569</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row">출장기간</th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>										
+										</td>
+										<th scope="row">진행상태</th>
+										<td>임시저장</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row">출장지</th>
+										<td colspan="3">
+											<ul class="trip_list01">
+												<li>
+													<span class="tit">출장지1</span>
+													<select style="width:80px;">
+														<option value="" selected="selected">일본</option>
+													</select>
+													<span class="input_gray_fix" style="width:232px;"><input type="text" id="" name="" title="" value="" /></span>
+												</li>
+												<li>
+													<span class="tit">출장지2</span>
+													<select style="width:80px;">
+														<option value="" selected="selected">일본</option>
+													</select>
+													<span class="input_gray_fix" style="width:232px;"><input type="text" id="" name="" title="" value="" /></span>
+												</li>
+												<li>
+													<span class="tit">출장지3</span>
+													<select style="width:80px;">
+														<option value="" selected="selected">일본</option>
+													</select>
+													<span class="input_gray_fix" style="width:232px;"><input type="text" id="" name="" title="" value="" /></span>
+												</li>
+											</ul>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="tbl-scroll-wrap t_line_type01 top_mr03"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="164" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">구매제목</label></th>
+										<td colspan="5"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">구매번호</label></th>
+										<td>123456789</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">구매신청일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>										
+										</td>
+										<th scope="row"><label for="">작성자</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">진행상태</label></th>
+										<td>임시저장</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">구매목적</label></th>
+										<td colspan="7">
+											<div class="txtarea">
+												<textarea style="height:35px;"></textarea>	
+											</div>											
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="884" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">귀속일</th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01">
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">구매제목</label></th>
+										<td colspan="3">
+											<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>
+										</td>
+										<th scope="row"><label for="">구매번호</label></th>
+										<td>PC20150700001</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">구매요청일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">납품요청일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">진행상태</label></th>
+										<td>임시저장</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">구매목적</label></th>
+										<td colspan="5">
+											<div class="txtarea">
+												<textarea style="height:35px;"></textarea>	
+											</div>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="545" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">귀속일</th>
+										<td>
+											<span class="input_gray_fix input_ico w76">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row">비용항목</th>
+										<td class="td_last">
+											<select style="width:150px;">
+												<option value="" selected="selected">4101200011234789</option>
+											</select>
+											<button type="button" class="btn_gray_com">일괄적용</button>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+					</div>
+					<!-- //[e]width:1013px -->
+
+
+
+
+					<br /><br />
+
+
+					<!-- [s]width:1011px -->
+					<div class="cont_gray_line01">
+						<table class="tbl_choice_row">
+							<colgroup>
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">소모품</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">IT/SW/도서/경품</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //[e]width:1011px -->
+
+					<!-- [s]width:1009px -->
+					<div class="cont_white_fix">
+
+						<div class="cont_gray_line02">
+							<table class="tbl_sum_row">
+								<colgroup>
+									<col width="90" />
+									<col width="162" />
+									<col width="90" />
+									<col width="162" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="161" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">부가세유형</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="매입세금계산서전자(10%)" /></span></td>
+										<th scope="row"><label for="">공급가액</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="4,940,000" /></span></td>
+										<th scope="row"><label for="">부가세</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="4,940,000" /></span></td>
+										<th scope="row" class="blue_txt"><label for="">지급액/월</label></th>
+										<td class="last"><span class="input_gray_block"><input type="text" id="" class="blue_txt txt_r" name="" title="" value="5,434,000" /></span></td>
+										<td class="blank_last last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">원천세유형</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="매입세금계산서전자(10%)" /></span></td>
+										<th scope="row"><label for="">소득금액</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="4,940,000" /></span></td>
+										<th scope="row"><label for="">소득세</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="4,940,000" /></span></td>
+										<th scope="row"><label for="">주민세</label></th>
+										<td class="last"><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="4,940,000" /></span></td>
+										<td class="blank_last last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+					<!-- //[e]width:1009px -->
+
+
+					<br /><br />
+					
+
+
+					<!-- [s]width:998px -->
+					<div class="tbl_title">width:998px</div>
+
+					
+					<!-- [s]기본 -->
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">신청일자</label></th>
+									<td>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>		
+										<span class="txt_bar">-</span>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+									<th scope="row"><label for="">조회구분</label></th>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">미처리</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">처리</label>											
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //[e]기본 -->
+
+
+					<!-- [s]기본 -->
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">작성자</label></th>
+									<td>
+										<span class="input_gray_fix input_ico w70">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+										<span class="input_gray_fix txt_none" style="width:110px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발</span>
+									</td>
+									<th scope="row"><label for="">작성조직</label></th>
+									<td>
+										<span class="input_gray_fix input_ico w70">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+										<span class="input_gray_fix txt_none" style="width:110px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발</span>		
+									</td>
+									<th scope="row"><label for="">경비구분</label></th>
+									<td>
+										<select>
+											<option value="" selected="selected">일반경비</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">작성자</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>							
+									</td>
+									<th scope="row"><label for="">귀속일</label></th>
+									<td>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>		
+										<span class="txt_bar">-</span>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+									<th scope="row"><label for="">진행상태</label></th>
+									<td>
+										<select>
+											<option value="" selected="selected"></option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<!-- //[e]기본 -->
+
+
+					<!-- [s]6글자일 경우 -->
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="110" />
+								<col width="242" />
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">작성자</label></th>
+									<td>
+										<span class="input_gray_fix input_ico w70">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+										<span class="input_gray_fix txt_none" style="width:110px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발</span>
+									</td>
+									<th scope="row"><label for="">작성조직</label></th>
+									<td>
+										<span class="input_gray_fix input_ico w70">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+										<span class="input_gray_fix txt_none" style="width:110px;">개발팀개발팀개발팀개발팀개발팀개발팀개발팀개발</span>		
+									</td>
+									<th scope="row"><label for="">경비구분</label></th>
+									<td>
+										<select>
+											<option value="" selected="selected">일반경비</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">전자결재번호</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>							
+									</td>
+									<th scope="row"><label for="">귀속일</label></th>
+									<td>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>		
+										<span class="txt_bar">-</span>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+									<th scope="row"><label for="">진행상태</label></th>
+									<td>
+										<select>
+											<option value="" selected="selected"></option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<!-- //[e]6글자일 경우 -->
+
+
+					<!-- [s]6글자일 경우 -->
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="254" />
+								<col width="80" />
+								<col width="138" />
+								<col width="80" />
+								<col width="138" />
+								<col width="80" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">전자결재번호</label></th>
+									<td>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>		
+										<span class="txt_bar">-</span>
+										<span class="input_gray_fix input_ico" style="width:73px;">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>				
+									</td>
+									<th scope="row"><label for="">귀속일</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>		
+									</td>
+									<th scope="row"><label for="">진행상태</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>		
+									</td>
+									<th scope="row"><label for="">진행상태</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>		
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<!-- //[e]6글자일 경우 -->
+
+					<!-- [s]6글자일 경우 -->
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="159" />
+								<col width="90" />
+								<col width="159" />
+								<col width="90" />
+								<col width="159" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">예산마스터</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>					
+									</td>
+									<th scope="row"><label for="">귀속일</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>		
+									</td>
+									<th scope="row"><label for="">진행상태</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>		
+									</td>
+									<th scope="row"><label for="">진행상태</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>		
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<!-- //[e]6글자일 경우 -->
+					<!-- //[e]width:998px -->
+
+
+
+
+					<div class="tbl_title">width 구애 받지 않고 100%</div>
+
+					<!-- [s]width 100% -->
+					<div class="cont_white_fix">
+
+
+						<!-- [s]1번째 타이틀과 증빙버튼 -->
+						<div class="stitbox01">
+							<div class="cont">
+								<h2>거래처정보</h2>
+								<div class="pos_btn_right">
+									<a href="#1" class="ico_evidence_txt">증빙</a>
+									<!-- 데이터가 들어왔을때는 on 처리
+									<a href="#1" class="ico_evidence_txt on">증빙</a>
+									 -->
+								</div>
+							</div>
+						</div>
+						<!-- //[e]1번째 타이틀과 증빙버튼 -->
+
+						<!-- [s]1번째 타이틀과 버튼 -->
+						<div class="stitbox01">
+							<div class="cont">
+								<h2>전표처리목록</h2>
+								<div class="pos_btn_right">
+									<button type="button" class="btn_skyblue_data">행추가</button>
+									<button type="button" class="btn_skyblue_data">행삭제</button>
+								</div>
+							</div>
+						</div>
+						<!-- //[e]1번째 타이틀과 버튼 -->
+
+						<!-- [s]1번째 타이틀과 radio버튼 -->
+						<div class="stitbox01">
+							<div class="cont">
+								<h2>출장내용 </h2>
+								<span class="choice_radio">
+									<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">국내</label>
+									<input type="radio" id="" class="input_radio" value="" /> <label for="">국외</label>								
+								</span>
+							</div>
+						</div>
+						<!-- [s]1번째 타이틀과 radio버튼 -->
+
+						<!-- [s]2번째 타이틀과 버튼 -->
+						<div class="stitbox02">
+							<h3>계좌정보</h3>
+							<div class="pos_btn_right">
+								<button type="button" class="btn_green_data">행추가</button>
+								<button type="button" class="btn_green_data">행삭제</button>
+							</div>							
+						</div>
+						<!-- //[e]2번째 타이틀과 버튼 -->
+
+
+
+
+						<!-- [s]하위 테이블 체크박스 -->
+						<div class="tbl-scroll-wrap top_mr01"> 
+
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_add_col">
+								<table>
+									<colgroup>
+										<col width="40" />
+										<col width="50" />
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+										<col width="324" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+											<th scope="col">순번</th>
+											<th scope="col">신청자</th>
+											<th scope="col">귀속조직</th>
+											<th scope="col">직급</th>
+
+											<th scope="col">출장일수</th>
+											<th scope="col">조식포함여부</th>
+											<th scope="col">R&amp;B</th>
+											<th scope="col" class="last">일지금액</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td></td>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>			
+											</td>
+											<td class="td_left">가나다</td>
+											<td>가나다</td>
+
+											<td>가나다</td>
+											<td>
+												<select>
+													<option value="" selected="selected">전체</option>
+												</select>										
+											</td>
+											<td class="td_left">가나다</td>
+											<td class="last td_right">9</td>
+										</tr>
+										<tr class="tr_total">
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td class="td_right">합계</td>
+											<td class="last td_left"><span class="point">20,000,000</span> 원</td>
+										</tr>
+									</tbody>
+								</table>	
+							</div>
+							<!-- //[e]그리드 테이블 -->
+
+						</div>
+						<!-- //[e]하위 테이블 체크박스 -->
+
+
+						<div class="stitbox02">
+							<h3>기타정산율</h3>
+							<span class="green_txt">(슬라이드조건)</span>
+						</div>
+
+						<div class="tbl_height_box">
+							<div class="tbl-scroll-wrap top_mr01">
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_row_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="200" />
+											<col width="200" />
+											<col width="100" />
+											<col width="415" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순서</th>
+												<th scope="col">적용기준</th>
+												<th scope="col">적용범위</th>
+												<th scope="col">정산율</th>
+												<th scope="col" class="last">설명</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td class="td_left">누적 다운로드수</td>
+												<td class="td_left">1,000,001 이상 ~ 10,000,000,000 미만</td>
+												<td>100 %</td>
+												<td class="last td_left">1,000,001 이상 ~ 10,000,000,000 미만 일경우에 25%의 정산율이 적용됩니다.</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="td_left">누적 다운로드수</td>
+												<td class="td_left">1,000,001 이상 ~ 10,000,000,000 미만</td>
+												<td>100 %</td>
+												<td class="last td_left">1,000,001 이상 ~ 10,000,000,000 미만 일경우에 25%의 정산율이 적용됩니다.</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="td_left">누적 다운로드수</td>
+												<td class="td_left">1,000,001 이상 ~ 10,000,000,000 미만</td>
+												<td>100 %</td>
+												<td class="last td_left">1,000,001 이상 ~ 10,000,000,000 미만 일경우에 25%의 정산율이 적용됩니다.</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="td_left">누적 다운로드수</td>
+												<td class="td_left">1,000,001 이상 ~ 10,000,000,000 미만</td>
+												<td>100 %</td>
+												<td class="last td_left">1,000,001 이상 ~ 10,000,000,000 미만 일경우에 25%의 정산율이 적용됩니다.</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="td_left">누적 다운로드수</td>
+												<td class="td_left">1,000,001 이상 ~ 10,000,000,000 미만</td>
+												<td>100 %</td>
+												<td class="last td_left">1,000,001 이상 ~ 10,000,000,000 미만 일경우에 25%의 정산율이 적용됩니다.</td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+						</div>
+
+					</div>
+					<!-- //[e]width 100% -->
+
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

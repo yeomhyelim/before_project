@@ -1,0 +1,72 @@
+
+-- 테이블 생성 --
+
+CREATE TABLE `POST_SMS_LOG` (
+  `PL_NO` bigint(20) NOT NULL auto_increment COMMENT '번호',
+  `PL_PS_NO` bigint(20) default NULL COMMENT '전체문자발송관리 번호',
+  `PL_TO_M_NO` bigint(20) default NULL COMMENT '받는사람 회원번호',
+  `PL_TO_M_HP` varchar(30) default NULL COMMENT '받는사람 휴대폰번호',
+  `PL_TO_M_NAME` varchar(60) default NULL COMMENT '받는사람 이름',
+  `PL_FROM_M_NO` bigint(20) default NULL COMMENT '보낸사람 회원번호',
+  `PL_FROM_M_HP` varchar(30) default NULL COMMENT '보낸사람 휴대폰번호',
+  `PL_FROM_M_NAME` varchar(60) default NULL COMMENT '보낸사람 이름',
+  `PL_TEXT` text COMMENT '내용',
+  `PL_IP` varchar(20) default NULL COMMENT '보낸사람 아이피',
+  `PL_SEND_DATE` datetime default NULL COMMENT '보낸시간',
+  `PL_SEND_RESULT` varchar(20) default NULL COMMENT '결과',
+  `PL_REG_DT` datetime default NULL COMMENT '작성일',
+  `PL_REG_NO` bigint(20) default NULL COMMENT '작성자',
+  PRIMARY KEY  (`PL_NO`)
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COMMENT='전체문자발송관리-로그';
+
+
+
+-- 프로시저 --
+DROP PROCEDURE IF EXISTS `SP_POST_SMS_LOG_I`;
+CREATE PROCEDURE `SP_POST_SMS_LOG_I`(
+	 IN IN_PL_NO INT
+	,IN IN_PL_PS_NO INT
+	,IN IN_PL_TO_M_NO INT
+	,IN IN_PL_TO_M_HP VARCHAR(30)
+	,IN IN_PL_TO_M_NAME VARCHAR(60)
+	,IN IN_PL_FROM_M_NO INT
+	,IN IN_PL_FROM_M_HP VARCHAR(30)
+	,IN IN_PL_FROM_M_NAME VARCHAR(60)
+	,IN IN_PL_TEXT BLOB
+	,IN IN_PL_IP VARCHAR(20)
+	,IN IN_PL_SEND_DATE DATETIME
+	,IN IN_PL_SEND_RESULT VARCHAR(20)
+	,IN IN_PL_REG_DT DATETIME
+	,IN IN_PL_REG_NO INT
+)
+BEGIN
+	INSERT INTO POST_SMS_LOG (
+		 PL_PS_NO
+		,PL_TO_M_NO
+		,PL_TO_M_HP
+		,PL_TO_M_NAME
+		,PL_FROM_M_NO
+		,PL_FROM_M_HP
+		,PL_FROM_M_NAME
+		,PL_TEXT
+		,PL_IP
+		,PL_SEND_DATE
+		,PL_SEND_RESULT
+		,PL_REG_DT
+		,PL_REG_NO
+	) VALUES (
+		 IN_PL_PS_NO
+		,IN_PL_TO_M_NO
+		,IN_PL_TO_M_HP
+		,IN_PL_TO_M_NAME
+		,IN_PL_FROM_M_NO
+		,IN_PL_FROM_M_HP
+		,IN_PL_FROM_M_NAME
+		,IN_PL_TEXT
+		,IN_PL_IP
+		,NOW()
+		,IN_PL_SEND_RESULT
+		,NOW()
+		,IN_PL_REG_NO
+	);
+END

@@ -1,0 +1,384 @@
+<?
+	# 상품 스킨 PL0001
+
+	## 네비게시션 설정
+	$naviTitle = "";
+	if($strSearchHCodeName1) {
+		if($naviTitle) { $naviTitle = "{$naviTitle} > "; }
+		$naviTitle = "{$strSearchHCodeName1}";
+	}
+	if($strSearchHCodeName2) {
+		if($naviTitle) { $naviTitle = "{$naviTitle} > "; }
+		$naviTitle = "{$strSearchHCodeName2}";
+	}
+	if($strSearchHCodeName3) {
+		if($naviTitle) { $naviTitle = "{$naviTitle} > "; }
+		$naviTitle = "{$strSearchHCodeName3}";
+	}
+	if($strSearchHCodeName4) {
+		if($naviTitle) { $naviTitle = "{$naviTitle} > "; }
+		$naviTitle = "{$strSearchHCodeName4}";
+	}
+
+	## 정렬 설정
+	## 2015.01.20 kim hee sung 등록일 추가, 및 제조사 주석처리.
+	$strSort = $_GET['sort'];
+
+	$sortArr = array
+	(
+		'M'	=> $LNG_TRANS_CHAR["PW00026"] , //제조사
+		'N'	=> $LNG_TRANS_CHAR["OW00058"] , //상품명
+		'R'	=> $LNG_TRANS_CHAR["PW00004"] , //판매가격
+		'T'	=> $LNG_TRANS_CHAR["PW00078"] , //등록일
+//		'P'	=> $LNG_TRANS_CHAR["PW00008"] , //적립금
+//		'S'	=> $LNG_TRANS_CHAR["PW00079"]   //인기순
+	) ;
+
+	## 2015.03.04 kim hee sung 정렬 출력방식 옵션으로 변경
+	if($S_PROUDCT_ORDER_LIST):
+		foreach($S_PROUDCT_ORDER_LIST as $key):
+			if($key == 'P')			$sortArr['P'] =  $LNG_TRANS_CHAR["PW00008"];  //적립금
+			else if($key == 'S')	$sortArr['P'] =  $LNG_TRANS_CHAR["PW00079"];  //인기순
+		endforeach;
+	endif;
+?>
+<style>
+	.prodNewListWrapA .listProdImg{width:<?=$intWSize?>px;height:<?=$intHSize?>px;}
+	.prodNewListWrapA .title{color:<?=$strColor1?>;}
+	.prodNewListWrapA .comment{color:<?=$strColor2?>;}
+	.prodNewListWrapA .pricePoint{color:<?=$strColor3?>;}
+	.prodNewListWrapA .priceConsumer{color:<?=$strColor4?>}
+	.prodNewListWrapA .priceSale{color:<?=$strColor5?>;}
+
+	div.productInfoWrap{margin-bottom:20px;text-align:<?=$strWAlign?>}
+	div.productInfoWrap ul{margin-top:5px;}
+	div.productInfoWrap ul li{padding: 2px 0;}
+	div.productInfoWrap ul li img{vertical-align:middle;margin-top:-1px;margin-right:3px;}
+	div#infscr-loading {width:100px; margin:0 auto; text-align:center;}
+</style>
+
+<script type="text/javascript">
+
+	//2015.04.13 by.mk
+	$(function() {
+
+		//List view button handler
+		$('#btnListView').on('click', function() {
+			$('.prodNewListWrapB:eq(0)').show();
+			$('.prodNewListWrapA:eq(0)').hide();
+		});
+
+		//Tile view button handler
+		$('#btnTileView').on('click', function() {
+			$('.prodNewListWrapB:eq(0)').hide();
+			$('.prodNewListWrapA:eq(0)').show();
+		});
+
+
+	});
+
+</script>
+
+<div class="prodTopArea">
+	<h2><?php echo $naviTitle;?></h2>
+	<div class="locationWrap">
+		<ul>
+			<li class="home">H</li>
+			<li>Cate1</li>
+			<li class="end">Cate2</li>
+		</ul>
+	</div>
+	<div class="clr"></div>
+</div>
+
+<!-- 정렬 -->
+
+	<div class="listTopSortWrap">
+		<div class="sortListBtn">
+			<? foreach ( $sortArr as $sortKey => $sortVal ) : ?>
+			<?
+				$onClass = 'product_order' ;
+				if ( strpos ( $strSort , $sortKey ) !== false ) // 현재 정렬기준이면
+				{
+					$onClass = 'product_order_on poa' ;
+					if ( substr ( $strSort , -1 ) == 'D' )		// 내림차순이면
+						$onClass = 'product_order_on pod' ;
+				}
+
+			?>
+				<span class="txt">
+					<a href="javascript:void(0);" data-order="<?=$sortKey?>" class="<?=$onClass?>"><?=$sortVal?></a>
+				</span>
+			<? endforeach ; ?>
+		</div>
+
+		<div class="cntProd">총 <strong><?php echo $intTotal;?></strong> 개</div>
+		<div class="clr"></div>
+	</div>
+
+	<div class="prodListSearchWrap">
+		<div class="searchIn"><input type="text" name=""><a href="#">검색</a></div>
+		<div class="listSelectWrap">
+			<select name="">
+				<option>20개씩 보기</option>
+			</select>
+			<a href="#" id="btnListView"><img src="/upload/images/ico_prod_list_1.gif"></a>
+			<a href="#" id="btnTileView"><img src="/upload/images/ico_prod_list_2.gif"></a>
+		</div>
+		<div class="clr"></div>
+	</div>
+
+<!-- 정렬 -->
+<?if($intTotal > 0){?>
+
+
+
+<?	//2015. 04. 13 by.mk
+	//Data setting * notice : important variable *
+	//$row = array();
+
+/*	while ( $_row = mysql_fetch_array($result) ) {
+		array_push($row, $_row);
+	}*/
+?>
+
+<!-- Start to display list view. 2015.04.13 by.mk -->
+<div class="prodNewListWrapB" style="display: none;">
+	<ul>
+		<li>Test li : <?=$intHList?></li>
+	</ul>
+</div>
+<!-- End list view -->
+
+<!-- Start to display tile view. -->
+<div class="prodNewListWrapA">
+	<table class="thumbTable">
+		<? for($i=0,$k=0;$i<$intHList;$i++): ?>
+		<tr>
+			<? for($j=0;$j<$intWList;$j++):	?>
+			<td<? if($j==($intWList-1)) { echo sprintf(" style='width:%dpx'", $intWSize); } ?>>
+				<? $row = mysql_fetch_array($result); $k++;
+				   if($row):
+
+						## 기본 설정
+						$strP_CODE = $row['P_CODE'];
+						$strP_NAME = $row['P_NAME'];
+						$intP_GRADE = $row['P_GRADE'];
+						$intP_GRADE_CNT = $row['P_GRADE_CNT'];
+						$strP_COLOR = $row['P_COLOR'];
+						$intP_SALE_PRICE = $row['P_SALE_PRICE'];
+						$intP_POINT = $row['P_POINT'];
+						$strP_POINT_TYPE = $row['P_POINT_TYPE'];
+						$strP_POINT_OFF1 = $row['P_POINT_OFF1'];
+						$strP_POINT_OFF2 = $row['P_POINT_OFF2'];
+						$strPM_REAL_NAME = $row['PM_REAL_NAME'];
+						$strPM_REAL_NAME2 = $row['PM_REAL_NAME2']; // 이미지2 (마우스 오버시 이미지)
+						$strP_EVENT = $row['P_EVENT'];
+						$strP_LIST_ICON = $row['P_LIST_ICON'];
+						$strP_COLOR_IMG = $row['P_COLOR_IMG'];
+						$strP_BRAND_NAME = $row['P_BRAND_NAME'];
+						$strP_MODEL = $row['P_MODEL'];
+						$strP_ETC = $row['P_ETC'];
+						$intP_CONSUMER_PRICE = $row['P_CONSUMER_PRICE'];
+						$strP_PRICE_TEXT = $row['P_PRICE_TEXT'];
+						$intP_QTY = $row['P_QTY']; // 수량
+						$strP_STOCK_OUT = $row['P_STOCK_OUT']; // 품절여부
+						$strP_RESTOCK = $row['P_RESTOCK']; // 재입고여부
+						$strP_STOCK_LIMIT = $row['P_STOCK_LIMIT']; // 무제한상품
+						$strP_BAESONG_TYPE = $row['P_BAESONG_TYPE']; // 배송타입
+						$strP_MEMO = $row['P_MEMO'];
+						## 재고 수량 표시
+						$strP_QTY = "";
+						if($S_IS_QTY_SHOW == "Y"):
+							## 제고 수량 설정	
+							if($intP_QTY) { $strP_QTY = "<span>".$LNG_TRANS_CHAR["PW00080"]."</span>" . $intP_QTY; }
+						endif;
+
+						## 색상 설정
+						$aryP_COLOR_IMG = "";
+						if($strP_COLOR && $strShow6):
+							$aryP_COLOR = explode("|", $strP_COLOR);
+							foreach($aryP_COLOR as $key => $val):
+								if($val != "Y") { continue; }
+								if($S_ARY_PROD_COLOR[$key]['USE'] != "Y") { continue; }
+								$aryP_COLOR_IMG[] = $S_ARY_PROD_COLOR[$key]['IMG'];
+							endforeach;
+						endif;
+
+						## 적립금 설정
+						$intProdPoint = getProdPoint($intP_SALE_PRICE, $intP_POINT, $strP_POINT_TYPE, $strP_POINT_OFF1, $strP_POINT_OFF2);
+						$intProdPointMoney = 0;
+						if($intProdPoint <= 0) { $strShow3 = ""; }
+						if($strShow3 == "Y") { $intProdPointMoney = getCurToPrice($intProdPoint); }
+
+						## 소비자가격 설정
+						$strTextConsumerPrice = "";
+						$strTextConsumerPriceUsd = "";
+						if($intP_CONSUMER_PRICE > 0):
+							$strTextConsumerPrice = getCurToPrice($intP_CONSUMER_PRICE);
+							$strTextConsumerPrice = "{$strMoneyIconL}{$strTextConsumerPrice}{$strMoneyIconR}";
+							if($S_ARY_CUR[$S_SITE_LNG]["USD"][2] == "Y") { $strTextConsumerPriceUsd = getCurMark("USD") . getCurToPrice($intP_CONSUMER_PRICE, "US") . getCurMark2("USD"); }
+						endif;
+			
+						## 상품 가격 설정
+						$strTextPriceUsd = "";
+						$strTextPrice = '<strong>' . getProdDiscountPrice($row) . '</strong>';
+						$strTextPrice = $strMoneyIconL . $strTextPrice . $strMoneyIconR;
+						if($S_ARY_CUR[$S_SITE_LNG]["USD"][2] == "Y") { $strTextPriceUsd = getCurMark("$") . getProdDiscountPrice($row,"1",0,"US") . getCurMark2("USD"); }
+						if($strP_PRICE_TEXT) { $strTextPrice = $strP_PRICE_TEXT; } 
+
+						## 이미지 설정
+						if(!$strPM_REAL_NAME) { $strPM_REAL_NAME = "/himg/product/A0001/no_img.gif"; }
+
+						## 마우스 오버시 변경 이미지 설정
+						$strOverImage = "";
+						if($strTurnUse == "Y" && $strPM_REAL_NAME2):
+							$strOverImage = " overImg='{$strPM_REAL_NAME2}'";
+						endif;
+
+						## 리스트 이미지를 동영상으로 보이게 하며 특정 카테고리에서만 동영상이 보이도록 처리
+						$strProdMovieUrl = "";
+						if($S_FIX_PROD_VIEW_MOVIE_FLAG == "Y" && !in_array(SUBSTR($row['P_CATE'],0,3),$S_FIX_PROD_VIEW_MOVIE_CATE_NOT_LIST)):
+							$productMgr->setP_CODE($strP_CODE);
+							$productMgr->setPM_TYPE("movie1");
+							$prodMovieRow = $productMgr->getProdImg($db);
+							$strProdMovieUrl = $prodMovieRow[0]['PM_REAL_NAME'];
+						endif;
+
+						## 이벤트 정보
+						$strEvent = "";
+						if($strP_EVENT > 0 && getProdEventInfo($row) == "Y"):
+							if($S_EVENT_INFO[$strP_EVENT]["PRICE_TYPE"] == "1"):
+								$strEvent = $S_EVENT_INFO[$row[P_EVENT]]["PRICE_MARK"];
+							endif;
+						endif;
+
+						## 아이콘 설정
+						$iconTag = "";
+						$icon = explode("/", $strP_LIST_ICON);
+						for($x=0; $x<sizeof($icon); $x++):
+							$iconTag .= $S_ARY_PRODUCT_LIST_ICON[$icon[$x]];
+						endfor;
+						
+						## 상품명 설정
+						$strP_NAME = strHanCutUtf2($strP_NAME, $intTitleMaxsize, "N"); 
+
+						## 평점 설정
+						$intGrade = $intP_GRADE / $intP_GRADE_CNT;
+						if(!$intGrade) { $intGrade = 0; }
+
+						## td style 설정
+						$strStyleTD = "";
+						if($j==($intWList-1)) { $strStyleTD = "width:{$intWSize}px"; }
+
+						## div class 설정
+						$strClassDiv = "productInfoWrap";
+						if($j==($intWList-1)) { $strClassDiv .= " endProdList"; }
+
+						## div style 설정
+						$strStyleDiv = "width:{$intWSize}px;text-align:{$strWAlign}";
+
+						if($_SERVER['HTTP_HOST'] == "ausieshop.eumshop.co.kr"):
+							$strShow9 = "Y";
+							$strShow10 = "Y";
+						endif;
+
+						## 판매가 할인율
+						$intProdDiscountRate	= 0;
+						if ($S_FIX_PRODUCT_DISCOUNT_RATE_SHOW == "Y"){
+							$intProdDiscountRate= getRoundUp((($row['P_CONSUMER_PRICE'] - $row['P_SALE_PRICE'])/$row['P_CONSUMER_PRICE']) * 100,0);
+							$strProdDiscountRateText = "<strong class='discountRate'>".$intProdDiscountRate."</strong><span class='rateSign'>%</span>";
+						}
+
+						## 무료배송아이콘표시
+						$strProdFreeDeliveryText = "";
+						if ($S_FIX_PRODUCT_FREE_DELIVERY_SHOW == "Y"){
+							if ($strP_BAESONG_TYPE == "2"){
+								$strProdFreeDeliveryText = "무료배송";
+							}
+						}
+
+						## 2015.02.09 kim hee sung
+						## 상품가격 출력 설정
+						##  관리자페이지 > 기본설정 > 주문및결제관리 > 상품가격노출 사용시 해당 그룹 회원에게만 가격 노출합니다.
+						if($isPriceHide):
+							$strProdDiscountRateText = '';	
+							$strTextPrice = '';
+							$intProdPointMoney = '';
+							$strTextConsumerPrice = ''; 
+							$strTextConsumerPriceUsd = '';
+						endif;
+					?>
+					<!-- 상품 디자인 -->
+						<div class="productInfoWrap">
+							<div class="bestIco_<?php echo $j+1;?>"></div>
+								<div class="prodImgWrap">
+									<a href="javascript:goProdView('<?php echo $strP_CODE;?>');"><img src="<?php echo $strPM_REAL_NAME;?>" class="listProdImg"/></a>
+								</div>
+							<?php if($strEvent):?>
+								<div class="sailInfo">
+									<strong><?php echo $strEvent;?></strong>%									
+								</div>
+							<?php endif;?>
+							<div class="title"><a href="javascript:goProdView('<?php echo $strP_CODE?>');"><?php echo $strP_NAME;?></a></div>
+							<div class="prodInfoSum">
+								<ul class="prodInfoTxt">
+									<li><span>원산지</span> <strong>중국</strong></li>
+									<?php if($strShow4 == "Y" && $intP_CONSUMER_PRICE > 0 && $intP_CONSUMER_PRICE != $intP_SALE_PRICE ):?>
+										<li class="priceConsumer">
+											<s><?php echo $strTextConsumerPrice; // 소비자가격?></s>
+										</li>		
+									<?php endif;?>													
+									<?php if($strShow5 == "Y"):?>
+										<?php if($strTextPriceUsd):?>
+											<li>
+												<span class="priceCn"><?php echo $strTextPrice; // 가격?></span>
+												<span class="priceCn_us"> / <?php echo $strTextPriceUsd // USD 달러?></span>
+											</li>
+										<?php else:?>
+											<li class="priceSale"><span>가격</span> <strong><?php echo $strTextPrice; // 가격?></strong></li>
+										<?php endif;?>	
+									<?php endif;?>													
+		
+								</ul>
+								</div>
+								<div class="shopInfoWrap">
+									<ul>
+										<li><span>업체명</span> <strong>에스엔택</strong></li>
+										<li><span>국가</span> <strong>한국</strong></li>
+										<li><span>TYPE</span> <strong>제조, 공급사</strong></li>
+									</ul>
+									<div class="shopIcoWrap">
+										<img src="/upload/images/ico_shop_1.png">
+										<img src="/upload/images/ico_shop_2.png">
+										<img src="/upload/images/ico_shop_3.png">
+									</div>
+								</div>
+							<div class="clr"></div>
+						</div>
+					<!-- 상품 디자인 -->
+				<? endif; ?>
+			</td>
+			<? endfor;	?>
+		</tr>
+		<? if($intListNum <= $k) { break; } ?>
+		<? endfor; ?>
+	</table>
+</div>
+<!-- End tile view -->
+
+<?if ($strProdListAllView != "Y"){?>
+<div id="pagenate">
+	<?=drawPaging($intPage,$intPageLine,$intPageBlock,$intTotal,$intTotPage,$linkPage,"","","","","")?>
+</div>
+<? if ( $S_SHOP_MORE_VIEW_USE == 'Y' && $intTotPage > 1 ) { ?><a href="<?=$_SERVER['PHP_SELF']?>&page=2" id="btnProductMore" class="btnProductMore">더보기</a><? } ?>
+<?}?>
+<?}else{?>
+<div class="prodNewListWrapA">
+	<table>
+		<tr>
+			<td class="center"><?=$LNG_TRANS_CHAR["PS00001"]?></td>
+		</tr>
+	</table>
+</div>
+<?}?>

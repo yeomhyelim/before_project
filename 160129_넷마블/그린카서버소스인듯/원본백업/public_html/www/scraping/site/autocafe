@@ -1,0 +1,45 @@
+
+// 주석
+// ID				: 페이지ID
+// URL				: 스크립 웹 사이트
+// LEVEL 함수 설명
+//	- preg_match_all : 정규식을 이용하여 범위를 지정하여 값 반환.
+//	- _striptext : snoopy 함수, 텍스트 값만 반환
+//	- ereg_replace : 정규화 표현식을 이용하여 A를 B 로 변경 (여기서 구분자는 ▣▣SPLIT▣▣ 로 한다.)
+//	- split : 정규화 표현식을 이용하여 문자열 짜르기 (결과값은 배열)
+//	- RLtrimEx : 오른쪽 왼쪽 원하는 문자 짜르기
+//	- saveDataInArray : 배열 정보를 DATA 배열에 기록 (단, 공백은 제거됩니다.)
+//	- addDataInArray : 지정된 배열 변수에 데이터 추가
+//	- sizeof : 공백을 제거하고 배열 개수를 반환
+//	- plus : 변수만큼 값 더하기
+//	- addStringFront : 원하는 문장을 앞부분에 추가. (문장 버전)
+//	- addArrayFront : 원하는 문장을 앞부분에 추가. (배열 버전)
+//
+//
+//	키워드
+//		THIS_WEB_SITE	: 사용자가 입력한 웹 사이트 주소
+//		▣▣SPLIT▣▣		: 인자 값 구분자
+
+{START:-}
+	{ID:autocafe}
+	{URL:http://http://www.autocafe.co.kr}
+
+	{KEY:sizeOf_Page}
+		{NAME:페이지수}
+		{LINK:-}
+// 		{LEVEL:preg_match_all=/<a href=.*?>/}
+//		{LEVEL:ereg_replace=(<a href="|">.</a>|다음|이전|<span class=.*</span>| |\]|\[)+▣▣SPLIT▣▣[CUT]}
+//		{LEVEL:RLtrimEx=[CUT]}
+//		{LEVEL:split=\[CUT\]}
+//		{LEVEL:addStringFront=http://www.jeanstone.co.kr}
+//		{LEVEL:addDataInArray=THIS_WEB_SITE}
+//		{LEVEL:saveDataInArray=sizeOf_Page}
+//		{LEVEL:sizeof=sizeOf_Page}
+	{NEXT:-}
+
+
+
+
+
+
+{END:-}

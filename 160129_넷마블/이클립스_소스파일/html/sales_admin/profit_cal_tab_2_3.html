@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">수익정산신청</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li><a href="#1"><b>정산현황관리</b></a></li>
+								<li class="on"><a href="#1"><b>예정신청</b></a></li>
+								<li><a href="#1"><b>확정신청</b></a></li>
+								<li><a href="#1"><b>정산내역조회</b></a></li>
+							</ul>
+						</div>
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">조회</button>
+							<button type="button" class="btn_red_data">신규등록</button>
+							<button type="button" class="btn_red_data">저장</button>
+							<button type="button" class="btn_red_data">메일발송</button>
+							<button type="button" class="btn_red_data">결재올림</button>
+						</div>
+					</div>
+
+
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">ERP번호</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+									</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>						
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_white_fix">
+
+
+						<div class="stitbox01 top_mr02">
+							<div class="cont">
+								<h2>수익정산</h2>
+								<div class="pos_btn_right">
+									<button type="button" class="btn_skyblue_data">수익정산추가</button>
+									<button type="button" class="btn_skyblue_data">수익정산삭제</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">품의제목</label></th>
+										<td colspan="3">
+											<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>
+										</td>
+										<th scope="row"><label for="">전자결재번호</label></th>
+										<td>
+											<span class="input_gray_block txt_none"></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">진행상태</label></th>
+										<td>
+											<span class="input_gray_block txt_none"></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">귀속월</label></th>
+										<td colspan="5">
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w152">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+											<button type="button" class="btn_gray_com">정산대상조회</button>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+							
+						</div>
+					</div>
+
+
+					<div class="stitbox05">
+						<h2>수익정산리스트</h2>						
+					</div>
+
+
+					<div class="cont_white_fix">
+
+						<div class="stitbox02">
+							<h3>매출정보</h3>
+							<div class="pos_btn_right">
+								<a href="#1" class="ico_evidence_txt">증빙</a>
+								<button type="button" class="btn_green_data">정산조건보기</button>
+								<button type="button" class="btn_green_data">정산서보기</button>
+							</div>		
+						</div>
+
+						<div class="tbl-scroll-wrap top_zero t_line_type03"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="90" />
+									<col width="153" />
+									<col width="110" />
+									<col width="153" />
+									<col width="90" />
+									<col width="153" />
+									<col width="110" />
+									<col width="154" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">프로젝트</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>											
+										</td>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>										
+										</td>
+
+										<th scope="row"><label for="">계약</label></th>
+										<td colspan="3">
+											<span class="input_gray_fix w250">
+												<input type="text" id="" name="" title="" value="" />
+											</span>
+											<button type="button" class="btn_gray_com">보기</button>									
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">매출발생월</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">매출유형</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>										
+										</td>
+										<th scope="row"><label for="">매출항목</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>										
+										</td>
+										<th scope="row"><label for="">ERP번호(매출)</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">매출금액</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">통화</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>										
+										</td>
+										<th scope="row"><label for="">환율</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">매출금액(원화)</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>							
+						</div>
+
+
+						<div class="stitbox02">
+							<h3>수익정산정보</h3>	
+						</div>
+
+						<div class="tbl-scroll-wrap top_zero t_line_type03"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="90" />
+									<col width="153" />
+									<col width="110" />
+									<col width="153" />
+									<col width="90" />
+									<col width="153" />
+									<col width="110" />
+									<col width="154" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">원가구분</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>											
+										</td>
+										<th scope="row"><label for="">정산율</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">정산금액</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">SAP전표번호</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">국가</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>									
+										</td>
+										<th scope="row"><label for="">외국납부세율</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<th scope="row"><label for="">원천세</label></th>
+										<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>							
+						</div>
+
+					</div>
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

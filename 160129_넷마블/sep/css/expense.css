@@ -1,0 +1,4 @@
+/* ÃâÀåÁö */
+.trip_list01 li {margin-top:2px;}
+.trip_list01 li:first-child {margin-top:0;}
+.trip_list01 li .tit {display:inline-block; margin-right:10px;}

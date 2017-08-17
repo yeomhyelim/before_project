@@ -1,0 +1,44 @@
+/* 리뷰테이블 */
+/* Color: Gray(기본형 게시판)*/
+.tableList, .tableForm{width:100%;}
+.tableList table, .tableForm table{width:100%;border-top:1px solid #dddddd;}
+.tableList table th,
+.tableForm table th{padding: 5px 0;border-bottom:1px solid #dddddd;background: #eef3f8;}
+.tableList table td{height:22px;padding: 5px 0;text-align:center;border-bottom:1px solid #dddddd;}
+.tableList table td.title{text-align:left;padding-left:10px;}
+.tableList table td.title a:hover{color:#42a919;text-decoration:underline;}
+
+
+.tableForm table td{padding: 5px;border-bottom:1px solid #dddddd;}
+
+
+
+.buttonWrapRight{padding:10px 0 50px;text-align:right;}
+.buttonWrapCenter{padding:10px 0 50px;text-align:center;}
+
+
+
+/* 리뷰테이블 */
+/* Color: Gray*/
+.tableGrayList table{width:100%;border-top:2px solid #dddddd;}
+.tableGrayList table th{height:22px;padding: 2px 0;font-weight:normal;border:1px solid #dddddd;background: #f2f2f2;}
+.tableGrayList table td{height:22px;padding: 4px 0;text-align:center;border-bottom:1px solid #dddddd;}
+.tableGrayList table td.title{padding-left:10px;text-align:left;}
+
+
+/***** 리뷰게시판 *****/
+.tableGrayList table td.title img.prodImg{float:left;width:50px;height:60px;}
+.tableGrayList table td.title ul{float:left;margin-left:15px;}
+.tableGrayList table td.title ul li{padding-bottom: 5px;}
+.tableGrayList table td.title ul li.txtReview{line-height:16px;}
+.tableGrayList table td.title ul li.txtDateGray{color:#a7a7a7}
+.tableGrayList table td.cntStar img{margin-right:-4px;}
+
+/***** 리뷰게시판 *****/
+.tableGrayWrite table{width:100%;border-top:2px solid #645e5e;}
+.tableGrayWrite table th{height:22px;padding: 3px 10px;color:#737373;text-align:left;font-size:11px;letter-spacing:-1px;background: #efefef;border:1px solid #e6e6e6;}
+.tableGrayWrite table  td{padding: 5px;border:1px solid #e6e6e6;}
+.tableGrayWrite table  td dl dd input{margin: 1px 0;}
+.tableGrayWrite table  td ul.priceInfo li{padding: 5px 0;}
+.tableGrayWrite table  td ul.priceInfo li span{display:inline-block;width:80px;color:#838383;}
+.tableGrayWrite table  td ul li.totPayPrice{padding: 5px 0;border-top:1px solid #e5e5e5;}

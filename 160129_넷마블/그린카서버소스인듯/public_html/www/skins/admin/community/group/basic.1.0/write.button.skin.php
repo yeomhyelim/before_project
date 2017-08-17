@@ -1,0 +1,1 @@
+<a href="javascript:goGroupWriteAct()" class="btn_blue_big"  id="menu_auth_w" style="display:none"><strong>그룹 생성</strong></a>

@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+
+<!-- jquery easing 추가 -->
+<script type="text/javascript" src="../../js/lib/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="../../js/verticalnav.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+	$(".sidebar").globalSideMenu({
+		
+		/**
+		 * tiny 서브메뉴 자동 포지셔닝
+		 *  */
+		tinySubAutoPosition : true,
+		
+		/**
+		 * nav 펼침(false)/닫힘(true) 상태값.
+		 *  */
+		istiny : false,
+		/**
+		 * sidebar 펼침/닫힘 애니메이션 여부
+		 *  */
+		isanimate : true,
+		/***
+		* 클릭시 콜백
+		* @param $item 클릭한 LI의 Jquery 객체.
+		* @param uid 고유값 아이디.
+		*        uid 규칙 : 0_ + 1depth 순번(0부터) + _ + 2depth 순번(0부터) + _ + 3depth 순번(0부터)
+		* */
+		onclick : function( $item, uid ){
+			//console.log( $item, uid );
+		}
+	
+	});
+	//
+	// 메뉴 열기.
+	//$(".sidebar").globalSideMenu( 'goOpen', 'testCallId' );
+	
+	/* 특정메뉴열기 test code :: 상단 캐릭터 클릭해보면됨.
+	$('.nav_help a').click( function(){
+		$(".sidebar").globalSideMenu( 'goOpen', 'testCallId' );
+	});
+	*/
+
+	
+});
+
+</script>
+
+
+<script type="text/javascript">
+	//<![CDATA[
+
+	$(document).ready(function(){
+
+		$("#leftMenu2 .subnav01 li > a").click(function(){
+			var $link = $(this).attr("href");
+			
+			$("iframe").attr("src",$link);
+
+			return false;
+		});
+
+		$("#leftMenu0 .subnav01 li > a").click(function(){
+			var $link = $(this).attr("href");
+			
+			$("iframe").attr("src",$link);
+
+			return false;
+		});
+
+		$(".top_layer_menu ul li > a").click(function(){
+			var $link = $(this).attr("href");
+			
+			$("iframe").attr("src",$link);
+
+			return false;
+		});
+
+		$(window).resize(function() {
+			var bodyHeight = $(window).height();
+			var bodyWidth = $(window).width();
+
+			var mainFrame = $("#mainFrame").offset();
+			$("#mainFrame").css({width:(bodyWidth-mainFrame.left)+"px",height:(bodyHeight-mainFrame.top)+"px"});
+		});
+
+		$(".top_layer_menu").hide();
+
+		$(".sidebar .inside .side_quick li.m4 > a").click(function(){
+			$(".top_layer_menu .close").show();
+			$(".top_layer_menu").slideDown(300);
+			return false;
+		});
+
+		$(".top_layer_menu .close a").click(function(){
+			$(".top_layer_menu .close").hide();
+			$(".top_layer_menu").slideUp(300);
+			return false;
+		});
+
+		$(".top_layer_menu .cont ul li a").removeClass("on");
+
+		$(".top_layer_menu .cont ul li li a").click(function(){
+			$(".top_layer_menu .cont ul li a").removeClass("on");
+			$(this).addClass("on");
+			
+			if($(this).hasClass("on")){
+				$(".top_layer_menu").slideUp(300);
+			}
+
+			return false;
+		});
+
+
+//		$(".top_layer_menu").hide();
+//
+//		$("#leftMenu0 .subnav01 li > a").click(function(){
+//			var $link = $(this).attr("href");
+//			
+//			$("iframe").attr("src",$link);
+//
+//			return false;
+//		});
+//
+//		$("#leftMenu2 .subnav01 li > a").click(function(){
+//			var $link = $(this).attr("href");
+//			
+//			$("iframe").attr("src",$link);
+//
+//			return false;
+//		});
+//
+//		$(window).resize(function() {
+//			var bodyHeight = $(window).height();
+//			var bodyWidth = $(window).width();
+//
+//			var mainFrame = $("#mainFrame").offset();
+//			$("#mainFrame").css({width:(bodyWidth-mainFrame.left)+"px",height:(bodyHeight-mainFrame.top)+"px"});
+//		});
+
+
+
+	});
+
+	//]]>
+</script>
+
+
+
+
+
+<style type="text/css">
+.top_layer_menu {position:absolute; top:0; left:0; background-color:#fff; border-bottom:2px solid #8b8b8b; width:100%; z-index:1000;}	
+.top_layer_menu .cont {position:relative; overflow-x:hidden; overflow-y:scroll; height:400px;}
+.top_layer_menu .close {position:fixed; top:10px; right:30px;}
+.top_layer_menu .close a {display:block; width:14px; height:15px; background:url('../../images/button/btn_close.gif') left top no-repeat; font-size:0; line-height:0; text-indent:-9999px;}
+
+.top_layer_menu .cont ul li {padding:20px 15px 20px 15px; border-bottom:1px solid #dedede;}
+.top_layer_menu .cont ul li:first-child {margin-top:0;}
+.top_layer_menu .cont ul li .tit {font-size:16px; line-height:18px; font-weight:bold;}
+.top_layer_menu .cont ul li li {margin-top:10px; padding:0 0 0 8px; border-bottom:none; background:url('../../images/board/print_blt01.gif') left 7px no-repeat;}
+.top_layer_menu .cont ul li li:first-child {margin-top:10px;}
+.top_layer_menu .cont ul li li a {display:inline-block; font-size:12px; line-height:20px; font-weight:normal;}
+
+.top_layer_menu .cont ul li li strong {display:block; font-size:14px; line-height:16px;}
+</style>
+
+
+</head>
+<body style="overflow-y:hidden; overflow-x:hidden;">
+
+<!-- skip_navigation -->
+<ul class="skip-navigation">
+	<li><a href="#container">본문내용 바로가기</a></li>
+</ul>
+<!-- //skip_navigation -->
+
+
+<div class="nav_help">
+	<a href="#1"><img src="../../images/common/gnb_help.gif" alt="도움이 필요하나요?" /></a>
+</div>
+
+<!-- Begin #wrap -->
+<div id="wrap">
+	<!-- Begin #header -->
+	<div id="header">
+
+		<h1 class="logo"><a href="#1"><img src="../../images/common/logo.gif" alt="NERP" /></a></h1>		
+		<p class="name_list">홍길동 | 넷마블게임즈팀   <a href="http://erp.nmn.io/" class="move_link">* index 페이지로 이동</a></p>
+
+	</div>
+	<!-- //End #header -->
+
+
+	<!-- Begin #container -->
+	<div id="container">
+		<div class="content_wrap">
+
+			
+			<!-- 유정석 :  side bar 배경 추가
+			<div class="sidebar-bg"></div>
+			 --> 
+			<div class="sidebar">
+
+					<!--
+					<div class="insideWrap">
+						<div class="insideViewport" style="overflow: hidden; width:174px;">
+						-->
+							<div class="inside">
+								<h2 class="left_tit"></h2>
+								<div class="open_btn close"><a id="sideBtn" href="javascript:void(0);">close</a></div>
+								<ul class="side_quick">
+									<li class="m1"><a href="#1" onclick="left_Choice(0)">기본메뉴</a></li>
+									<li class="m2"><a href="#1" onclick="left_Choice(1)">즐겨찾기</a></li>
+									<li class="m3"><a href="#1" onclick="left_Choice(2)">관리자</a></li>
+									<li class="m4"><a href="#1">도움말</a></li>
+								</ul>
+
+
+						<div class="scroll_box">
+			
+								<!-- 즐겨찾기 -->
+								<div id="leftMenu1">
+									<ul class="leftMenu star">
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">공통비배부결과조회</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">총무성비용정산</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">유형별계정관리</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">수익정산등록</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">원천징수영수증</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">출장비 감액기준표</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">출장비 감액기준표</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">출장비 감액기준표</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">출장비 감액기준표</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">출장비 감액기준표</b></a></li>
+										<li class="st"><a href="#1" onclick="return false"><b class="ico_hidden">출장비 감액기준표</b></a></li>
+									</ul>
+								</div>
+
+
+								<!-- 어드민(기본메뉴에서 따로 빠짐) -->
+								<div id="leftMenu2">
+					
+									<ul class="leftMenu admin">
+										<li class="ad1">
+											<a href="#1" onclick="return false"><b class="ico_hidden">관리자</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 
+													<div class="left_tit">
+														관리자
+													</div>
+													<ul class="subnav01">
+														<li class="txt_off"><a href="../admin/common_code_set.html"><b>공통코드기준정보</b></a></li>
+														<li class="txt_off"><a href=""><b>SAP공통코드관리</b></a></li>
+														<li class="txt_off"><a href=""><b>화면별마감관리</b></a></li>
+														<li class="txt_off"><a href=""><b>조직기준정보</b></a></li>
+														<li class="txt_off"><a href=""><b>배치관리</b></a></li>
+														<li class="txt_off"><a href=""><b>기타기준정보</b></a></li>
+														<li class="txt_off"><a href=""><b>공지사항 관리</b></a></li>
+														<li class="txt_off"><a href=""><b>QnA 관리</b></a></li>
+														<li class="txt_off"><a href=""><b>품의서/리포트 양식관리</b></a></li>
+														<li class="txt_off"><a href=""><b>도움말 관리</b></a></li>
+														<li class="last"><a href=""><b>로그관리</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													-->
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->
+										</li>
+										<li class="ad2"><a href="#1" onclick="return false"><b class="ico_hidden">공통코드기준정보</b></li>
+										<li class="ad3"><a href="#1" onclick="return false"><b class="ico_hidden">SAP공통코드관리</b></li>
+										<li class="ad4"><a href="#1" onclick="return false"><b class="ico_hidden">화면별마감관리</b></li>
+										<li class="ad5"><a href="#1" onclick="return false"><b class="ico_hidden">조직기준정보</b></li>
+										<li class="ad6"><a href="#1" onclick="return false"><b class="ico_hidden">조직기준정보</b></li>
+										<li class="ad7"><a href="#1" onclick="return false"><b class="ico_hidden">기타기준정보</b></li>
+										<li class="ad8"><a href="#1" onclick="return false"><b class="ico_hidden">공지사항 관리</b></li>
+										<li class="ad9"><a href="#1" onclick="return false"><b class="ico_hidden">QnA 관리</b></li>
+										<li class="ad10"><a href="#1" onclick="return false"><b class="ico_hidden">품의서/리포트 양식관리</b></li>
+									</ul>					
+				
+								</div><!-- // .inside -->
+
+
+								<!-- 기본메뉴 -->
+								<div id="leftMenu0">
+									<ul class="leftMenu">
+										<li class="m1">
+											<a href="#1" onclick="return false"><b class="ico_hidden">기준정보</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														기준정보
+													</div>
+
+													<ul class="subnav01">
+														<li><a href="../standard/customer_tab_1_1.html" onclick="return false"><b>거래처 관리</b></a></li>
+														<li><a href="../project/project_tab_1.html" onclick="return false"><b>프로젝트 관리</b></a></li>
+														<li><a href="../standard/standard_tab_1.html" onclick="return false"><b>매출기준관리</b></a></li>
+														<li><a href="../standard/calculate_tab_1.html" onclick="return false"><b>정산기준관리</b></a></li>
+														<li><a href=""><b>매출일일보고</b></a></li>
+
+														<li><a href="../standard/account_tab_1.html" onclick="return false"><b>계정관리</b></a></li>
+														<li class="last"><a href="../standard/expense_tab_1.html" onclick="return false"><b>비용기준정보</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->										
+										</li>
+										<li class="m2"><a href="#1" onclick="return false"><b class="ico_hidden">계약관리</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														계약관리
+													</div>
+													<ul class="subnav01">
+														<li><a href="../erp/erp_tab_1.html"><b>ERP현황</b></a></li>
+														<li><a href="../contract/contract_1.html"><b>계약 품의 등록</b></a></li>
+														<li><a href=""><b>계약 신청</b></a></li>
+														<li><a href=""><b>계약이력관리</b></a></li>
+														<li><a href=""><b>세무관리</b></a></li>
+
+														<li class="last"><a href=""><b>계약 리포트</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->										
+										</li>
+
+										<li class="m3"><a href="#1" onclick="return false"><b class="ico_hidden">매출/ 정산관리</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														매출/정산 관리
+													</div>
+													<ul class="subnav01">
+														<li><a href="../erp/erp_tab_1.html"><b>ERP현황</b></a></li>
+														<li><a href="../sales_admin/original_data_tab_1_1.html"><b>원본데이타 관리</b></a></li>
+														<li><a href="../sales_admin/sales_tab_1_1.html"><b>매출 신청</b></a></li>
+														<li><a href="../sales_admin/refund_tab_1.html"><b>환불 신청</b></a></li>
+														<li><a href="../sales_admin/profit_cal_tab_1.html"><b>수익정산 신청</b></a></li>
+
+														<li><a href="../sales_admin/pg_tab_1.html"><b>PG정산 신청</b></a></li>
+														<li><a href="../sales_admin/debenture_tab_1.html"><b>채권 및 채무 관리</b></a></li>
+														<li><a href="../sales_admin/tax_tab_1_1.html"><b>세무관리</b></a></li>
+														<li class="last"><a href="">매출 및 정산 리포트<b></b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->										
+										</li>
+										<li class="m4"><a href="#1" onclick="return false"><b class="ico_hidden">비용관리</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														비용관리
+													</div>
+													<ul class="subnav01">
+														<li><a href="../erp/erp_tab_1.html"><b>ERP현황</b></a></li>
+														<li><a href="../expense/expense_reg_tab_1_1.html"><b>비용 신청</b></a></li>
+														<li><a href="../expense/corporate_card_tab_1.html"><b>법인카드 정산 신청</b></a></li>
+														<li><a href="../expense/trip_round_robin_tab_1.html"><b>출장비 관리</b></a></li>
+														<li><a href="../expense/marketing_tab_1.html"><b>비용품의 등록</b></a></li>
+
+														<li><a href="../expense/common_tab_1.html"><b>공통비 신청</b></a></li>
+														<li><a href=""><b>예외지급신청</b></a></li>
+														<li><a href="../expense/pay_tab_1_1.html"><b>인건비 신청</b></a></li>
+														<li class="last"><a href=""><b>비용리포트</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->											
+										</li>
+										<li class="m5"><a href="#1" onclick="return false"><b class="ico_hidden">총무신청</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														총무신청
+													</div>
+													<ul class="subnav01">
+														<li><a href="../portal/general_affairs_write_tab_1.html"><b>총무품의 등록</b></a></li>
+														<li class="last"><a href="../portal/general_affairs_cal_tab_1.html"><b>총무정산 신청</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->		
+										</li>
+										<li class="m6"><a href="#1" onclick="return false"><b class="ico_hidden">손익예측</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														손익예측
+													</div>
+													<ul class="subnav01">
+														<li><a href="../predict/plan_tab_1.html"><b>매출계획</b></a></li>
+														<li><a href="../predict/advertisement_tab_1.html"><b>광고선전비</b></a></li>
+														<li><a href="../predict/subsidiary_tab_1.html"><b>자회사손익예측</b></a></li>
+														<li><a href="../predict/calculate_version.html"><b>버전관리 및 정산</b></a></li>
+														<li><a href="../predict/calculate_copy.html"><b>버전복사</b></a></li>
+														<li><a href="../predict/condition_reg.html"><b>정산조건등록</b></a></li>
+														<li><a href="../predict/calculate_result.html"><b>정산결과 조회</b></a></li>
+														<li><a href="../predict/calculate_project.html"><b>정산조건 누락분</b></a></li>
+														<li class="last"><a href="../predict/project_people_tab_1.html"><b>프로젝트투입비중</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->		
+										</li>
+										<li class="m7">
+											<a href="#1" onclick="return false"><b class="ico_hidden">자회사관리</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														자회사관리
+													</div>
+													<ul class="subnav01">
+														<li><a href="../subsidiary/state_tab_1.html"><b>자회사현황</b></a></li>
+														<li><a href="../subsidiary/financial_tab_1.html"><b>재무제표버전관리</b></a></li>
+														<li><a href="../subsidiary/financial_tab_2_1.html"><b>자회사재무상태표</b></a></li>
+														<li><a href="../subsidiary/financial_tab_3.html"><b>자회사손익계산서</b></a></li>
+														<li><a href="../subsidiary/objective_view_1_1.html"><b>넷마블연결재무상태표</b></a></li>
+														<li><a href="../subsidiary/objective_view_2.html"><b>넷마블연결손익계산서</b></a></li>
+														<li class="last"><a href="../subsidiary/invest_tab_1.html"><b>지분 투자 내역</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->
+										</li>
+										<li class="m8">
+											<a href="#1" onclick="return false"><b class="ico_hidden">communication  portal</b></a>
+											<!-- [s]depthbox 
+											<div class="posbox_b">
+												<div class="posbox_t">
+												-->
+													<!-- (2015-07-14) left_tit는 close시만 사용 -->
+													<div class="left_tit">
+														자회사관리
+													</div>
+													<ul class="subnav01">
+														<li><a href="../cmp/predict_tab_1.html"><b>손익예측</b></a></li>
+														<li><a href="../cmp/potar_tab_1.html"><b>정산리스트조회</b></a></li>
+														<li><a href="../cmp/potar_tab_1.html"><b>정산확인</b></a></li>
+														<li><a href="../cmp/potar_tab_1.html"><b>정산서조회</b></a></li>
+														<li><a href="../cmp/potar_tab_1.html"><b>매출상세내역조회</b></a></li>
+														<li><a href="../cmp/potar_tab_1.html"><b>공통비배부결과</b></a></li>
+														<li class="last"><a href=""><b>게시판</b></a></li>
+													</ul>
+													<div class="arrow"></div>
+													<!-- 
+												</div>
+											</div>
+											//[e]depthbox -->
+										</li>
+									</ul>					
+								</div>
+
+							</div><!-- // .inside -->
+							<!--
+						</div>
+					</div>
+					-->
+
+				</div>
+
+			</div><!-- // .sidebar -->
+
+
+			<div class="contentbox">
+				<div id="__tabBarContainer">
+					<div class="tabBarContainer">
+						
+						<ul class="tab_add_menu">
+							<li class="on"><em class="link"><b>메뉴메뉴메뉴뉴뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+							<li><em class="link"><b>메뉴메뉴메뉴</b></em> <a href="#2" class="close">닫기</a></li>
+						</ul>
+
+						<!--					
+						<div class="pageNavcont">
+							<ul class="pageNav">
+								<li><a href="#1">이전</a></li>
+								<li><a href="#1">다음</a></li>
+							</ul>
+							<div class="clearbox"><a href="#1">clear</a></div>							
+						</div>
+						-->
+
+						<div class="pageNavcont">
+							<div class="pageNav">
+								<a href="#1" class="pre">이전</a>
+								<a href="#1" class="next">다음</a>
+							</div>
+							<div class="clearbox"><a href="#1">clear</a></div>							
+						</div>
+
+						<!--
+						<div class="pageNav">
+							<img src="../../images/icons/icon_prev.gif" />
+							<img src="../../images/icons/icon_next.gif" />
+						</div>
+						<div class="clear"></div>
+						-->
+
+						<iframe id="mainFrame" name="mainFrame" class="ui-layout-center" width="100%" height="900" frameborder="0" scrolling="yes" src="../portal/general_affairs_write_tab_1.html" style="overflow-x:hidden;" title="컨텐츠 페이지"></iframe>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //End #container -->
+
+
+	<!-- [s]top_layer_menu -->
+	<div class="top_layer_menu">
+		<div class="cont">
+			<p class="close"><a href="#1">닫기</a></p>
+
+			<ul>
+				<li>
+					<p class="tit">[기준정보]</p>
+					<ul>
+						<li>
+							<strong>거래처관리</strong>
+							<a href="../standard/customer_tab_1_2.html">· 등록 (국가가 한국인경우)_(탭)</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<p class="tit">[계약관리]</p>
+					<ul>
+						<li>
+							<strong>계약품의등록</strong>
+							<a href="../contract/contract_2.html">· 계약품의등록 - 해외수출</a>
+						</li>				
+					</ul>
+				</li>
+
+
+				<li>
+					<p class="tit">[매출 및 정산 관리]</p>
+					<ul>
+						<li>
+							<strong>원본데이타 관리</strong>
+							<a href="../sales_admin/original_data_tab_1_3.html">· 모바일매출업로드 - 확정매출</a>
+						</li>
+						<li>
+							<strong>예정신청</strong>
+							<a href="../sales_admin/sales_tab_1_2.html">· 예정신청 - 수출</a>
+						</li>
+						<li>
+							<strong>확정신청</strong>
+							<a href="../sales_admin/sales_tab_2_2_2.html">· 확정신청 - 온라인/빌링</a><br />
+							<a href="../sales_admin/sales_tab_2_2_3.html">· 확정신청 - 온라인/PC방</a><br />
+							<a href="../sales_admin/sales_tab_2_2_4.html">· 확정신청 - 온라인/채널링</a><br />
+							<a href="../sales_admin/sales_tab_2_3.html">· 확정신청 - 수출</a><br />
+							<a href="../sales_admin/sales_tab_2_4.html">· 확정신청 - 기타/일반</a>
+						</li>
+						<li>
+							<strong>수익정산신청</strong>
+							<a href="../sales_admin/profit_cal_tab_2_2.html">· 예정신청 - 모바일/해외정산</a> <br />
+							<a href="../sales_admin/profit_cal_tab_2_3.html">· 예정신청 - 모바일/정산(직접입력)</a> <br />
+							<a href="../sales_admin/profit_cal_tab_2_4.html">· 예정신청 - 온라인/빌링</a> <br />
+							<a href="../sales_admin/profit_cal_tab_2_5.html">· 예정신청 - 수출/수출</a> <br />
+							<a href="../sales_admin/profit_cal_tab_3_2.html">· 확정신청 - 모바일/해외정산</a> <br />
+							<a href="../sales_admin/profit_cal_tab_3_3.html">· 확정신청 - 모바일/정산(직접입력)</a> <br />
+							<a href="../sales_admin/profit_cal_tab_3_4.html">· 확정신청 - 온라인/빌링</a> <br />
+							<a href="../sales_admin/profit_cal_tab_3_5.html">· 확정신청 - 수출/수출</a> 
+						</li>
+						<li>
+							<strong>세무관리</strong>
+							<a href="../sales_admin/tax_tab_1_2.html">· 세금계산서발행 - 매입</a> <br />
+							<a href="../sales_admin/tax_tab_1_3.html">· 세금계산서발행 - 관리</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<p class="tit">[비용관리]</p>
+					<ul>
+						<li>
+							<strong>비용신청</strong>
+							<a href="../expense/expense_reg_tab_1_2.html">· 일반경비신청 - 전자세금계산서</a><br />
+							<a href="../expense/expense_reg_tab_1_3.html">· 일반경비신청 - 원천세</a><br />
+							<a href="../expense/expense_reg_tab_1_4.html">· 일반경비신청 - 선급금 요청 및 정산</a>
+						</li>
+						<li>
+							<strong>정기지급</strong>
+							<a href="../expense/expense_reg_tab_2_2.html">· 정기지급신청 - 정기지급 조회 및 처리</a>
+						</li>
+						<li>
+							<strong>인건비신청</strong>
+							<a href="../expense/pay_tab_1_2.html">· 인사지급마스터 - 지급항목마스터</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<p class="tit">[총무신청]</p>
+					<ul>
+						<li>
+							<strong>총무정산 신청</strong>
+							<a href="../portal/general_affairs_cal_tab_4_2.html">· 구매 - IT/SW/도서/경품</a>
+						</li>
+						<li>
+							<strong>총무품의 등록</strong>
+							<a href="../portal/general_affairs_write_tab_4_2.html">· 구매 - IT/SW/도서/경품</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<p class="tit">[자회사관리]</p>
+					<ul>
+						<li>
+							<strong>자회사현황</strong>
+							<a href="../subsidiary/state_tab_1_2.html">· 회사일반현황등록 - 항목별</a>
+						</li>
+
+						<li>
+							<strong>자회사재무상태표</strong>
+							<a href="../subsidiary/financial_tab_2_2.html">· 자회사재무상태표 - 연결</a>
+						</li>
+						<li>
+							<strong>넷마블연결재무상태표</strong>
+							<a href="../subsidiary/objective_view_1_2.html">· 넷마블연결재무상태표 - 연결 </a>
+						</li>
+					</ul>
+				</li>
+			</ul>			
+		</div>
+	</div>
+	<!-- //[e]top_layer_menu -->
+
+
+</div>
+<!-- //End #wrap -->
+
+
+</body>
+</html>

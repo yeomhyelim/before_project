@@ -1,0 +1,1935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">지분투자내역</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>자회사현황</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>지분투자내역</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>전환투자내역</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>						
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+	
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>상세유형</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="90" />
+										<col width="296" />
+										<col width="130" />
+										<col width="258" />
+										<col width="90" />
+										<col width="149" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">유형</label></th>
+											<td>
+												<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">국내</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">해외</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">전체</label>
+											</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">상세유형</label></th>
+											<td>
+												<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">전체</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">회사별</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">항목별</label>
+											</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="110" />
+									<col width="252" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">적용년월일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">회사명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">항목</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num01">일반현황</h2>
+								</div>
+							</div>
+
+							<div class="tbl_height_box">	
+								<div class="tbl-scroll-wrap  top_zero">
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										
+										<table>
+											<colgroup>
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+
+												<col width="169" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">회사명</th>
+													<th scope="col">설립일자</th>
+													<th scope="col">인수일자</th>
+													<th scope="col">대표이사</th>
+													<th scope="col">이사</th>
+
+													<th scope="col" class="last">감사</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>			
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>			
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>			
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>			
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>			
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>															
+											</tbody>
+										</table>		
+
+									</div>
+									<!-- //[e]그리드 테이블 -->
+												
+								</div>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num02">지분현황</h2>
+								</div>
+							</div>
+
+
+							<div class="tbl_height_box height_th_row">	
+								<div class="tbl-scroll-wrap  top_zero">
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										
+										<table>
+											<colgroup>
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" rowspan="2">회사명</th>
+													<th scope="col" rowspan="2">발행주식수</th>
+													<th scope="col" rowspan="2">액면가</th>
+													<th scope="col" colspan="4">게임즈내역</th>
+													<th scope="col" colspan="2">의장님내역</th>
+
+													<th scope="col" colspan="3">계열사내역</th>
+													<th scope="col" rowspan="2">대표이사주식수</th>
+													<th scope="col" rowspan="2">대표이사지분율</th>
+													<th scope="col" rowspan="2">기타주식수</th>
+													<th scope="col" rowspan="2" class="last">기타지분율</th>
+												</tr>
+
+												<tr>
+													<th scope="col">취득주식종류</th>
+													<th scope="col">취득주식수</th>
+													<th scope="col">주당취득금액</th>
+													<th scope="col">현재지분율</th>
+
+													<th scope="col">취득주식수</th>
+													<th scope="col">현재지분율</th>
+
+													<th scope="col">투자회사명</th>
+													<th scope="col">취득주식수</th>
+													<th scope="col">지분율</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>		
+
+									</div>
+									<!-- //[e]그리드 테이블 -->
+												
+								</div>
+							</div>
+
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num03">투자내역</h2>
+								</div>
+							</div>
+
+
+							<div class="tbl_height_box height_th_row3">	
+								<div class="tbl-scroll-wrap  top_zero">
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										
+										<table>
+											<colgroup>
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" rowspan="3">회사명</th>
+													<th scope="col" colspan="8">지분투자</th>
+													<th scope="col" colspan="6">게임투자</th>
+													<th scope="col" colspan="4" class="last">기타자금</th>
+												</tr>
+												<tr>
+													<th scope="col" colspan="2">보통주</th>
+													<th scope="col" colspan="2">CPS</th>
+													<th scope="col" colspan="2">CB</th>
+													<th scope="col" colspan="2">기타주식</th>
+													<th scope="col" colspan="2">IP</th>
+
+													<th scope="col" colspan="2">MG</th>
+													<th scope="col" colspan="2">기타</th>
+													<th scope="col" colspan="2">대여금</th>
+													<th scope="col" colspan="2" class="last">기타</th>
+												</tr>
+												<tr>
+													<th scope="col">원화</th>
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+													<th scope="col">발생통화</th>
+
+													<th scope="col">원화</th>
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+
+													<th scope="col">발생통화</th>
+													<th scope="col">원화</th>
+													<th scope="col" class="last">발생통화</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>	
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>	
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>	
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>	
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>	
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>	
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>		
+
+									</div>
+									<!-- //[e]그리드 테이블 -->
+												
+								</div>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num04">인원수</h2>
+								</div>
+							</div>
+
+
+							<div class="tbl_height_box height_row">	
+								<div class="tbl-scroll-wrap  top_zero">
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										
+										<table>
+											<colgroup>
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">회사1</th>
+													<th scope="col">회사2</th>
+													<th scope="col">회사3</th>
+													<th scope="col">회사4</th>
+
+													<th scope="col">회사5</th>
+													<th scope="col">회사6</th>
+													<th scope="col">회사7</th>
+													<th scope="col">회사8</th>
+													<th scope="col">회사9</th>
+
+													<th scope="col">회사10</th>
+													<th scope="col" class="last">회사11</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_bg"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>													
+											</tbody>
+										</table>		
+
+									</div>
+									<!-- //[e]그리드 테이블 -->
+												
+								</div>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num05">재무현황</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap  top_zero">
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="126" />
+											<col width="126" />
+											<col width="126" />
+											<col width="126" />
+											<col width="126" />
+
+											<col width="126" />
+											<col width="126" />
+											<col width="132" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">회사명</th>
+												<th scope="col">자산</th>
+												<th scope="col">부채</th>
+												<th scope="col">자본</th>
+												<th scope="col">현금성자산</th>
+
+												<th scope="col">매출</th>
+												<th scope="col">영업이익</th>
+												<th scope="col" class="last">당기순익</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>													
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+
+
+						</div>	
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+
+						<div class="cont_gray_line03 top_mr01">
+							<table class="tbl_type_row">
+								<colgroup>
+									<col width="130" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr class="tr_last">
+										<th scope="row"><label for="">유형</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">회계기준</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">자금기준</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_gray_fix top_mr01">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="110" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">적용년월일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">회사명</label></th>
+										<td>
+											<span class="input_gray_fix input_ico w120">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<span class="info_inline_txt">
+												<span class="blt">전체 또는 지정회사</span>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>지분투자 현황리스트</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap  top_zero">
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="114" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2">회사명</th>
+												<th scope="col" rowspan="2">내용</th>
+												<th scope="col" rowspan="2">취득일자</th>
+												<th scope="col" rowspan="2">발행주식수</th>
+												<th scope="col" rowspan="2">취득주식수</th>
+
+												<th scope="col" rowspan="2">지분율</th>
+												<th scope="col" colspan="2">취득단가</th>
+												<th scope="col" colspan="2" class="last">취득가액</th>
+											</tr>
+											<tr>
+												<th scope="col">발행통화</th>
+												<th scope="col">원화</th>
+												<th scope="col">발행통화</th>
+												<th scope="col" class="last">원화</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											<tr>
+												<td class="td_bg"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>													
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+						</div>
+
+
+
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont2">
+
+						<div class="cont_gray_line03 top_mr01">
+							<table class="tbl_type_row">
+								<colgroup>
+									<col width="130" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr class="tr_last">
+										<th scope="row"><label for="">유형</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">전체</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">CPS</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">CB</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_gray_fix top_mr01">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="110" />
+									<col width="252" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">적용년월일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">회사명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num01">CPS현황</h2>
+								</div>
+							</div>
+
+							<div class="tbl_height_box height_row26">
+								<div class="tbl-scroll-wrap  top_zero">
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										<table>
+											<colgroup>
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="114" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" colspan="2">구분</th>
+													<th scope="col">회사명1</th>
+													<th scope="col">회사명2</th>
+													<th scope="col">회사명3</th>
+
+													<th scope="col">회사명4</th>
+													<th scope="col">회사명5</th>
+													<th scope="col">회사명6</th>
+													<th scope="col">회사명7</th>
+													<th scope="col" class="last">회사명8</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td_left td_bg" rowspan="5">현재시점</td>
+													<td class="td_left">총발행주식수</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">취득주식수</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">지분율</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">취득단가</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">취득가</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												
+
+
+												<tr>
+													<td class="td_left td_bg" rowspan="13">CPS계약조건</td>
+													<td class="td_left">총투자금액</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">CPS주식수</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">전환비율</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">액면가</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">전환가격</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+
+												<tr>
+													<td class="td_left">전환주식수</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">발행일</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">전환가능일</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">1차기간</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+
+												<tr>
+													<td class="td_left">2차기간</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">3차기간</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">4차기간</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">전환만기일</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+
+												<tr>
+													<td class="td_left td_bg" rowspan="3">전환후</td>
+													<td class="td_left">총발행주식수</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">취득주식수</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">지분율</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+
+
+
+												<tr>
+													<td class="td_left td_bg" rowspan="4">희석주식</td>
+													<td class="td_left">스톡옵션</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">FI</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">희석주식수 소계</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+												<tr>
+													<td class="td_left">지분율</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+
+												<tr>
+													<td class="td_left td_bg">연결대상기간</td>
+													<td class="td_left"></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>	
+											</tbody>
+										</table>
+									</div>
+									<!-- //[e]그리드 테이블 -->
+												
+								</div>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2 class="num02">CB현황</h2>
+								</div>
+							</div>
+
+
+							<div class="tbl-scroll-wrap  top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="114" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="2">구분</th>
+												<th scope="col">회사명1</th>
+												<th scope="col">회사명2</th>
+												<th scope="col">회사명3</th>
+
+												<th scope="col">회사명4</th>
+												<th scope="col">회사명5</th>
+												<th scope="col">회사명6</th>
+												<th scope="col">회사명7</th>
+												<th scope="col" class="last">회사명8</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="td_left td_bg" rowspan="5">현재시점</td>
+												<td class="td_left">총발행주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">취득주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">지분율</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">취득단가</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">취득가</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											
+
+
+											<tr>
+												<td class="td_left td_bg" rowspan="18">CB계약조건</td>
+												<td class="td_left">1차</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환가격</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">발행일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환가능일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+
+											<tr>
+												<td class="td_left">전환만기일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">2차</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환가격</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+
+											<tr>
+												<td class="td_left">발행일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환가능일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환만기일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">3차</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환가격</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">발행일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환가능일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td class="td_left">전환만기일</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+
+											<tr>
+												<td class="td_left td_bg">총CB투자주식수</td>
+												<td class="td_left"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+
+											<tr>
+												<td class="td_left td_bg">총CB투자금액</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+
+
+
+											<tr>
+												<td class="td_left td_bg" rowspan="3">전환후</td>
+												<td class="td_left">총발행주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+
+											<tr>
+												<td class="td_left">취득주식수</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+
+
+											<tr>
+												<td class="td_left">지분율</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+
+											<tr>
+												<td class="td_left td_bg">연결대상기간</td>
+												<td class="td_left"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>		
+											
+										</tbody>
+									</table>
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+						</div>	
+
+					</div>
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

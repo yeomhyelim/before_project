@@ -1,0 +1,1 @@
+<? include "order_buyNonList.{$S_MEMBER_LOGIN_IMAGE_DESIGN}.skin.php"; ?>

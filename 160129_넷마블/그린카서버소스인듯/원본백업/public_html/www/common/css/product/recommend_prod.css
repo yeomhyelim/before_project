@@ -1,0 +1,40 @@
+/****** 슬라이드형 추천상품 **********/
+.bestList1 tr td{vertical-align:top;}
+.ca-container{position:relative;width:970px;height:370px;}
+.ca-wrapper{width:100%;	height:100%;position:relative;}
+/*.mainProdList  .productInfoWrap{margin-left:20px !important;}*/
+.ca-item{width:190px;height:226px;}
+.ca-item ul.prodInfoTxt li{width:190px;font-size:10px;}
+
+
+/*** (임시) 추천상품 -BEST/NEW *********/
+div.bestProdListWrap1 table,
+div.bestProdListWrap2 table,
+div.bestProdListWrap3 table,
+div.bestProdListWrap4 table,
+div.bestProdListWrap5 table{width:100%}
+div.bestProdListWrap1 table td,
+div.bestProdListWrap2 table td,
+div.bestProdListWrap3 table td,
+div.bestProdListWrap4 table td,
+div.bestProdListWrap5 table td{vertical-align:top;}
+div.bestProdListWrap1 .productInfoWrap,
+div.bestProdListWrap2 .productInfoWrap,
+div.bestProdListWrap3 .productInfoWrap,
+div.bestProdListWrap4 .productInfoWrap,
+div.bestProdListWrap5 .productInfoWrap{width:145px;margin-bottom:20px;text-align:left}
+div.bestProdListWrap1 .productInfoWrap ul,
+div.bestProdListWrap2 .productInfoWrap ul,
+div.bestProdListWrap3 .productInfoWrap ul,
+div.bestProdListWrap4 .productInfoWrap ul,
+div.bestProdListWrap5 .productInfoWrap ul{margin-top:5px;}
+div.bestProdListWrap1 .productInfoWrap ul li,
+div.bestProdListWrap2 .productInfoWrap ul li,
+div.bestProdListWrap3 .productInfoWrap ul li,
+div.bestProdListWrap4 .productInfoWrap ul li,
+div.bestProdListWrap5 .productInfoWrap ul li{padding-bottom: 1px;}
+div.bestProdListWrap1 .productInfoWrap ul li img,
+div.bestProdListWrap2 .productInfoWrap ul li img,
+div.bestProdListWrap3 .productInfoWrap ul li img,
+div.bestProdListWrap4 .productInfoWrap ul li img,
+div.bestProdListWrap5 .productInfoWrap ul li img,{vertical-align:middle;margin-top:-1px;margin-right:3px;}

@@ -1,0 +1,71 @@
+[2012-09-14 13:52:43][/shopAdmin/index.php][] A
+[2012-09-14 13:52:51][/shopAdmin/index.php][] A
+[2012-09-14 13:53:22][/shopAdmin/index.php][] A
+[2012-09-14 13:54:42][/shopAdmin/index.php][] designTypechange
+[2012-09-14 13:55:06][/shopAdmin/index.php][] designTypeChange
+[2012-09-14 13:55:27][/shopAdmin/index.php][] designTypeChange
+[2012-09-14 13:55:35][/shopAdmin/index.php][] Resource id #28
+[2012-09-14 13:59:06][/shopAdmin/index.php][] 
+[2012-09-14 13:59:06][/shopAdmin/index.php][] 
+[2012-09-14 13:59:06][/shopAdmin/index.php][] 
+[2012-09-14 13:59:11][/shopAdmin/index.php][] 
+[2012-09-14 13:59:11][/shopAdmin/index.php][] 
+[2012-09-14 13:59:11][/shopAdmin/index.php][] 
+[2012-09-14 14:00:10][/shopAdmin/index.php][] 
+[2012-09-14 14:00:10][/shopAdmin/index.php][] 
+[2012-09-14 14:00:10][/shopAdmin/index.php][] 
+[2012-09-14 14:00:11][/shopAdmin/index.php][] 
+[2012-09-14 14:00:11][/shopAdmin/index.php][] 
+[2012-09-14 14:00:11][/shopAdmin/index.php][] 
+[2012-09-14 14:00:12][/shopAdmin/index.php][] 
+[2012-09-14 14:00:12][/shopAdmin/index.php][] 
+[2012-09-14 14:00:12][/shopAdmin/index.php][] 
+[2012-09-14 14:01:25][/shopAdmin/index.php][] 
+[2012-09-14 14:01:25][/shopAdmin/index.php][] 
+[2012-09-14 14:01:25][/shopAdmin/index.php][] 
+[2012-09-14 14:01:29][/shopAdmin/index.php][] 
+[2012-09-14 14:01:29][/shopAdmin/index.php][] 
+[2012-09-14 14:01:29][/shopAdmin/index.php][] 
+[2012-09-14 14:02:11][/shopAdmin/index.php][] main/main_A0001.jpg
+[2012-09-14 14:02:11][/shopAdmin/index.php][] main/main_A0001.jpg
+[2012-09-14 14:02:11][/shopAdmin/index.php][] main/main_A0001.jpg
+[2012-09-14 14:08:40][/shopAdmin/index.php][] 
+[2012-09-14 14:08:40][/shopAdmin/index.php][] 
+[2012-09-14 14:08:40][/shopAdmin/index.php][] 
+[2012-09-14 14:09:00][/shopAdmin/index.php][] 
+[2012-09-14 14:09:00][/shopAdmin/index.php][] 
+[2012-09-14 14:09:00][/shopAdmin/index.php][] 
+[2012-09-14 14:09:11][/shopAdmin/index.php][] main/main_A0001.jpg
+[2012-09-14 14:09:11][/shopAdmin/index.php][] main/main_A0001.jpg
+[2012-09-14 14:09:11][/shopAdmin/index.php][] main/main_A0001.jpg
+[2012-09-14 14:09:33][/shopAdmin/index.php][] 
+[2012-09-14 14:09:34][/shopAdmin/index.php][] 
+[2012-09-14 14:09:34][/shopAdmin/index.php][] 
+[2012-09-14 14:09:46][/shopAdmin/index.php][] 0
+[2012-09-14 14:09:46][/shopAdmin/index.php][] 1
+[2012-09-14 14:09:46][/shopAdmin/index.php][] 2
+[2012-09-14 14:10:17][/shopAdmin/index.php][] 0
+[2012-09-14 14:10:17][/shopAdmin/index.php][] 1
+[2012-09-14 14:10:17][/shopAdmin/index.php][] 2
+[2012-09-14 14:10:22][/shopAdmin/index.php][] 0
+[2012-09-14 14:10:22][/shopAdmin/index.php][] 1
+[2012-09-14 14:10:22][/shopAdmin/index.php][] 2
+[2012-09-14 14:10:32][/shopAdmin/index.php][] 
+[2012-09-14 14:10:32][/shopAdmin/index.php][] 
+[2012-09-14 14:10:32][/shopAdmin/index.php][] 
+[2012-09-14 14:10:48][/shopAdmin/index.php][] 
+[2012-09-14 14:10:48][/shopAdmin/index.php][] 
+[2012-09-14 14:10:48][/shopAdmin/index.php][] 
+[2012-09-14 14:11:11][/shopAdmin/index.php][] 
+[2012-09-14 14:11:11][/shopAdmin/index.php][] 
+[2012-09-14 14:11:11][/shopAdmin/index.php][] 
+[2012-09-14 14:11:33][/shopAdmin/index.php][] 
+[2012-09-14 14:11:33][/shopAdmin/index.php][] 
+[2012-09-14 14:11:33][/shopAdmin/index.php][] 
+[2012-09-14 14:11:36][/shopAdmin/index.php][] 
+[2012-09-14 14:11:36][/shopAdmin/index.php][] 
+[2012-09-14 14:11:36][/shopAdmin/index.php][] 
+[2012-09-15 10:58:35][/shopAdmin/index.php][] scrapingInfo end
+[2012-09-15 10:58:55][/shopAdmin/index.php][] scrapingInfo end
+[2012-09-15 11:00:03][/shopAdmin/index.php][] scrapingInfo end
+[2012-09-15 11:22:46][Scraping.class.php][] A

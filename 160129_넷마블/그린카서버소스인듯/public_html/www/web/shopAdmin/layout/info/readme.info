@@ -1,0 +1,15 @@
+-- 페이지 디자인 설정
+	- 메인페이지 레이아웃 설정			: ./?menuType=layout&mode=pageDesignSave&pageDesign=MH		-> layout_A_M.inc.php
+	- 서브페이지 레이아웃 설정			: ./?menuType=layout&mode=pageDesignSave&pageDesign=SH		-> layout_A_S.inc.php
+	- 상품페이지 레이아웃 설정			: ./?menuType=layout&mode=pageDesignSave&pageDesign=PH		-> layout_A_P.inc.php
+	- 주문페이지 레이아웃 설정			: ./?menuType=layout&mode=pageDesignSave&pageDesign=OH		-> layout_A_O.inc.php
+	- 회원페이지 레이아웃 설정			: ./?menuType=layout&mode=pageDesignSave&pageDesign=EH		-> layout_A_E.inc.php
+	- 커뮤니티페이지 레이아웃 설정		: ./?menuType=layout&mode=pageDesignSave&pageDesign=BH		-> layout_A_B.inc.php
+
+-- 약어 정리
+	- M		-> main
+	- S		-> sub
+	- P		-> product
+	- O		-> order
+	- E		-> member
+	- B		-> community

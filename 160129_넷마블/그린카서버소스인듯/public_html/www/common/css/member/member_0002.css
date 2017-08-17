@@ -1,0 +1,172 @@
+div.loginFormWrap{margin-top:50px;}
+div.loginFormWrap h2{width:315px;margin:0 auto;font-size:40px;color:#000;}
+div.loginFormWrap .loginForm{margin-top:10px;
+							padding:30px 0;
+							-webkit-border-radius: 5px;
+							-moz-border-radius: 5px;
+							border-radius: 5px;
+							border:3px solid #e7e8e9;
+							background: #fcfcfc;
+							}
+div.loginFormWrap .loginForm ul{width:315px;margin:0 auto;}
+div.loginFormWrap .loginForm ul li{padding:5px 0;}
+div.loginFormWrap .loginForm ul li input.i_w{width:315px;padding:10px 0;font-weight:bold;font-size:14px;}
+div.txtJoin{width:340px;margin:0 auto;margin-top:20px;padding:10px 0 10px 35px;font-size:14px;background: url(/upload/images/ico_mb_2_1.gif) left center no-repeat;}
+div.txtJoin a{	display:inline-block;*zoom:1;*display:inline;
+				padding-right:20px;margin-left:20px;
+				font-size:14px;color:#de381b;background: url(/upload/images/ico_more.gif) right 6px no-repeat;
+				}
+
+
+
+/*
+#contentWrap .loginFormWrap .loginForm{width:633px;margin:0 auto;margin-top:30px;}
+#contentWrap .loginFormWrap .loginForm .tabSearchPw{position:relative;top:1px;margin-top:10px;}
+#contentWrap .loginFormWrap .loginForm .tabSearchPw a{float:left;display:block;padding:8px 0;width:25%;text-align:center;border:1px solid #CCC;border-bottom:1px solid #e5e5e5;}
+#contentWrap .loginFormWrap .loginForm .tabSearchPw a.on{color:#000;border:1px solid #555;border-bottom:1px solid #FFF;}
+#contentWrap .loginFormWrap .loginForm table{width:100%;margin-top:10px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
+#contentWrap .loginFormWrap .findPwForm table{margin-top:0;}
+#contentWrap .loginFormWrap .loginForm table td{padding: 5px 0;border-bottom:1px solid #e5e5e5}
+#contentWrap .loginFormWrap .loginForm table td input{width:250px;}
+#contentWrap .loginFormWrap .loginForm table td label{display:inline-block;width:100px;color:#7e7e7e;}
+#contentWrap .loginFormWrap .loginForm table td.centerTd{padding: 8px 0;text-align:center;}
+#contentWrap .loginFormWrap .loginForm table td.centerTd a{font-size:11px;text-decoration:underline;color:#9d9d9d;}
+#contentWrap .loginFormWrap .loginForm table td.facebookBtn{text-align:right;}
+#contentWrap .loginFormWrap .loginForm table th{width:258px;border-bottom:1px solid #e5e5e5}
+#contentWrap .loginFormWrap .loginForm a.loginBtn,
+#contentWrap .loginFormWrap .loginForm a.nonOrderloginBtn{display:inline-block;width:258px;height:30px;padding-top:20px;color:#FFF;background:#000;}
+
+
+#contentWrap .nonMemberLogin .loginForm h3{text-align:left;}
+#contentWrap .nonMemberLogin .loginForm ul li{display:inline-block;}
+#contentWrap .nonMemberLogin .loginForm ul li.txtNonInfo{width:370px;text-align:center;}
+
+div.titLeft{float:left;}
+div.stepRight{float:right;margin-top:5px;}
+div.stepRight strong{display:inline-block;padding-right:15px;margin-right:6px;color:#000;background: url(/himg/member/dot_location_1.gif) right 2px no-repeat;}
+div.stepRight span{display:inline-block;padding-right:15px;margin-right:6px;background: url(/himg/member/dot_location_1.gif) right 2px no-repeat;}
+div.stepRight span.noStep, div.stepRight strong.noStep{display:inline-block;padding:0;background:none;}
+
+div.agreeWrap .titTerms,
+div.agreeWrap .titPrivate{padding:10px 0;font-weight:bold;}
+div.agreeWrap h4{padding-bottom:5px;margin-top:20px;margin-bottom:20px;color:#000;border-bottom:2px solid #e5e5e5;}
+div.policyForm .boxForm{height:250px;padding:0 15px;border:1px solid #e5e5e5;background:#FFF;overflow:auto;}
+
+
+
+div.facebookSigninWrap{position:relative;padding-bottom:30px;border-bottom:1px solid #ddd;}
+div.facebookSigninWrap p.faceBookTxt{padding:10px 0;}
+div.facebookSigninWrap .orTxt{display:block;position:absolute;left:50%;bottom:-8px;padding:0 10px;background:#FFF;}
+
+div.joinWrap table, div.joinEndWrap table{width:100%;border-top:1px solid #000;border-bottom:1px solid #000;background:#FFF;}
+div.joinWrap table th,  div.joinEndWrap table th{width:150px;height:40px;padding-left:20px;text-align:left;font-weight:normal;border-bottom:1px solid #e5e5e5;}
+div.joinWrap table th strong,  div.joinEndWrap table th strong{display:inline-block;width:10px;color:#FF0000;}
+div.joinWrap table td{padding:3px 0;border-bottom:1px solid #e5e5e5;}
+div.joinWrap table td input{margin:1px 0;}
+div.joinEndWrap table td{height:30px;padding:3px 0;border-bottom:1px solid #e5e5e5;}
+div.joinWrap h4{padding-bottom:5px;}
+div.regInfo{padding:10px 0;}
+
+div.checkBoxWrap{padding:10px;border:1px solid #ebeced;border-top:none;background: #f8f8f8}
+div.checkBoxWrap input{margin-left:10px;vertical-align:middle;}
+
+div.joinWrap span.tdTextGuide{display:block;padding: 3px 0;color:#9d9d9d;}
+div.requiredFieldInfo{padding:10px 0;}
+
+a.btnIDChk{padding:4px 10px;color:#FFF;background: #6a6a6a;}
+*/
+
+/** ★★★ ********************************************************************************/
+/******* 마이페이지 (start: mypage로 이동) **********/
+div.mypageSubNaviWrap{float:left;width:202px;height:530px;margin-top:73px;background: #f4f4f4;}
+div.mypageSubNaviWrap .maNavTit{padding:13px 10px 13px 45px;color:#FFF;font-weight:bold;
+								background: #cd2b16 url(/upload/images/ico_cate_m.png) 12px center no-repeat;
+								}
+div.mypageSubNaviWrap .inNavBox{margin:20px;}
+div.mypageSubNaviWrap ul li a{display:block;padding:5px 15px;}
+div.mypageSubNaviWrap ul li.subNaviTitle{font-size:18px;margin-top:30px;padding-bottom:8px;color:#000;}
+
+div.mypageContentsWrap{float:right;}
+
+/*
+div.mypageSubNaviWrap ul li a{display:block;padding: 3px 0 3px 5px;color:#7e7e7e;}
+div.mypageSubNaviWrap ul li a:hover{color:#FFF;background:#000;}
+div.mypageSubNaviWrap ul li.subNaviTitle{padding-bottom:5px;font-weight:bold;color:#000;}
+div.mypageContentsWrap{float:right;width:750px;}
+div.mypageContentsWrap h5{padding-bottom:6px;margin-bottom:20px;border-bottom:1px solid #e5e5e5;}
+*/
+
+
+/* 주문목록 */
+div.myOrderListWrap table{width:100%;border-top:2px solid #e5e5e5;background:#FFF;}
+div.myOrderListWrap table th{padding:8px 0;color:#7e7e7e;border-bottom:1px solid #e5e5e5;}
+div.myOrderListWrap table td{padding:8px 0;color:#7e7e7e;text-align:center;border-bottom:1px solid #e5e5e5;}
+td.dataNoList{height:50px;text-align:center;border-bottom:1px solid #e5e5e5;}
+
+div.myOrderListWrap table{width:100%;}
+div.myOrderListWrap  table th{height:22px;padding: 3px 0;color:#737373;font-size:11px;letter-spacing:-1px;background: #efefef;border:1px solid #e6e6e6;}
+div.myOrderListWrap  table  td{padding: 5px;text-align:center;border:1px solid #e6e6e6;}
+div.myOrderListWrap  table  td.prodInfo{text-align:left;}
+div.myOrderListWrap  table  td.prodInfo img{float:left;border:1px solid #eee;}
+div.myOrderListWrap  table  td.prodInfo ul{float:left;margin-left:10px;width:200px;}
+div.myOrderListWrap  table  td.prodInfo ul li{padding: 2px 0;}
+div.myOrderListWrap  table  td.prodInfo ul li a.optBtn{display:block;padding-right:5px;font-size:11px;color:#999999;letter-spacing:-2px;text-decoration:underline;}
+div.myOrderListWrap  table  td.checkBtn{wpadding-left:10px;text-align:left;}
+div.myOrderListWrap table  td.checkBtn a{display:block;margin: 1px;}
+div.myOrderListWrap table  td dl dd{display:inline-block;vertical-align:top;}
+div.myOrderListWrap table  td dl dd a{display:block;}
+
+ul.deliveryInfo strong{font-weight:normal;color:#333;line-height:16px;text-decoration:underline;}
+
+/** 장바구니 토탈금액 **/
+div.totalPriceWrap{padding:10px 0;text-align:right;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+div.totalPriceWrap table td{padding:8px 0;text-align:right;}
+
+
+div.orderStateWrap{padding:15px 40px;margin-bottom:30px;border:2px solid #e5e5e5;background:#FFF;}
+div.orderStateWrap .totalCntWrap{padding-bottom:6px;}
+div.orderStateWrap .totalCntWrap strong.txtCnt{font-size:16px;color:#ff0000;}
+div.orderStateWrap .stateIconWrap ul li{float:left;width:24.5%;padding:15px 0 5px;border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;}
+div.orderCnt1,div.orderCnt2,div.orderCnt3,div.orderCnt4,
+div.orderCnt1_on,div.orderCnt2_on,div.orderCnt3_on,div.orderCnt4_on{width:50px;margin:0 auto;padding:6px 6px 6px 40px;font-size:13px;font-weight:bold;}
+div.orderCnt4, div.orderCnt4_on{width:60px;}
+div.orderCnt1{background: url(/himg/mypage/A0002/icon_buy_1.gif) left top no-repeat;}
+div.orderCnt1_on{background: url(/himg/mypage/A0002/icon_buy_1_on.gif) left top no-repeat;}
+div.orderCnt2{background: url(/himg/mypage/A0002/icon_buy_2.gif) left top no-repeat;}
+div.orderCnt2_on{background: url(/himg/mypage/A0002/icon_buy_2_on.gif) left top no-repeat;}
+div.orderCnt3{background: url(/himg/mypage/A0002/icon_buy_3.gif) left top no-repeat;}
+div.orderCnt3_on{background: url(/himg/mypage/A0002/icon_buy_3_on.gif) left top no-repeat;}
+div.orderCnt4{background: url(/himg/mypage/A0002/icon_buy_4.gif) left top no-repeat;}
+div.orderCnt4_on{background: url(/himg/mypage/A0002/icon_buy_4_on.gif) left top no-repeat;}
+div.orderCnt1 strong,div.orderCnt2 strong,div.orderCnt3 strong,div.orderCnt4 strong,
+div.orderCnt1_on strong,div.orderCnt2_on strong,div.orderCnt3_on strong,div.orderCnt4_on strong{display:block;}
+
+div.totalPointWrap{padding-bottom:10px;border-bottom:1px solid #e1e1e1;}
+div.totalPointWrap strong.txtCnt{padding:5px 25px 5px 10px;text-align:right;font-family:verdana;color:#FF0000;font-size:16px;font-weight:bold;background: url(/himg/mypage/A0002/icon_point.gif) right 4px no-repeat;}
+div.txtInfoWrap{margin-top:10px;}
+div.txtInfoWrap ul li{padding: 3px 0;color:#9d9d9d;}
+div.myOrderListWrap table td.orderDateDiv{width:}
+div.myOrderListWrap table td.pointState{padding-right:15px;text-align:right;}
+div.myOrderListWrap table td.pointState img{margin-left:5px;}
+
+
+/*회원탈퇴*/
+.btnMemOut{padding:5px 0;text-align:right;}
+.memOutWrap{padding:20px;border:5px solid #49851d;}
+.memOutWrap .titWrap{padding-bottom:8px;border-bottom:1px solid #e5e5e5;}
+.memOutWrap .txtInfo{margin-top:20px;line-height:18px;}
+.memOutWrap .stepOut{margin-top:20px;}
+.memOutWrap .stepOut ul{margin-top:5px;}
+.memOutWrap .stepOut ul li{padding: 2px 0 2px 10px;}
+.memOutWrap .outTable table{width:100%;}
+.memOutWrap .outTable table th{width:100px;padding:3px;font-size:12px;text-align:left;border:1px solid #c5c5c5;background:#f3f3f3}
+.memOutWrap .outTable table td{padding:3px;border:1px solid #c5c5c5;}
+.memOutWrap .outTable .passInfo{padding:3px 0;font-size:11px;}
+
+/* 주소록 */
+.addr_wrap table{width:100%;}
+.addr_wrap table th{padding: 5px;border:1px solid #ddd;background: #e5e5e5;}
+.addr_wrap table td{padding: 5px;border:1px solid #ddd;}
+.addr_wrap .btnRight{text-align:right;}
+/****** (end) ******/
+

@@ -1,0 +1,44 @@
+<html>
+  <title>
+  <!-- 메일 제목 -->
+    {{__사이트이름__}} - 고객님께 드리는 최고의 {{__사이트이름__}}입니다.
+  <!-- 메일 제목 -->
+  </title>
+  <meta http-equiv="Content-Type" content="application/xhtml xml; charset=utf-8" />
+  <body>
+  <!-- 메일 본문 -->
+  <div style="padding:20px;">
+	<span><em style='font-style:normal;font-weight:bold;font-size:11px;'>{{__주문번호__}}</em>
+	<span style='display:block;'>{{__주문상태표시__}}</span>	
+	<div style="margin-top:20px;">
+		<table style="width:100%;margin:0 auto;border-collapse: collapse;">
+			<colgroup>
+				<col style="width:100px;"/>
+				<col/>
+			</colgroup>
+			<tr>
+				<th style="padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;">주문번호</th>
+				<td style="padding: 5px;text-align:left;border:1px solid #c5c5c5">{{__주문번호__}}</td>
+			</tr>
+			<tr>
+				<th style="padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;">상품명</th>
+				<td style="padding: 5px;text-align:left;border:1px solid #c5c5c5">{{__주문상품명__}}</td>
+			</tr>
+			<tr>
+				<th style="padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;">취소일자></th>
+				<td style="padding: 5px;text-align:left;border:1px solid #c5c5c5">{{__주문취소일자__}}</td>
+			</tr>
+		</table>
+	</div>
+  </div>
+  <!-- 메일 본문 -->
+  <!-- 메일 하단 -->
+  <div style="padding:10px;border-top:1px solid  #e5e5e5;">
+    상호:{{__회사명__}} /{{__회사주소__}} / 대표: {{__대표자명__}}<br/>
+    사업자번호: {{__사업자번호__}} / 통신판매업신고: {{__통신번호__}} / 대표전화: {{__전화번호__}} <br/>
+    개인정보관리책임: {{__개인정보_담당자__}}({{__개인정보_이메일__}}) <br/>
+    Copyright ⓒ 2012 {{__사이트주소__}} All rights reserved.
+  </div>
+  <!-- 메일 하단 -->
+  </body>
+</html>

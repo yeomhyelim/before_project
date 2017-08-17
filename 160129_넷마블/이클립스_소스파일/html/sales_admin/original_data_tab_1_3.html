@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">원본데이타 관리</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1"><b>모바일매출 업로드</b></a></li>
+								<li><a href="#1"><b>빌링채권조정</b></a></li>
+								<!-- <li><a href="#1"><b>마켓대사조회</b></a></li> -->
+							</ul>
+						</div>
+
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">마감</button>
+							<button type="button" class="btn_red_data">마감취소</button>
+							<button type="button" class="btn_red_data">조회</button>
+						</div>
+					</div>
+
+
+					<div class="cont_gray_line01">
+						<table class="tbl_choice_row">
+							<colgroup>
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">일일매출</label>
+										<input type="radio" id="" class="input_radio" value="" checked="checked" /> <label for="">확정매출</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">조회년도</label></th>
+									<td>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<span class="input_gray_fix input_ico w73">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="150" />
+								<col width="90" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">매출월</label></th>
+									<td>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<span class="input_gray_fix input_ico w73">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+									<td>
+										<select>
+											<option selected="selected" value="">마켓</option>
+										</select>
+									</td>
+									<td>
+										<span class="input_gray_fix w150"><input type="text" id="" name="" title="" value="" /></span>
+										<button type="button" class="btn_gray_com">파일찾기</button>
+										<button type="button" class="btn_gray_com">업로드</button>
+									</td> 
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_white_fix">
+						<div class="stitbox01">
+							<div class="cont">
+								<h2>매출업로드 리스트</h2>
+							</div>
+						</div>
+
+						<!-- [s]tbl-scroll-wrap -->
+						<div class="tbl-scroll-wrap  top_zero">
+
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_col">
+								
+								<table>
+									<colgroup>
+										<col width="40" />
+										<col width="50" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+                                                    
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+                                                    
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">선택</th>
+											<th scope="col" rowspan="2">마감</th>
+											<th scope="col" rowspan="2">매출월</th>
+											<th scope="col" colspan="2">구글</th>
+											<th scope="col" colspan="2">애플</th>
+											<th scope="col" colspan="2">티스토어</th>
+
+											<th scope="col" colspan="2">올레</th>
+											<th scope="col" colspan="2">오즈스토어</th>
+											<th scope="col" colspan="2">엔스토어</th>
+											<th scope="col" colspan="2" class="last">카카오샵</th>
+										</tr>
+										<tr>
+											<th scope="col">상태</th>
+											<th scope="col">마감</th>
+											<th scope="col">상태</th>
+											<th scope="col">마감</th>
+											<th scope="col">상태</th>
+											<th scope="col">마감</th>
+											<th scope="col">상태</th>
+											<th scope="col">마감</th>
+											<th scope="col">상태</th>
+											<th scope="col">마감</th>
+											<th scope="col">상태</th>
+											<th scope="col">마감</th>
+											<th scope="col">상태</th>
+											<th scope="col" class="last">마감</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td><span class="ico_except_on">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01"  /></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td><span class="ico_except_off">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td><span class="ico_except_off">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td><span class="ico_except_off">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td><span class="ico_except_off">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td><span class="ico_except_off">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td><span class="ico_except_off">진행중</span></td>
+											<td>2015-07</td>
+											<td>업로드</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+
+											<td>집계요청</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>집계완료</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감취소</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+											<td>마감</td>
+											<td class="last"><input type="checkbox" id="" name="" class="input_check01" disabled="disabled" /></td>
+										</tr>
+									</tbody>
+								</table>				
+
+							</div>
+							<!-- //[e]그리드 테이블 -->
+										
+						</div>
+						<!-- //[e]tbl-scroll-wrap -->
+
+					</div>				
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

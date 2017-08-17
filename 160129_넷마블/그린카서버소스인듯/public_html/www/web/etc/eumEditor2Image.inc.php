@@ -1,0 +1,1 @@
+<?php include_once MALL_ADMIN . "/etc/eumEditor2Image.inc.php";?>

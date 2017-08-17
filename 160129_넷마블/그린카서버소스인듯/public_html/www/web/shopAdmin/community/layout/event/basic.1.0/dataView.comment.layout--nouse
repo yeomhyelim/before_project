@@ -1,0 +1,25 @@
+<? 
+	## 설정
+	$tableName		= "EventCommentMgr"; 
+	$list_total		= $_REQUEST['result'][$tableName]['pageResult']['list_total'];
+	$page			= $_REQUEST['result'][$tableName]['pageResult']['page'];
+	$page_total		= $_REQUEST['result'][$tableName]['pageResult']['page_total'];
+
+?>
+
+<? include "{$_REQUEST['S_DOCUMENT_ROOT']}www/skins/admin/community/comment/basic.1.0/eventType.skin.php" ?>
+
+<a href="javascript:goCommentExcelDownMoveEvent();">[엑셀]</a>
+<a href="javascript:goCommentDeleteMultiActEvent();">[선택항목 삭제]</a>
+
+<div class="tableList" alt="코멘트 리스트 스킨">
+<? include "{$_REQUEST['S_DOCUMENT_ROOT']}www/skins/admin/community/event/basic.1.0/eventCommentList.skin.php" ?>
+</div>
+
+<div class="button" alt="코멘트 설정">
+<? include "{$_REQUEST['S_DOCUMENT_ROOT']}www/skins/admin/community/event/basic.1.0/eventCommentEventSet.skin.php" ?>
+</div>
+
+<div class="paginate" alt="코멘트 페이징 스킨">
+<? include "{$_REQUEST['S_DOCUMENT_ROOT']}www/skins/admin/community/common/page.1.0/list.page.skin.php" ?>
+</div>

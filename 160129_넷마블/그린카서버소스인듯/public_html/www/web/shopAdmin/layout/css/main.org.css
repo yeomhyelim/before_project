@@ -1,0 +1,7 @@
+
+/* main / include / mainbanner.motion2.skin.html.php */
+.mainbanner_motion2 {width:{__S_MAIN_SLIDER_IMAGE_SIZE_W__}px;height:{__S_MAIN_SLIDER_IMAGE_SIZE_H__}px;display:block;}
+.mainbanner_motion2 .slide {width:{__S_MAIN_SLIDER_IMAGE_SIZE_W__}px;height:{__S_MAIN_SLIDER_IMAGE_SIZE_H__}px;display:block;}
+.mainbanner_motion2 .slides_container {width:{__S_MAIN_SLIDER_IMAGE_SIZE_W__}px;height:{__S_MAIN_SLIDER_IMAGE_SIZE_H__}px;overflow:hidden;position:relative;display:none;}
+.mainbanner_motion2 .pagination li {float:left;margin:0 1px;list-style:none;}
+.mainbanner_motion2 .pagination li.current a {float:left;margin:0 1px;list-style:none;border:1px solid #555555;}

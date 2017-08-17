@@ -1,0 +1,7 @@
+
+#contentWrap .mainProdList h2{padding: 10px 0;}
+#contentWrap .mainProdList table{width:100%;}
+#contentWrap .mainProdList .prodWrap{padding-bottom:30px;}
+#contentWrap .mainProdList .prodWrap ul{margin-top:10px;}
+#contentWrap .mainProdList .prodWrap ul li{padding-top:3px;text-align:center;}
+#contentWrap .mainProdList .prodWrap ul li.title{color:#363636}

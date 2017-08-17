@@ -1,0 +1,1134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+
+
+					<div class="sub_top_content">
+						<h1 class="subtit">프로젝트관리</h1>
+
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>등록</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>게임명변경</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>정보수정</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(3); return false"><b>조회</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">생성요청</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">변경요청</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">변경요청</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn3">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>
+						</div>
+					</div>					
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>게임명 선택/입력</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />										
+										<col width="210" />
+										<col width="673" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">게임명</label></th>											
+											<td>
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<span class="input_gray_fix input_ico w152">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<td>
+												<input type="checkbox" id="" class="input_check left_zero" value="" /> <label for="">게임명 입력</label>
+												<span class="info_inline_txt top_minus01 color_red">
+													<span class="blt">먼저 기 등록된 게임명을 검색하여 선택하세요. 게임명이 미등록인 경우 게임명을 입력하세요.</span>
+												</span>
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>	
+
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>
+										프로젝트 Header 정보
+										<span class="info_inline_txt top_minus01 color_red">
+											<span class="blt">생성하고자 하는 프로젝트에 맞는 “사업유형, 국내외, 서비스유형”을 반드시 선택하세요.</span>
+										</span>
+									</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+									<col width="130" />
+									<col width="883" />
+									<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">사업유형</label></th>
+											<td class="td_input_w01">
+												<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">모바일</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">PC</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">제휴</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">기타</label>
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">국내외</label></th>
+											<td class="td_input_w01">
+												<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">국내</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">해외</label>
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">서비스유형</label></th>
+											<td class="td_input_w01">
+												<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">PC-고포류(국내)</label>			
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">PC-캐쥬얼(국내)</label>			
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">PC-온라인(국내)</label>			
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>	
+
+						
+							<!-- 2015-08-07 수정 : top_mr01 클래스 추가 -->	
+							<div class="stitbox02 top_mr01">
+								<h3>프로젝트 상세정보</h3>						
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01">
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="207" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">귀속조직</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">귀속본부</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">개발사</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">개발유형</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected">2015</option>
+												</select>
+											</td>
+											<th scope="row"><label for="">그랜드론칭월</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">개발사(2개이상시)</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">퍼블리셔</label></th>
+											<td>
+												<select disabled="disabled">
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<th scope="row"><label for="">플랫폼</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<th scope="row"><label for="">개발사(3개이상시)</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">국가명</label></th>
+											<td>
+												<span class="input_gray_block input_ico none">
+													<input type="text" id="" name="" title="" value="" disabled="disabled" />
+													<a><img src="../../images/button/btn_search_off.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">비고</label></th>
+											<td colspan="5">
+												<div class="txtarea">
+													<!-- 2015-09-16 수정 style값 class로 변경 -->
+													<textarea class="h35"></textarea>
+												</div>											
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<!-- 2015-08-07 수정 : top_mr01 클래스 추가 -->							
+							<div class="stitbox01 top_mr01">
+								<div class="cont">
+									<h2><span class="point_blue">[모두의마블]</span> 프로젝트 리스트</h2>
+								</div>
+							</div>
+
+							<!-- [s]tbl-scroll-wrap -->
+							<div class="tbl-scroll-wrap bot_par_tbl top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="414" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">귀속조직</th>
+												<th scope="col">사업유형</th>
+
+												<th scope="col">국가</th>
+												<th scope="col">퍼블리셔</th>
+												<th scope="col">플랫폼</th>
+												<th scope="col" class="last">개발사1</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+							<!-- //[e]tbl-scroll-wrap -->
+
+						</div>			
+					</div>
+
+					<div class="sub_tab_cont tab_GrayCont1">
+						<div class="cont_gray_fix">
+
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="302" />
+									<col width="90" />
+									<col width="242" />
+									<col width="30" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">사업유형</label> <span class="star">*</span></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">모바일</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">PC</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">제휴</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">기타</label>
+										</td>
+										<th scope="row"><label for="">게임명</label> <span class="star">*</span></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>게임명변경</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col game_name">
+									<table>
+										<colgroup>
+											<col width="497" />
+											<col width="498" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">변경전</th>
+												<th scope="col"  class="last">변경후</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="2" class="last">
+													<div class="game_name_box">
+														<div class="f_left">
+															<div class="cont">
+																모두의 마블															
+															</div>
+														</div>
+														<div class="f_right">
+															<div class="cont">
+																<span class="input_gray_big_block"><input type="text" id="" class="txt_c" name="" title="" value="대박마블" /></span>
+															</div>														
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->								
+
+							</div>
+
+							<!-- 2015-08-07 수정 : top_mr01 추가 -->
+							<div class="stitbox01 top_mr01">
+								<div class="cont">
+									<h2>게임명 history</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="864" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">수정일자</th>
+												<th scope="col"  class="last">게임명</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td>2015.01.05</td>
+												<td class="last td_left">모두의 마블</td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td>2015.01.05</td>
+												<td class="last td_left">모두모두 참여하자</td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td>2015.01.05</td>
+												<td class="last td_left">모두의 마블</td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->								
+
+							</div>
+						</div>		
+					</div>					
+
+					<div class="sub_tab_cont tab_GrayCont2">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">프로젝트명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>프로젝트 Header 정보</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="207" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">게임명</label></th>
+											<td colspan="5">
+												모두의마블
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">사업유형</label></th>
+											<td>
+												모바일
+											</td>
+											<th scope="row"><label for="">국내외</label></th>
+											<td>
+												국내
+											</td>
+											<th scope="row"><label for="">서비스유형</label></th>
+											<td>
+												모바일(국내)
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="info_line_box txt_r">
+								<span class="blt">Header 정보 변경시 관리자에게(1234-5678) 문의바랍니다.</span>
+							</div>
+
+
+							<!-- 2015-08-07수정 :  top_mr01 클래스 추가 -->
+							<div class="stitbox02 top_mr01">
+								<h3>프로젝트 상세정보</h3>						
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01">
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="207" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">귀속조직</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">귀속본부</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">개발사</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">개발유형</label></th>
+											<td>
+												<select class="chosen-select-no-single">
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<th scope="row"><label for="">그랜드론칭월</label></th>
+											<td class="td_disabled">
+												<span class="input_gray_block input_ico none">
+													<input type="text" id="" name="" title="" value="" disabled="disabled" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">개발사(2개이상시)</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">퍼블리셔</label></th>
+											<td class="td_disabled">
+												<select class="chosen-select-no-single" disabled="disabled">
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<th scope="row"><label for="">플랫폼명</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<th scope="row"><label for="">개발사(3개이상시)</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+
+										<tr>
+											<th scope="row"><label for="">국가명</label></th>
+											<td class="td_disabled">
+												<span class="input_gray_block input_ico none">
+													<input type="text" id="" name="" title="" value="" disabled="disabled" />
+													<a><img src="../../images/button/btn_search_off.gif" alt="검색" /></a>
+												</span>
+											</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td class="blank_last"></td>
+										</tr>
+
+
+										<tr>
+											<th scope="row"><label for="">비고</label></th>
+											<td colspan="5">
+												<div class="txtarea txt_none">
+													<!-- 2015-09-16 수정 style값 class로 변경 -->
+													<textarea class="h35" disabled="disabled"></textarea>
+												</div>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>					
+
+					<div class="sub_tab_cont tab_GrayCont3">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="222" />
+									<col width="90" />
+									<col width="222" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">귀속본부</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">귀속조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">국내외</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">전체</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">국내</label>	
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">해외</label>	
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">GOB</label>	
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row"><label for="">프로젝트명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">사업유형</label></th>
+										<td>
+											<select >
+												<option value="" selected="selected"></option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">그랜드론칭월</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" class="hasDatepicker" name="" title="" value="" />
+												<img src="../../images/button/btn_cal.gif" alt="" title="" class="ui-datepicker-trigger"  />
+											</span>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row"><label for="">서비스유형</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>				
+										</td>
+										<th scope="row"><label for="">게임명</label></th>
+										<td colspan="3">
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>			
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>프로젝트 목록</h2>
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">엑셀다운로드</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tbl_height_box height_row10">
+
+								<!-- [s]tbl-scroll-wrap -->
+								<div class="tbl-scroll-wrap  top_zero">
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										
+										<table>
+											<colgroup>
+												<col width="50" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="50" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">순번</th>
+													<th scope="col">프로젝트</th>
+													<th scope="col">귀속본부</th>
+													<th scope="col">귀속조직</th>
+
+													<th scope="col">사업유형</th>
+													<th scope="col">게임</th>
+													<th scope="col">론칭월</th>
+													<th scope="col">국가</th>
+													<th scope="col">퍼블리셔</th>
+
+													<th scope="col">플랫폼</th>
+													<th scope="col">개발사1</th>
+													<th scope="col">개발사2</th>
+													<th scope="col" class="last">비고</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>		
+
+									</div>
+									<!-- //[e]그리드 테이블 -->
+												
+								</div>
+								<!-- //[e]tbl-scroll-wrap -->
+
+							</div>
+
+
+							<div class="stitbox02">
+								<h3>프로젝트명 History</h3>			
+							</div>
+
+							<div class="tbl-scroll-wrap top_mr01"> 
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_add_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="864" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">수정일자</th>
+												<th scope="col" class="last">프로젝트</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td>2015-07-10</td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td>2015-07-10</td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td>2015-07-10</td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td>2015-07-10</td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+
+
+						</div>				
+					</div>					
+
+
+					
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

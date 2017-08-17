@@ -1,0 +1,172 @@
+.layer_area {width:100%;  padding-bottom:0;}
+
+
+.layer-wrap01 {min-width:635px;}
+.layer-wrap02 {min-width:1075px;}
+.layer-wrap03 {min-width:720px;}
+.layer-wrap04 {min-width:840px;}
+.layer-wrap05  {min-width:993px;}
+
+.layer_area .sub_top_content .subtit {padding:25px 40px 10px 40px;}
+
+
+.layer_area .input_radio {display:inline-block; margin:-1px 3px 0 10px;}
+.layer_area .input_radio.left_zero {margin-left:0;}
+
+
+.layer_tbl_height01 {height:202px !important; overflow:hidden;}
+.layer_tbl_height02 {height:229px !important; overflow:hidden;}
+.layer_tbl_height03 {height:330px !important; overflow:hidden;}
+.layer_tbl_height04 {height:262px !important; overflow:hidden;}
+
+
+.layer-wrap01 .tbl_search_row {width:575px; table-layout:fixed;}
+.layer-wrap01 .tbl_search_row td.td_right {text-align:right;}
+.layer-wrap01 .tbl_search_row tr.tr_total td {padding-top:10px;}
+.layer-wrap01 .tbl_search_row td .total_search strong {display:inline-block;}
+.layer-wrap01 .tbl_search_row td .total_search .num {display:inline-block; min-width:50px; font-weight:bold;}
+
+
+.layer-wrap01 .cont_gray_fix .tbl_search_row {width:558px;}
+
+
+.layer_area  .tbl_type_row {min-width:575px;}
+
+
+.tbl-scroll-wrap.address a {display:block; padding:5px 0; line-height:14px; color:#222222; text-decoration:none;}
+
+
+/* title */
+.layer_stitbox01 {position:relative; z-index:1; margin:25px 30px 0 30px;}
+.layer_stitbox01 h2 {display:inline-block; color:#222222; vertical-align:top;}
+
+
+/* box */
+.layer_area .address_info {margin:4px 30px 0 30px;}
+.layer_area .address_info .list li:first-child {margin-top:0;}
+.layer_area .address_info .list li {margin-top:2px;}
+
+
+/* tax_mail */
+.tax_mail_box {overflow-x:hidden; overflow-y:auto; margin-top:10px; height:400px; border:1px solid #e2e2e2;}
+.tax_mail_box .cont {padding:15px;}
+
+
+
+/* 이동팝업 */
+.move_change_box {overflow:hidden;  background:url('../images/board/tr_game_arrow_bg.gif') center center no-repeat;}
+.move_change_box .f_left {float:left; width:50%;}
+.move_change_box .f_left.input_box {padding-top:0;}
+.move_change_box .f_right {float:right; width:50%;}
+.move_change_box .f_left .cont {padding:0 30px 0 0;}
+.move_change_box .f_right .cont {padding:0 0 0 30px;}
+
+
+
+/* 소득세법 */
+.pop_receipt_print {overflow:hidden; width:1128px; border:1px solid #111; padding:10px 60px 10px 60px; color:#000000; word-wrap: break-word !important;  font-size:10px; line-height:12px;}
+.pop_receipt_print .receipt_num {font-size:11px; line-height:12px; font-weight:bold;}
+.pop_receipt_print .top_pos_cont {position:relative; height:150px; margin-top:5px; font-weight:bold;}
+
+
+.pop_receipt_print .top_pos_cont .pos_l {position:absolute; top:50px; left:0; width:100px;}
+.pop_receipt_print .top_pos_cont .pos_l .tblbox {border-top:1px solid #111; border-left:1px solid #111;  font-weight:bold;}
+.pop_receipt_print .top_pos_cont .pos_l .tblbox th {border-bottom:1px solid #111; border-right:1px solid #111; padding:1px 0 2px 0;  font-size:10px; line-height:12px; text-align:center; font-weight:bold;}
+.pop_receipt_print .top_pos_cont .pos_l .tblbox td {border-bottom:1px solid #111; border-right:1px solid #111; padding:1px 0 2px 0;  font-size:10px; line-height:12px; text-align:center; color:#005aff;}
+
+.pop_receipt_print .top_pos_cont .pos_cn {margin-left:-180px; text-align:center;}
+.pop_receipt_print .top_pos_cont .pos_cn .tblbox {width:500px; margin:0 auto; font-size:11px; line-height:12px; font-weight:bold;}
+.pop_receipt_print .top_pos_cont .pos_cn .tblbox td {font-weight:bold; text-align:center;}
+.pop_receipt_print .top_pos_cont .pos_cn .tblbox td .en_box {font-weight:bold;}
+.pop_receipt_print .top_pos_cont .pos_cn .tblbox td.td_left {padding-left:10px; text-align:left;}
+.pop_receipt_print .top_pos_cont .pos_cn .tblbox td.td_right {padding-right:10px; text-align:right;}
+
+.pop_receipt_print .top_pos_cont .pos_r {position:absolute; top:0; right:0; width:280px; z-index:1;}
+.pop_receipt_print .top_pos_cont .pos_r .tblbox {border-top:1px solid #111; border-left:1px solid #111;  font-weight:bold;}
+.pop_receipt_print .top_pos_cont .pos_r .tblbox th {border-bottom:1px solid #111; border-right:1px solid #111; padding:1px 0 2px 0;  font-size:10px; line-height:12px; text-align:center; font-weight:bold;}
+.pop_receipt_print .top_pos_cont .pos_r .tblbox td {border-bottom:1px solid #111; border-right:1px solid #111; padding:1px 0 2px 0;  font-size:10px; line-height:12px; text-align:center;}
+.pop_receipt_print .top_pos_cont .pos_r .tblbox td .txt_blue {display:inline-block; color:#005aff;}
+
+
+.pop_receipt_print .middle_cont .tbl_out_box {border-top:1px solid #111; border-left:1px solid #111; font-weight:bold;}
+.pop_receipt_print .middle_cont .tbl_out_box th {border-bottom:1px solid #111; border-right:1px solid #111; padding:2px 3px;  font-size:10px; line-height:12px; text-align:left;}
+.pop_receipt_print .middle_cont .tbl_out_box td {border-bottom:1px solid #111; border-right:1px solid #111; padding:2px 3px;  font-size:10px; line-height:12px; text-align:left; color:#111;}
+.pop_receipt_print .middle_cont .tbl_out_box td.td_blue {color:#005aff;}
+
+.pop_receipt_print .middle_cont .tbl_out_box td.td_cont {border-bottom:none; padding:0;}
+
+.pop_receipt_print .middle_cont .tbl_write th {text-align:center;}
+.pop_receipt_print .middle_cont .tbl_write th.th_left {text-align:left;}
+.pop_receipt_print .middle_cont .tbl_write td {color:#005aff; text-align:center;}
+
+.pop_receipt_print .middle_cont .tbl_write td.td_right {text-align:right;}	
+.pop_receipt_print .middle_cont .tbl_write td.td_left {text-align:left;}	
+
+
+.pop_receipt_print .middle_cont .tbl_out_box td.td_txt_black {color:#000000;}
+.pop_receipt_print .middle_cont .tbl_out_box th.th_center {text-align:center;}
+
+.pop_receipt_print .middle_cont .tbl_out_box th.last_th {border-right:none;}
+.pop_receipt_print .middle_cont .tbl_out_box td.last_td {border-right:none;}
+
+
+.pop_receipt_print .middle_cont .date_box {text-align:right;  font-weight:bold;}
+.pop_receipt_print .middle_cont .date_box .txt_blue {color:#005aff;}
+.pop_receipt_print .middle_cont .dear {font-size:11px; line-height:11px;}
+
+.pop_receipt_print .middle_cont .sign_tbl td {border-right:none; border-bottom:none; padding-left:10px;}
+.pop_receipt_print .middle_cont .sign_tbl td.td_right {padding-right:10px; text-align:right;}
+.pop_receipt_print .middle_cont .sign_tbl td .txt_blue {color:#005aff;}
+
+.pop_receipt_print .bot_cont {margin-top:5px;}
+.pop_receipt_print .bot_cont .info_tit {border-top:1px solid #111; border-bottom:1px solid #111; padding:5px 0; background-color:#e2e2df; font-size:11px; line-height:12px; font-weight:bold; text-align:center;}
+.pop_receipt_print .bot_cont .info_box {padding:5px; border-bottom:1px solid #111;}
+.pop_receipt_print .bot_cont .info_box .listbox li {position:relative; padding:0 10px;}
+.pop_receipt_print .bot_cont .info_box .listbox li .num {position:absolute; top:0; left:0;}
+
+.pop_receipt_print .bot_cont .tblbox {margin:5px 0; border-top:1px solid #111; border-left:1px solid #111;}
+.pop_receipt_print .bot_cont .tblbox th {padding:2px 3px; border-bottom:1px solid #111; border-right:1px solid #111; text-align:center;}
+.pop_receipt_print .bot_cont .tblbox td {padding:2px 3px; border-bottom:1px solid #111; border-right:1px solid #111; text-align:center;}
+.pop_receipt_print .bot_cont .tblbox td.td_left {text-align:left;}
+
+
+/* 세금계산서 */
+.cont_pattern {min-height:561px; padding:20px 40px; background:url('../images/board/cont_pattern_bg.gif') left top repeat;}
+.cont_pattern .inside_cont {overflow:hidden; padding:0 3px 3px 3px; background-color:#fff;}
+
+.cont_pattern.td_line_red table {border-right:1px solid #fe6d69 !important; border-bottom:1px solid #fe6d69 !important;}
+.cont_pattern.td_line_red th {border-left:1px solid #fe6d69 !important; border-top:1px solid #fe6d69 !important; color:#fe6d69 !important;}
+.cont_pattern.td_line_red td {border-left:1px solid #fe6d69 !important; border-top:1px solid #fe6d69 !important;}
+.cont_pattern.td_line_red .tbl_tax_view td .tit {color:#fe6d69 !important;}
+.cont_pattern.td_line_red .tbl_tax_view td .sup {color:#fe6d69 !important;}
+
+.cont_pattern.td_line_red .td_inside_txt {border:none !important;}
+.cont_pattern.td_line_red .td_inside_txt td {border:none !important;}
+.cont_pattern.td_line_red .td_inside_txt td .on {color:#666666;}
+
+.tbl_tax_view {table-layout:fixed; margin-top:3px; border-right:1px solid #666699; border-bottom:1px solid #666699;}
+.tbl_tax_view th {padding:1px 3px 1px 3px; border-left:1px solid #666699; border-top:1px solid #666699; color:#666699; font-weight:normal;}
+.tbl_tax_view td {padding:1px 3px 1px 3px; border-left:1px solid #666699; border-top:1px solid #666699; color:#666666;}
+.tbl_tax_view td.td_center {text-align:center;}
+.tbl_tax_view td.td_right {text-align:right;}
+
+.tbl_tax_view td .tit {display:inline-block; padding-top:10px; width:60%; text-align:center; font-size:16px; line-height:18px; color:#666699; vertical-align:top; font-weight:bold;}
+.tbl_tax_view td .sup {display:inline-block; width:39%; color:#666699; text-align:center;}
+
+.td_inside_txt td {border:none;}
+.td_inside_txt td .on {display:inline-block; font-weight:bold; color:#666699;}
+
+
+/* help */
+.sub_top_content .choice_menu .subtit .bar {display:inline-block; padding-right:12px; background:url('../images/board/subtit_bar.gif') right 2px no-repeat; vertical-align:top; line-height:23px;}
+.sub_top_content .choice_menu select {width:auto; padding:0 24px 0 2px; vertical-align:top; font-size:13px; line-height:15px; color:#555555;}
+
+.cont_help_img {overflow-x:hidden; overflow-y:auto; height:361px;}
+.cont_help_img img {width:100%;}
+
+.cont_help_notice {overflow-x:hidden; overflow-y:auto; height:322px; border-top:7px solid #4d4f5a;}
+.cont_help_notice .tbl_notice th {padding:12px 10px; font-size:13px; color:#97c800; font-weight:bold; vertical-align:top;}
+.cont_help_notice .tbl_notice td {padding:12px 10px; vertical-align:top;}
+
+.cont_help_notice .tbl_notice td .inside_list {margin-left:12px;}
+.cont_help_notice .tbl_notice td .inside_list li {padding:0 0 2px 8px; background:url('../images/board/blt02.gif') left 8px no-repeat; line-height:14px;}

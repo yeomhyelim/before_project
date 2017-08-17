@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>[FingBook] {{__회원명__}}님의 입금이 완료 되었습니다. </title>
+		 <meta http-equiv="Content-Type" content="application/xhtml xml; charset=utf-8" />
+		 <style>
+			body, td, th, a, a:hover, li{font-size:12px;}
+			img{border:none;}
+			table { border-collapse: collapse;}
+			div.topWrap{background:#eeefe1;}
+			div.expContent{padding:10px;}
+			div.tableForm table{width:100%;}
+			div.tableForm table th,
+			.tableProdList table  th{width:130px;padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;}
+			div.tableForm table td,
+			.tableProdList table  td{text-align:center;padding: 5px;border:1px solid #c5c5c5}
+			div.mailBottom{padding:10px;border-top:1px solid  #e5e5e5;}
+			.tableProdList table  td.prodInfo{text-align:left;}
+			.tableProdList table  td.prodInfo img{float:left;}
+			.tableProdList table  td.prodInfo ul{float:left;margin-left:10px;}
+			.tableProdList table  td.prodInfo ul li{padding: 2px 0;}
+			.tableProdList table  td.prodInfo ul li a.optBtn{display:block;padding-right:5px;font-size:11px;color:#999999;letter-spacing:-2px;text-decoration:underline;}
+			.tableProdList table  td.checkBtn{width:80px;padding-left:10px;text-align:left;border-right:none;}
+			.tableProdList table  td.checkBtn a{display:block;margin: 1px;}
+			.tableProdList table  td dl dd{display:inline-block;vertical-align:top;}
+			.tableProdList table  td dl dd a{display:block;}
+			.totalPriceWrap{padding: 15px;border-bottom:1px solid #e6e6e6;text-align:right;}
+		 </style>
+	</head>
+	<body>
+		<h1><!--<img src="http://linksday.eumshop.co.kr/upload/layout/20130423102246.gif">--></h1>
+		<div style="border:5px solid #ff4560" >
+		<div style="background-image:url('http://222.122.20.23/upload/images/top_notxt_2.jpg'); background-repeat:repeat-x; margin-top:0px;">
+		<h1><img src="http://222.122.20.23/upload/images/mail_kr.jpg"></h1>
+			<div style="margin:20px;padding:30px;border:1px solid #ccc;background: #e5e5e5;">
+				
+				[FingBook] {{__회원명__}}님의 입금이 완료 되었습니다. 
+				<br><br>
+				<div class="tableProdList">
+					{{__주문상품내역__}}
+				</div>
+				<div style="padding: 15px;border-bottom:1px solid #e6e6e6;text-align:right;">
+					{{__주문금액정보__}}
+				</div>
+				<div class="tableForm">
+					{{__주문내역__}}
+				</div>
+				
+			</div>
+
+			 <!-- 메일 하단 -->
+			  <div style="margin-top:20px;padding:10px;border-top:1px solid  #e5e5e5;background:#f8f3f4;">
+			    상호:{{__회사명__}} /{{__회사주소__}} / 대표: {{__대표자명__}}<br/>
+			    사업자번호: {{__사업자번호__}} / 통신판매업신고: {{__통신번호__}} / 대표전화: {{__전화번호__}} <br/>
+			    <!-- 개인정보관리책임: {{__개인정보_담당자__}}({{__개인정보_이메일__}}) <br/> -->
+			    Copyright ⓒ 2015 {{__사이트주소__}} All rights reserved.
+			  </div>
+			  <!-- 메일 하단 -->
+
+		</div>
+	</body>
+</html>

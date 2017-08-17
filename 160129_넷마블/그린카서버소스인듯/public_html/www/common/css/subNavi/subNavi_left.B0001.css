@@ -1,0 +1,6 @@
+/**************** left Wrap *********************/
+
+#leftArea .commonSubNaviWrap ul li a{display:block;padding: 5px 10px;}
+#leftArea .commonSubNaviWrap ul li a:hover{padding: 5px 10px;font-weight:bold;}
+#leftArea .commonSubNaviWrap .title{margin: 0 5px;padding: 0 10px 5px;border-bottom:1px solid #e5e5e5;}
+/****************************/

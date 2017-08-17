@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">매출신청</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1"><b>확정신청</b></a></li>
+								<li><a href="#1"><b>모바일확정조회</b></a></li>
+								<li><a href="#1"><b>예정신청</b></a></li>
+								<li><a href="#1"><b>모바일예정조회</b></a></li>
+							</ul>
+						</div>
+
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">조회</button>
+							<button type="button" class="btn_red_data">신규등록</button>
+							<button type="button" class="btn_red_data">저장</button>
+							<button type="button" class="btn_red_data">결재올림</button>
+						</div>
+					</div>
+
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">ERP번호</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+									</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_gray_line03">
+						<table class="tbl_type_row">
+							<colgroup>
+								<col width="130" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">매출유형</label></th>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">모바일</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">온라인</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">수출</label>
+										<input type="radio" id="" class="input_radio" value="" checked="checked" /> <label for="">기타</label>
+									</td>
+								</tr>
+								<tr class="tr_last">
+									<th scope="row"><label for="">상세유형</label></th>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value=""/> <label for="">일반</label>
+										<input type="radio" id="" class="input_radio" value="" checked="checked" /> <label for="">청구( 세금계산서/인보이스 발행)</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					
+					<div class="cont_white_fix">
+
+						<div class="stitbox01 top_mr02">
+							<div class="cont">
+								<h2>청구매출</h2>
+							</div>
+						</div>
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">품의제목</label></th>
+										<td colspan="3">
+											<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>
+										</td>
+										<th scope="row"><label for="">전자결재번호</label></th>
+										<td>
+											<span class="input_gray_block txt_none">&nbsp;</span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<span class="input_gray_block txt_none">&nbsp;</span>
+										</td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td>
+											<span class="input_gray_block txt_none">&nbsp;</span>
+										</td>
+										<th scope="row"><label for="">진행상태</label></th>
+										<td>
+											<span class="input_gray_block txt_none">&nbsp;</span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">귀속월</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="2015-07" readonly="readonly" /></span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="stitbox01 top_mr02">
+							<div class="cont">
+								<h2>비용정보 불러오기</h2>
+							</div>
+						</div>
+
+						<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">비용조회</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">비용항목</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<th scope="row"><label for="">건수</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<th scope="row"><label for="">비용 합계</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">비용항목</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<th scope="row"><label for="">건수</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<th scope="row"><label for="">비용 합계</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="stitbox02">
+							<h3>비용정보</h3>
+							<div class="pos_btn_right">
+								<button type="button" class="btn_green_data">숨기기</button>
+								<button type="button" class="btn_green_data">숨김보임</button>
+							</div>		
+						</div>
+
+						<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="163" />
+									<col width="90" />
+									<col width="164" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">전표번호</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+
+										</td>
+										<th scope="row">비용항목</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<th scope="row">거래처</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<th scope="row">프로젝트</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row">귀속일</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_c txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>											
+										</td>
+										<th scope="row">금액</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<th scope="row"><label for="">내용</label></th>
+										<td colspan="3">
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row">전표번호</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+
+										</td>
+										<th scope="row">비용항목</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<th scope="row">거래처</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<th scope="row">프로젝트</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row">귀속일</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_c txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>											
+										</td>
+										<th scope="row">금액</th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<th scope="row"><label for="">내용</label></th>
+										<td colspan="3">
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="stitbox01 top_mr02">
+							<div class="cont">
+								<h2>청구정보</h2>
+								<div class="pos_btn_right">
+									<button type="button" class="btn_skyblue_data">거래처 추가</button>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!-- 거래처 s -->
+						<div class="tbl-scroll-wrap  top_zero"/>
+						
+						<div class="stitbox06 top_mr01">
+							<h3>거래처 리스트</h3>
+							<div class="pos_btn_right">
+								<a href="#1" class="ico_evidence_txt">증빙</a>
+								<!-- 데이터가 들어왔을때는 on 처리
+								<a href="#1" class="ico_evidence_txt on">증빙</a>
+								 -->
+								<a href="#1" class="ico_del_txt">삭제</a>
+							</div>			
+						</div>
+						<div class="tbl-scroll-wrap t_line_none top_zero"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>											
+										</td>
+										<th scope="row"><label for="">합산 발행</label></th>
+										<td colspan="3">
+											<input type="checkbox" id="" name="" class="input_check01"  />
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구구분</label></th>
+										<td>
+											<select>
+												<option value="">세금계산서</option>
+												<option value=""  selected="selected">인보이스</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">인보이스구분</label></th>
+										<td>
+											<select>
+												<option value="">한글</option>
+												<option value=""  selected="selected">영문</option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">계산서/인보이스 수신자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구금액(원화)</label></th>
+										<td>
+											<span class="input_gray_block"><input class="txt_r" type="text" id="" name="" title="" value="0" /></span>		
+										</td>
+										<th scope="row"><label for="">통화</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">통화</option>
+												<option value="">USD</option>
+												<option value="">KRW</option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">환율</label></th>
+										<td>
+											<span class="input_gray_block"><input class="txt_r" type="text" id="" name="" title="" value="0" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구금액</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>		
+										</td>
+										<th scope="row"><label for="">부가세</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>	
+										</td>
+										<th scope="row"><label for="">합계</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">입금조건</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">입금</option>
+												<option value="">상계</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">입금예정일</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">M+1월</option>
+												<option value="">상계</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">SAP번호</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">내용작성</label></th>
+										<td colspan="5">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				
+						<!-- 비용항목 -->
+						<div class="stitbox04 top_mr01">
+							<h3>비용항목</h3>
+							<div class="pos_btn_right">
+								<button type="button" class="btn_green_data">행추가</button>
+								<button type="button" class="btn_green_data">행삭제</button>
+							</div>									
+						</div>
+						<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="30" />
+									<col width="100" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="td_top" rowspan="6"><input type="checkbox" id="" value="" /></td>
+										<th scope="row"><label for="">비용항목</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>												
+										</td>
+										<th scope="row"><label for="">프로젝트</label></th>
+										<td colspan="3">
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>																					
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구구분</label></th>
+										<td>
+											<select>
+												<option value="">세금계산서</option>
+												<option value=""  selected="selected">인보이스</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">인보이스구분</label></th>
+										<td>
+											<select>
+												<option value="">한글</option>
+												<option value=""  selected="selected">영문</option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">계산서/인보이스 수신자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구금액(원화)</label></th>
+										<td>
+											<span class="input_gray_block"><input class="txt_r" type="text" id="" name="" title="" value="0" /></span>		
+										</td>
+										<th scope="row"><label for="">통화</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">통화</option>
+												<option value="">USD</option>
+												<option value="">KRW</option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">환율</label></th>
+										<td>
+											<span class="input_gray_block"><input class="txt_r" type="text" id="" name="" title="" value="0" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구금액</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>		
+										</td>
+										<th scope="row"><label for="">부가세</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>	
+										</td>
+										<th scope="row"><label for="">합계</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">입금조건</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">입금</option>
+												<option value="">상계</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">입금예정일</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">M+1월</option>
+												<option value="">상계</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">SAP번호</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">내용작성</label></th>
+										<td colspan="5">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2"><label for="">청구내역(인보이스)</label></th>
+										<td colspan="2">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<th scope="row"><label for="">사용기간(인보이스)</label></th>
+										<td colspan="2">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				
+						<div class="tbl-scroll-wrap t_line_type02  top_mr04"> 
+							<table class="tbl_white_row">
+								<colgroup>
+									<col width="30" />
+									<col width="100" />
+									<col width="208" />
+									<col width="130" />
+									<col width="208" />
+									<col width="130" />
+									<col width="207" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="td_top" rowspan="6"><input type="checkbox" id="" value="" /></td>
+										<th scope="row"><label for="">비용항목</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>												
+										</td>
+										<th scope="row"><label for="">프로젝트</label></th>
+										<td colspan="3">
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>																					
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구구분</label></th>
+										<td>
+											<select>
+												<option value="">세금계산서</option>
+												<option value=""  selected="selected">인보이스</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">인보이스구분</label></th>
+										<td>
+											<select>
+												<option value="">한글</option>
+												<option value=""  selected="selected">영문</option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">계산서/인보이스 수신자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구금액(원화)</label></th>
+										<td>
+											<span class="input_gray_block"><input class="txt_r" type="text" id="" name="" title="" value="0" /></span>		
+										</td>
+										<th scope="row"><label for="">통화</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">통화</option>
+												<option value="">USD</option>
+												<option value="">KRW</option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">환율</label></th>
+										<td>
+											<span class="input_gray_block"><input class="txt_r" type="text" id="" name="" title="" value="0" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">청구금액</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>		
+										</td>
+										<th scope="row"><label for="">부가세</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>	
+										</td>
+										<th scope="row"><label for="">합계</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_r txt_readonly" type="text" id="" name="" title="" value="0" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">입금조건</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">입금</option>
+												<option value="">상계</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">입금예정일</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected">M+1월</option>
+												<option value="">상계</option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">SAP번호</label></th>
+										<td>
+											<span class="input_gray_block txt_none"><input class="txt_l txt_readonly" type="text" id="" name="" title="" value="" readonly="readonly" /></span>
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">내용작성</label></th>
+										<td colspan="5">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+									<tr>
+										<th scope="row" colspan="2"><label for="">청구내역(인보이스)</label></th>
+										<td colspan="2">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<th scope="row"><label for="">사용기간(인보이스)</label></th>
+										<td colspan="2">
+											<span class="input_gray_block"><input class="txt_l" type="text" id="" name="" title="" value=""/></span>	
+										</td>
+										<td class="blank_last"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 거래처 E -->
+					</div>
+						
+					
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

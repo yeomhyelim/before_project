@@ -1,0 +1,6 @@
+/* main / include / mainbanner.motion2.skin.html.php */
+.mainbanner_motion2 .slide {width:1060px;height:500px;display:block;}
+.mainbanner_motion2 .slides_container {width:1060px;height:500px;overflow:hidden;position:relative;display:none;}
+.mainbanner_motion2 .pagination li {float:left;margin:0 1px;list-style:none;}
+.mainbanner_motion2 .pagination li.current a {float:left;margin:0 1px;list-style:none;border:1px solid #555555;}
+.mainbanner_motion2 {width:1060px;height:500px;display:block;}

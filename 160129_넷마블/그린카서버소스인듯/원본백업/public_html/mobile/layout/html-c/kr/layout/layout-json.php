@@ -1,0 +1,1 @@
+<?php $e='';$e['mode']='include';$e['include']='contents';include MALL_HOME . '/web/app/engin.php'; ?>

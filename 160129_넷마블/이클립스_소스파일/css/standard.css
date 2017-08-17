@@ -1,0 +1,8 @@
+/* 게임명 변경 및 팝업 교통비 */
+.game_name_box {overflow:hidden;  background:url('../images/board/tr_game_arrow_bg.gif') center center no-repeat;}
+.game_name_box .f_left {float:left; width:50%; padding-top:5px; font-size:16px; line-height:18px;}
+.game_name_box .f_left.input_box {padding-top:0;}
+.game_name_box .f_right {float:right; width:50%;}
+.game_name_box .f_left .cont {padding:0 30px 0 0;}
+.game_name_box .f_right .cont {padding:0 0 0 30px;}
+.tbl_view_col.game_name td {height:40px !important;}

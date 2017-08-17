@@ -1,0 +1,1785 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">비용신청</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>일반경비신청</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>정기지급신청</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>복합처리신청</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">신규등록</button>
+								<button type="button" class="btn_red_data">복사</button>
+								<button type="button" class="btn_red_data">전표추가</button>
+								<button type="button" class="btn_red_data">저장</button>
+								<button type="button" class="btn_red_data">결재올림</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">신규등록</button>
+								<button type="button" class="btn_red_data">복사</button>
+								<button type="button" class="btn_red_data">저장</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">신규등록</button>
+								<button type="button" class="btn_red_data">저장</button>
+								<button type="button" class="btn_red_data">삭제</button>
+								<button type="button" class="btn_red_data">업로드포맷다운</button>
+								<button type="button" class="btn_red_data">대량업로드</button>
+								<button type="button" class="btn_red_data">결재올림</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="120" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">ERP번호</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="cont_gray_line01 top_mr01">
+							<table class="tbl_choice_row">
+								<colgroup>
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">일반</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">전자세금계산서</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">원천세</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">선급금 요청 및 정산</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>기본정보</h2>
+									<div class="pos_btn_right">
+										<a href="#1" class="ico_evidence_txt">증빙</a>
+										<!-- 데이터가 들어왔을때는 on 처리
+										<a href="#1" class="ico_evidence_txt on">증빙</a>
+										 -->
+										<button type="button" class="btn_skyblue_data">전표삭제</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="90" />
+										<col width="163" />
+										<col width="90" />
+										<col width="163" />
+										<col width="90" />
+										<col width="163" />
+										<col width="90" />
+										<col width="164" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">귀속일</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>										
+											</td>
+											<th scope="row"><label for="">통화</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>												
+											</td>
+											<th scope="row"><label for="">환율</label></th>
+											<td></td>
+											<th scope="row"><label for="">계약명</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>												
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">거래처</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<th scope="row"><label for="">지급계좌</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>											
+											</td>
+											<th scope="row"><label for="">지급일</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>												
+											</td>
+											<th scope="row"><label for="">진행상태</label></th>
+											<td>진행중</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">지급액</label></th>
+											<td>
+												<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>									
+											</td>
+											<th scope="row"><label for="">원화금액</label></th>
+											<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											<th scope="row"><label for="">지로</label></th>
+											<td colspan="3"><input type="checkbox" class="input_check01" name="" id="" /></td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">내용작성</label></th>
+											<td colspan="7">
+												<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+							<div class="stitbox02">
+								<h3>비용 ITEM</h3>		
+								<div class="pos_btn_right">
+									<button type="button" class="btn_green_data">행추가</button>
+									<button type="button" class="btn_green_data">행삽입</button>
+									<button type="button" class="btn_green_data">행삭제</button>
+								</div>										
+							</div>
+
+							<div class="tbl-scroll-wrap top_mr01"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_add_col">
+									<table>
+										<colgroup>
+											<col width="40" />
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="50" />
+											<col width="100" />
+											<col width="274" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+												<th scope="col">순번</th>		
+												<th scope="col">비용항목</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">귀속조직</th>
+
+												<th scope="col">금액</th>		
+												<th scope="col">원화금액</th>
+												<th scope="col">교통비</th>
+												<th scope="col">교통비대상</th>
+												<th scope="col" class="last">내용작성</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><a href="#1" class="ico_traffic on">교통비</a></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><a href="#1" class="ico_traffic">교통비</a></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><a href="#1" class="ico_traffic">교통비</a></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><a href="#1" class="ico_traffic">교통비</a></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><a href="#1" class="ico_traffic">교통비</a></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td><a href="#1" class="ico_traffic">교통비</a></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+
+							</div>
+						
+						</div>			
+					</div>			
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+						<div class="cont_gray_line01">
+							<table class="tbl_choice_row">
+								<colgroup>
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">정기지급마스터 등록</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">정기지급 조회 및 정산</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_gray_fix top_mr01">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="110" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="70" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">정기지급마스터</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w196">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>정기지급 마스터등록</h2>
+									<div class="pos_btn_right">
+										<a href="#1" class="ico_evidence_txt">증빙</a>
+										<!-- 데이터가 들어왔을때는 on 처리
+										<a href="#1" class="ico_evidence_txt on">증빙</a>
+										 -->
+									</div>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="153" />
+										<col width="90" />
+										<col width="153" />
+										<col width="90" />
+										<col width="153" />
+										<col width="90" />
+										<col width="154" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">정기지급마스터명</label></th>
+											<td colspan="3">
+												<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>
+											</td>
+											<th scope="row"><label for="">거래처</label></th>
+											<td colspan="3">
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">계약명</label></th>
+											<td colspan="3">
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>	
+											</td>
+											<th scope="row"><label for="">지급계좌</label></th>
+											<td colspan="3">
+												<select>
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">계약기간</label></th>
+											<td colspan="3">
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<span class="input_gray_fix input_ico w76">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>		
+												<span class="txt_bar">-</span>
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<span class="input_gray_fix input_ico w76">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">지급조건</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>							
+											</td>
+											<th scope="row"><label for="">지급방법</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+
+							<div class="cont_gray_line02">
+								<table class="tbl_sum_row">
+									<colgroup>
+										<col width="120" />
+										<col width="162" />
+										<col width="80" />
+										<col width="162" />
+										<col width="80" />
+										<col width="163" />
+										<col width="80" />
+										<col width="161" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">세금계산서유형</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>											
+											</td>
+											<th scope="row"><label for="">공급가액</label></th>
+											<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="" /></span></td>
+											<th scope="row"><label for="">부가세</label></th>
+											<td><span class="input_gray_block txt_none"></span></td>
+											<th scope="row"><label for="">고정/변동</label></th>
+											<td class="last">
+												<select>
+													<option value="" selected="selected"></option>
+												</select>											
+											</td>
+											<td class="blank_last last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">원천세유형</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>											
+											</td>
+											<th scope="row"><label for="">소득금액</label></th>
+											<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="" /></span></td>
+											<th scope="row"><label for="">소득세</label></th>
+											<td><span class="input_gray_block txt_none"></span></td>
+											<th scope="row"><label for="">주민세</label></th>
+											<td class="last"><span class="input_gray_block txt_none"></span></td>
+											<td class="blank_last last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+							<div class="stitbox02">
+								<h3>정기지급마스터 지급내역 등록</h3>		
+								<div class="pos_btn_right">
+									<button type="button" class="btn_green_data">행추가</button>
+									<button type="button" class="btn_green_data">행삭제</button>
+								</div>										
+							</div>
+
+
+							<div class="tbl_height_box">						
+								<div class="tbl-scroll-wrap top_mr01"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_add_col">
+										<table>
+											<colgroup>
+												<col width="40" />
+												<col width="50" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="524" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+													<th scope="col">순번</th>		
+													<th scope="col">비용항목</th>
+													<th scope="col">귀속조직</th>
+													<th scope="col">프로젝트</th>
+
+													<th scope="col">금액</th>
+													<th scope="col" class="last">내용작성</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>												
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>												
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>												
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>												
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>												
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												</tr>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>												
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												</tr>
+											</tbody>
+										</table>	
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>정기지급계획 및 처리현황</h2>
+									<div class="pos_btn_right">
+										<button class="btn_skyblue_data" type="button">스케줄생성</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- [s]tbl-scroll-wrap -->
+							<div class="tbl-scroll-wrap  top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="40" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">회차</th>
+												<th scope="col">귀속월(예정)</th>
+												<th scope="col">거래처</th>
+												<th scope="col">세금계산서유형</th>
+												<th scope="col">지급액</th>
+
+												<th scope="col">공급가액</th>
+												<th scope="col">부가세</th>
+
+												<th scope="col">원천세유형</th>
+												<th scope="col">소득금액</th>
+												<th scope="col">소득세</th>
+												<th scope="col">주민세</th>
+												<th scope="col">지급조건</th>
+
+												<th scope="col">지급방법</th>
+												<th scope="col">지급계좌</th>
+												<th scope="col">제외</th>
+												<th scope="col" class="last">진행상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1/12</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>1/12</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>1/12</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>1/12</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>1/12</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>1/12</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+							<!-- //[e]tbl-scroll-wrap -->
+
+						</div>			
+					</div>	
+
+
+					<div class="sub_tab_cont tab_GrayCont2">
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="120" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">ERP번호</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>기본정보</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="90" />
+										<col width="163" />
+										<col width="90" />
+										<col width="163" />
+										<col width="90" />
+										<col width="163" />
+										<col width="90" />
+										<col width="164" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">귀속일</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>
+											</td>
+											<th scope="row"><label for="">통화</label></th>
+											<td>
+												<select>
+													<option value="" selected="selected"></option>
+												</select>
+											</td>
+											<th scope="row"><label for="">환율</label></th>
+											<td><span class="input_gray_block txt_none"></span></td>
+											<th scope="row"><label for="">진행상태</label></th>
+											<td><span class="input_gray_block txt_none"></span></td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+							<div class="stitbox02">
+								<h3>전표정보</h3>
+								<div class="pos_btn_right">
+									<a href="#1" class="ico_evidence_txt">증빙</a>
+									<!-- 데이터가 들어왔을때는 on 처리
+									<a href="#1" class="ico_evidence_txt on">증빙</a>
+									 -->
+									<button type="button" class="btn_green_data">전자세금계산서</button>
+									<button type="button" class="btn_green_data">행추가</button>
+									<button type="button" class="btn_green_data">행삭제</button>
+									<button type="button" class="btn_green_data">행삽입</button>
+								</div>										
+							</div>
+
+
+							<div class="tbl_height_box">
+								<div class="tbl-scroll-wrap top_mr01"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_add_col">
+										<table>
+											<colgroup>
+												<col width="40" />
+												<col width="50" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="200" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+													<th scope="col">순번</th>
+													<th scope="col">그룹키</th>
+													<th scope="col">귀속일</th>
+													<th scope="col">통화</th>
+
+													<th scope="col">환율</th>
+													<th scope="col">차변/대변</th>
+													<th scope="col">거래처</th>
+													<th scope="col">비용항목</th>
+													<th scope="col">귀속조직</th>
+
+													<th scope="col">프로젝트</th>
+													<th scope="col">금액</th>
+													<th scope="col">적요</th>
+													<th scope="col">지급일</th>
+													<th scope="col">지급계좌</th>
+
+													<th scope="col">세금유형</th>
+													<th scope="col">공급가액</th>
+													<th scope="col">세액</th>
+													<th scope="col">원천세유형</th>
+													<th scope="col">소득세</th>
+
+													<th scope="col">주민세</th>
+													<th scope="col">예산마스터</th>
+													<th scope="col" class="last">공통비체크</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>																
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>														
+													</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td class="last"><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												</tr>
+
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>																
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>														
+													</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td class="last"><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												</tr>
+
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>																
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>														
+													</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td class="last"><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												</tr>
+
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>																
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>														
+													</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td class="last"><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												</tr>
+
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>																
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>														
+													</td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<select>
+															<option value="" selected="selected"></option>
+														</select>														
+													</td>
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+
+													<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+														</span>													
+													</td>
+													<td class="last"><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												</tr>													
+											</tbody>
+										</table>	
+									</div>
+									<!-- //[e]그리드 테이블 -->
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_mr01 tbl_bg_center"> 
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_add_col tbl_width_center">
+									<table class="border_none">
+										<colgroup>
+											<col width="100" />
+											<col width="" />
+											<col width="100" />
+											<col width="" />
+										</colgroup>										
+										<tbody>
+											<tr class="tr_total">
+												<td class="td_right">차변계</td>
+
+												<td class="td_right"><span class="point">664.664,864 원</span></td>
+												<td class="td_right">대변계</td>
+												<td class="last td_right"><span class="point">664.664,864 원</span></td>
+											</tr>															
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+
+
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>미결항목</h2>
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">조회</button>
+										<button type="button" class="btn_skyblue_data">처리</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="box_gray_vs">
+								<div class="cont">
+									<table class="tbl_vs_col">
+										<colgroup>
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="">기준일</label></th>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+													</span>
+												</td>
+												<th scope="row"><label for="">거래처</label></th>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>
+												</td>
+												<th scope="row"><label for="">비용항목</label></th>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+											</tr>
+										</tbody>
+									</table>										
+								</div>					
+							</div>
+
+							<div class="tbl_height_box height_total">
+								<div class="tbl-scroll-wrap top_zero"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										<table>
+											<colgroup>
+												<col width="40" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+													<th scope="col">SAP번호</th>
+													<th scope="col">통화</th>
+													<th scope="col">환율</th>
+													<th scope="col">비용항목</th>
+
+
+													<th scope="col">차변/대변</th>
+													<th scope="col">귀속조직</th>
+													<th scope="col">프로젝트</th>
+													<th scope="col">금액</th>
+													<th scope="col">원화금액</th>
+
+													<th scope="col">지정번호</th>
+													<th scope="col" class="last">내용작성</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>		
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>		
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>		
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>		
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>		
+												<tr>
+													<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>														
+											</tbody>
+										</table>	
+									</div>
+									<!-- //[e]그리드 테이블 -->
+								</div>
+							</div>
+
+
+						
+						</div>		
+					</div>
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

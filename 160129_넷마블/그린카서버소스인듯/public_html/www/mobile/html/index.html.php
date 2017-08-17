@@ -1,0 +1,1 @@
+<? include sprintf ( "%s%s/html/%s.php", $S_DOCUMENT_ROOT, $S_SHOP_HOME, $_REQUEST['mode'] ); ?>

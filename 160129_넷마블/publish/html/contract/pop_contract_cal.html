@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+<!-- [s]w:1075, h:780 --> <!-- sub 컨텐츠 테이블 col width 넓이와 동일합니다, / 테이블 영역 전체는 1015px 입니다 -->
+
+	<!-- [s]팝업 -->
+	<div class="layer-wrap02 layer_area">
+		<!-- [s]layer-cont -->
+		<div class="layer-cont">
+
+
+			<div class="sub_top_content">
+				<h1 class="subtit">계약조회 정산</h1>
+				<div class="btn_right minus_t_btn">
+					<button type="button" class="btn_red_data">조회</button>
+					<button type="button" class="btn_red_data">닫기</button>
+				</div>
+			</div>
+
+			<div class="cont_gray_line03 top_mr01">
+				<table class="tbl_type_row">
+					<colgroup>
+						<col width="130" />
+						<col width="" />
+					</colgroup>
+					<tbody>
+						<tr class="tr_last">
+							<th scope="row"><label for="">계약유형</label></th>
+							<td>
+								<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">퍼블리싱</label>
+								<input type="radio" id="" class="input_radio" value="" /> <label for="">해외(수출)</label>
+								<input type="radio" id="" class="input_radio left20" value="" checked="checked" /> <label for="">투자</label>
+								<input type="radio" id="" class="input_radio" value="" checked="checked" /> <label for="">기타수익</label>
+								<input type="radio" id="" class="input_radio" value="" checked="checked" /> <label for="">기타매입</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+			<div class="cont_gray_fix">
+				<table class="tbl_search_row">
+					<colgroup>
+						<col width="90" />
+						<col width="242" />
+						<col width="90" />
+						<col width="242" />
+						<col width="90" />
+						<col width="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">거래처</label></th>
+							<td><span class="input_gray_block"><input title="" type="text" value="" /></span></td>
+							<th scope="row"><label for="">프로젝트</label></th>
+							<td><span class="input_gray_block"><input title="" type="text" value="" /></span></td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+
+						<tr>
+							<th scope="row"><label for="">계약명</label></th>
+							<td><span class="input_gray_block"><input title="" type="text" value="" /></span></td>
+							<th scope="row"><label for="">계약일</label></th>
+							<td>
+								<span class="input_gray_fix input_ico" style="width:73px;">
+									<input type="text" id="" name="" title="" value="" />
+									<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+								</span>		
+								<span class="txt_bar">-</span>
+								<span class="input_gray_fix input_ico" style="width:73px;">
+									<input type="text" id="" name="" title="" value="" />
+									<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+								</span>
+							</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+
+
+			<div class="cont_white_fix">
+
+				<div class="stitbox01">
+					<div class="cont">
+						<h2>계약리스트</h2>
+					</div>
+				</div>
+
+				<div class="tbl_height_box height_row">
+		
+					<!-- [s]tbl-scroll-wrap -->
+					<div class="tbl-scroll-wrap  top_zero">
+
+						<!-- [s]그리드 테이블 -->
+						<div class="tbl_view_html_col">
+							
+							<table>
+								<colgroup>
+									<col width="169" />
+									<col width="169" />
+									<col width="169" />
+									<col width="169" />
+									<col width="169" />
+
+									<col width="169" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">계약명</th>
+										<th scope="col">거래처명</th>
+										<th scope="col">프로젝트명</th>
+										<th scope="col">계약일</th>
+										<th scope="col">계약기간</th>
+
+										<th scope="col" class="last">종료일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+
+										<td class="last">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+
+										<td class="last">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+
+										<td class="last">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+
+										<td class="last">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+
+										<td class="last">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+
+										<td class="last">&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>		
+
+						</div>
+						<!-- //[e]그리드 테이블 -->
+									
+					</div>
+					<!-- //[e]tbl-scroll-wrap -->
+
+				</div>
+
+				<div class="stitbox02">
+					<h3>RS조건 슬라이딩</h3>							
+				</div>
+
+				<div class="tbl_height_box height_th_row">	
+					<div class="tbl-scroll-wrap top_mr01"> 
+
+						<!-- [s]그리드 테이블 -->
+						<div class="tbl_view_html_add_col">
+							<table>
+								<colgroup>
+									<col width="50" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2">순번</th>
+										<th scope="col" rowspan="2">구분</th>
+										<th scope="col" rowspan="2">매출유형</th>
+										<th scope="col" rowspan="2">기준</th>
+										<th scope="col" colspan="2">슬라이딩구간 (금액)</th>
+
+										<th scope="col" colspan="2">슬라이딩구간 (기간)</th>
+										<th scope="col" rowspan="2">적용기준</th>
+										<th scope="col" rowspan="2">수익배분율</th>
+										<th scope="col" rowspan="2">통화</th>
+										<th scope="col" rowspan="2">지급조건</th>
+
+										<th scope="col"  rowspan="2" class="last">지급조건일</th>
+									</tr>
+									<tr>
+										<th scope="col">From</th>
+										<th scope="col">To</th>
+										<th scope="col">From</th>
+										<th scope="col">To</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+									<tr>
+										<td>999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+									<tr>
+										<td>999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+									<tr>
+										<td>999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+									<tr>
+										<td>999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+									<tr>
+										<td>999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										<td></td>
+										<td class="last"></td>
+									</tr>
+								</tbody>
+							</table>	
+						</div>
+						<!-- //[e]그리드 테이블 -->
+
+					</div>
+				</div>
+
+
+				<div class="stitbox02">
+					<h3>RS조건 일반</h3>							
+				</div>
+
+				<div class="tbl-scroll-wrap top_mr01"> 
+
+					<!-- [s]그리드 테이블 -->
+					<div class="tbl_view_html_add_col">
+						<table>
+							<colgroup>
+								<col width="50" />
+								<col width="137" />
+								<col width="137" />
+								<col width="137" />
+								<col width="137" />
+
+								<col width="137" />
+								<col width="137" />
+								<col width="142" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">순번</th>
+									<th scope="col">구분</th>
+									<th scope="col">매출유형</th>
+									<th scope="col">적용기준</th>
+									<th scope="col">수익배분율</th>
+
+									<th scope="col">통화</th>
+									<th scope="col">지급조건</th>
+									<th scope="col" class="last">지급조건일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>999</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+									<td></td>
+									<td></td>
+									<td class="last"></td>
+								</tr>
+								<tr>
+									<td>999</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+									<td></td>
+									<td></td>
+									<td class="last"></td>
+								</tr>
+								<tr>
+									<td>999</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+									<td></td>
+									<td></td>
+									<td class="last"></td>
+								</tr>
+								<tr>
+									<td>999</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+									<td></td>
+									<td></td>
+									<td class="last"></td>
+								</tr>
+								<tr>
+									<td>999</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+									<td></td>
+									<td></td>
+									<td class="last"></td>
+								</tr>
+								<tr>
+									<td>999</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+									<td></td>
+									<td></td>
+									<td class="last"></td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<!-- //[e]그리드 테이블 -->
+
+				</div>
+
+
+			</div>				
+			
+
+		</div>
+		<!-- [e]layer-cont -->
+	</div>
+	<!-- [e]팝업 -->
+	
+<!-- //[e]w:1075, h:780 -->
+
+
+</body>
+</html>

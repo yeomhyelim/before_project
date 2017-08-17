@@ -1,0 +1,14 @@
+/********* 우편번호 ************/
+div.popUpWrap{min-height:430px;border:10px solid #1b8348;background:#FFF;}
+div.popUpWrap h2{padding:10px;font-size:14px;border-bottom:1px solid #e5e5e5;}
+div.zipTxtInfo{font-size:11px;line-height:20px;color:#888888;text-align:center;}
+div.zipTxtInfo strong{color:#333;}
+div.zipSearchWrap{margin-top:10px;text-align:center;}
+div.zipSearchWrap span{display:inline-block;color:#bac47f;}
+div.zipSearchWrap input{width:300px;height:19px;padding:6px 2px 2px;border:2px solid #cccccc;}
+div.resultTxtInfo{padding: 10px 15px;font-size:11px;color:#CCC;}
+
+.scrolWrap table{width:100%;}
+.scrolWrap table th{padding:6px;border:1px solid #ccc;background:#e5e5e5;}
+.scrolWrap table td{padding:6px;border-bottom:1px solid #ccc;}
+.scrolWrap table tr:hover{background:#faf7f4;}

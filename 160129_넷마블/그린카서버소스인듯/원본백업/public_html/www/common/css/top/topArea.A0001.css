@@ -1,0 +1,19 @@
+/**************** Top Wrap *********************/
+
+#topWrap{width:980px;margin:0 auto;}
+#topWrap .logoWrap h1{float:left;width:500px;vertical-align:bottom;}
+
+#topWrap .topGrobalWrap{float:right;}
+#topWrap .topGrobalWrap span.txtHidden{display:none;}
+
+
+
+
+#topWrap .searchWrap{float:right;margin-top:30px;background:#f0f0f0;}											
+#topWrap .searchWrap input{width:200px;padding:2px 2px 3px;background:#f0f0f0;border:1px solid #f0f0f0;}
+
+#mainNavi{margin-top:12px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+#mainNavi img{margin-right:-4px;}
+
+/****************************/
+

@@ -1,0 +1,1 @@
+<? include "memberJoinEnd.skin.inc.php" ?>

@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+
+@font-face {
+	font-family: 'NanumGothic'; font-style: normal; font-weight: 700;
+	src: url(NanumGothic-Bold.eot);
+	src: url(NanumGothic-Bold.eot?#iefix) format('embedded-opentype'), url(NanumGothic-Bold.woff2) format('x-woff2'), url(NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'NanumGothic'; font-style: normal; font-weight: 400;
+	src: url(NanumGothic.eot);
+	src: url(NanumGothic.eot?#iefix) format('embedded-opentype'), url(NanumGothic.woff2) format('x-woff2'), url(NanumGothic.woff) format('woff'), url(NanumGothic.ttf) format('truetype');
+}
+
+
+* {margin:0; padding:0;}
+
+body {
+	height:100%;
+	font-size:75%;
+	font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+	color:#666;
+}
+
+img					{border:0; vertical-align:top; font-size:0;}
+form, fieldset		{display:block; border:0;}
+ul,ol,li			{list-style:none;}
+
+legend, caption, .hidden		{width:0; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden;}
+
+table {table-layout:fixed; border-collapse:collapse; border-spacing:0; width:100%; font-size:1em;}
+
+ul,ol,li,a,table,td,th,p,dl,dd,dt,strong,span,div {font-size:1em; line-height:1.5; letter-spacing:-1px;}
+
+p, acronym, address, big, small, cite, code, dfn, em, kbd, pre, samp, sub, sup, tt, var {
+	font-weight:normal; font-style:normal;
+}
+
+h1, h2, h3, h4, h5, h6	{font-size:1em; letter-spacing:-1px; font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;}
+
+big						{font-size:1.125em;} /* 14px */
+small					{font-size:0.95em;} /* 11px */
+
+sub						{font-size:1.05em;}
+sup						{font-size:1.05em;}
+
+input, select {
+	vertical-align:middle; 
+	font-size:1em;
+	color:#000; 
+	font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+}
+input[type="password"] {font-family:Verdana; color:#555;}
+
+input::-ms-clear {
+    display: none;
+}
+
+textarea {
+	border:1px solid #ccc; 
+	font-size:12px; 
+	font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+	resize:none;
+}
+
+blockquote, q		{quotes:none;}
+ins {}
+del					{text-decoration:line-through;}
+
+hr {display:none;}
+
+iframe {border:0;}
+
+
+/* 기본 링크 스타일 */
+a:link 				{color:#616161; text-decoration:none;}
+a:visited			{color:#666; text-decoration:none;}
+a:hover, a:focus	{color:#666; text-decoration:none;}
+a:active			{color:#666; text-decoration:none;}
+
+
+/* button */
+button {
+	background:transparent;
+	margin:0;
+	padding:0;
+	border:0;
+	cursor:pointer;
+	font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+	*overflow:visible;
+}
+.button,
+.button *{
+	position:relative; 
+	margin:0; 
+	padding:0; 
+	display:inline-block; 
+	text-decoration:none !important; 
+	border:0;
+	font-size:12px; 
+	white-space:nowrap; 
+	vertical-align:middle; 
+	overflow:visible; 
+	color:#fff;
+}
+
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+
+/* clear */
+.clear {clear:both;}
+
+
+/* skip-navigation */
+.skip-navigation {
+	display:block; 
+	position:absolute; 
+	z-index:8888; 
+	left:0; 
+	top:0; 
+	width:100%;
+}
+.skip-navigation a {
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	position:absolute;
+	top:-10000px;
+	left:0;
+	z-index:5000;
+	background-color:#005ba0;
+	color:#fff;
+}
+.skip-navigation a:hover,
+.skip-navigation a:focus, 
+.skip-navigation a:active {top:0;}	
+
+
+
+.join_chkbox {margin-top:10px;}
+.join_chkbox label {font-size:13px; margin-left:5px; cursor:pointer;}
+
+.payment-type {}
+.payment-type li {*zoom:1; margin-top:10px; font-size:13px;}
+.payment-type li:first-child {margin-top:0;}
+.payment-type li:after {content:""; display:block; clear:both;}
+.paybox01 {float:left; width:135px;}
+.paybox01 label {
+	cursor:pointer; 
+	margin-left:2px; 
+	vertical-align:-1px; 
+	color:#333; 
+	font-weight:bold;
+}
+.paybox02 {float:left;}
+
+.stxt02 {font-size:16px;}
+.stxt02 strong {color:#333;}
+.stxt02 span {color:#fe5a08;}

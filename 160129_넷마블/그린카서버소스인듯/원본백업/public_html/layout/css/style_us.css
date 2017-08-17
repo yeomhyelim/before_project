@@ -1,0 +1,10 @@
+
+div.mainContentBox .topNaviWrap ul li{display:inline-block;*display:inline;*zoom:1;margin:0 22px;}
+div.myOrderListWrap table td.prodInfo{min-width:290px;}
+div.buyListBodyWrap .myOrderListWrap table td.prodInfo ul{width:220px;}
+div.buyListBodyWrap .myOrderListWrap table td span.iconOrderCancel{width:82px;}
+div.buyListBodyWrap .myOrderListWrap table td.wishQtyWrap dl dd.cartCntModifyBox{display:block;margin-top:3px;}
+
+table.listTypeTable tr td.shopInfoWrap .shopInfoWrap{width:190px}
+
+table.listTypeTable tr td.prodInfoWrap ul li.tit a{display:block;width:98%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}

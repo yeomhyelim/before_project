@@ -1,0 +1,1 @@
+<? include  MALL_WEB_PATH."shopAdmin/include/scrapingList.inc.php" ?>

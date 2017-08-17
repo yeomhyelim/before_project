@@ -1,0 +1,290 @@
+/* 게시판 */
+/* Color: Gray(기본형 게시판) - 디자인 A타입은 검정, 그레이 스타일*/
+div.tableList table{width:100%;}
+
+
+/**(1) 게시판 목록****/
+/* sort */
+div.boardTopWrap{padding-bottom:5px;}
+div.boardCntWrap{float:left;margin-top:10px;color:#6a6a6a;}
+
+/*list*/
+table.bbsListTable th{padding: 7px 0 7px;color:#FFF;background: url(/himg/board/A0002/bg_th.jpg) right top no-repeat;}
+table.bbsListTable td{height:22px;padding: 5px 0;text-align:center;border-bottom:1px solid #e4e4e4;}
+table.bbsListTable td.titleList{text-align:left;padding-left:10px;}
+table.bbsListTable td.titleList a:hover{text-decoration:underline;}
+table.bbsListTable td.listImg img{width:80px;border:1px solid #ccc;}
+table.bbsListTable td a:hover{text-decoration:underline;color:#333;}
+table.bbsListTable td span.cntComment{color:#e84a4a;font-weight:bold;}
+table.bbsListTable td img{vertical-align:middle;}
+
+.tableList table td img.prodImg{width:50px;height:50px;margin-right:10px;border:1px solid #e2e2e2;vertical-align:middle;}
+.tableList table td img.ico_Re{margin-left:60px;}
+
+
+.tableList  th.numDiv{width:60px;}
+.tableList  th.listImageDiv{width:80px;}
+.tableList  th.idDiv{width:15%;}
+.tableList  th.dateDiv{width:15%;}
+.tableList  th.readDiv{width:10%;}
+
+/**(2) 게시판 등록/수정/상세보기 폼****/
+.tableForm table.tableForm{width:100%;}
+.tableForm table th{
+									width:85px;
+									padding: 7px 0 7px 10px;
+									color:#898989;
+									font-size:11px;
+									text-align:left;
+									letter-spacing:-1px;
+									border:1px solid #e1e1e1;
+									background:#f8f8f8;
+									}
+.tableForm table th.viewTitle,
+.tableForm table th.boardTit{
+									width:100%;
+									padding: 7px 0 7px;
+									margin-bottom:3px;
+									text-align:center;
+									font-size:14px;
+									color:#FFF;
+									border:1px solid #a4a4a4;
+									background: url(/himg/board/A0002/bg_th.jpg) left top no-repeat;
+									background-size : 100% 100%;
+									}
+.tableForm table tr.writerInfo th{width:10%;}
+
+.tableForm table td{padding:5px;border:1px solid #e1e1e1;}
+.tableForm table td input{padding:3px;}
+.tableForm table td.bbsExplain{padding: 15px 10px;border-left:none;border-right:none;}
+.tableForm table td span.boardTxtInfo{display:block;margin-top:5px;color:#6c6c6c;font-size:11px;letter-spacing:-1px;vertical-align:top;}
+.viewContentArea{min-height:150px;padding: 15px 0;border-bottom:1px solid #e1e1e1}
+div.viewContentArea img{max-width:100%;}
+.nextTextWrap{margin-top:10px;}
+.nextTextWrap ul{border-top:1px solid #e5e5e5;}
+.nextTextWrap ul li{padding: 5px 0;border-bottom:1px solid #e5e5e5;}
+
+div.snsIcoWrap{padding:5px 0;}
+
+
+/**(2) NEW 게시판 등록/수정/상세보기 폼****/
+table.tableForm{width:100%;}
+
+
+table.tableForm  th{
+									width:85px;
+									padding: 7px 0 7px 10px;
+									color:#898989;
+									font-size:11px;
+									text-align:left;
+									letter-spacing:-1px;
+									border:1px solid #e1e1e1;
+									background:#f8f8f8;
+									}
+table.tableForm  th.viewTitle,
+table.tableForm  th.boardTit{
+									width:100%;
+									padding: 7px 0 7px;
+									margin-bottom:3px;
+									text-align:center;
+									font-size:14px;
+									color:#FFF;
+									border:1px solid #a4a4a4;
+									background: url(/himg/board/A0002/bg_th.jpg) left top no-repeat;
+									background-size : 100% 100%;
+									}
+
+table.tableForm  tr.writerInfo th{width:10%;}
+
+table.tableForm  td{padding:5px;border:1px solid #e1e1e1;}
+table.tableForm  td input{padding:3px;}
+table.tableForm  td.bbsExplain{padding: 15px 10px;border-left:none;border-right:none;}
+table.tableForm  td span.boardTxtInfo{display:block;margin-top:5px;color:#6c6c6c;font-size:11px;letter-spacing:-1px;vertical-align:top;}
+
+
+/** 댓글**/
+div.comtTabWrap{margin-top:10px;padding:10px;border:1px solid #d9d9d9;}
+	div.comtTabWrap .array{float:right;}
+	div.comtTabWrap a.btnComtClose,
+	div.comtTabWrap a.btnRefresh,
+	div.comtTabWrap a.btnComtWrite{padding:3px 8px 2px;letter-spacing:-1px;color:#777;border:1px solid #d9d9d9;}
+
+	div.comtWriteWrap{margin-top:30px;}
+	div.comtWriteWrap textarea.comtWriteForm{float:left;width:85%;height:80px;overflow:hidden;border:1px solid #CCC;}
+	div.comtWriteWrap a.comtWriteOk{float:left;padding-top:35px;width:13%;height:50px;text-align:center;font-weight:bold;color:#FFF;background:#BBB;border:1px solid #CCC;}
+
+	div.comtModifyWrap{margin-top:30px;}
+	div.comtModifyWrap textarea.comtModifyForm{float:left;width:85%;height:80px;overflow:hidden;border:1px solid #CCC;}
+	div.comtModifyWrap a.comtModifyOk{float:left;padding-top:35px;width:13%;height:50px;text-align:center;font-weight:bold;color:#FFF;background:#BBB;border:1px solid #CCC;}
+
+	div.comtListForm{margin-top:30px;padding-bottom:30px;border-bottom:1px solid #dfdfdf;}
+	div.comtViewWrap{padding:20px 10px;}
+	div.comtViewWrap .imgBox{float:left;width:40px;}
+	div.comtViewWrap .imgBox img.userImg{vertical-align:top;width:40px;height:40px;border:1px solid #dfdfdf;}
+	div.comtViewWrap .comtBox{float:left;margin-left:10px;max-width:650px;}
+	div.comtViewWrap .comtBox .info span{display:inline-block;*display:inline;*zoom:1;}
+	div.comtViewWrap .comtBox .info span.userId{font-weight:bold;}
+	div.comtViewWrap .comtBox .info span.date{margin-left:5px;vertical-align:middle;font-size:11px;color:#858585;}
+	div.comtViewWrap .comtBox .comt{margin-top:10px;}
+	div.comtViewWrap .comtBox .btnWrap{margin-top:15px;}
+	div.comtViewWrap .comtBox .btnWrap a.btnComtWrite,
+	div.comtViewWrap .comtBox .btnWrap a.btnLike,
+	div.comtViewWrap .comtBox .btnWrap a.btnBad,
+	div.comtViewWrap .comtBox .btnWrap a.btnModify,
+	div.comtViewWrap .comtBox .btnWrap a.btnDelete{padding:3px 8px 2px;font-size:11px;letter-spacing:-1px;color:#777;border:1px solid #d9d9d9;}
+	div.comtViewWrap .comtBox .btnWrap a.btnLike span{color:#ff0000;}
+	div.comtViewWrap .comtBox .btnWrap a.btnBed span{color:#0054ff;}
+	div.comtViewWrap .comtBox .btnWrap .btnLeftWrap{float:left;}
+	div.comtViewWrap .comtBox .btnWrap .btnRightWrap{float:right;}
+
+	div.comtWriteBox{margin:0 0 20px 60px;}
+	div.comtModifyBox{margin:0 0 20px 60px;}
+
+	div.comtListWrap{margin:0 15px 0 60px;padding:20px;background:#f9f9f9;border-bottom:1px solid #d9d9d9;}
+	div.comtListWrap .imgBox{padding-left:15px;background:url(/himg/community/comment/ico_reply.png) left top no-repeat;}
+
+	div.popLoginForm{padding:20px 10px;width:280px;border:1px solid #d9d9d9;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+	div.popLoginForm h3.title{font-size:18px;text-align:center;}
+	div.popLoginForm .loginForm{margin-top:15px;padding:20px 10px 10px;border-top:1px solid #e1e1e1;}
+	div.popLoginForm .loginForm .inputBox{float:left;}
+	div.popLoginForm .loginForm .inputBox ul li.memPw{margin-top:7px;}
+	div.popLoginForm .loginForm .inputBox ul li input{padding:2px;width:160px;}
+	div.popLoginForm .loginForm .btnWrap{float:left;}
+	div.popLoginForm .loginForm .btnWrap a.btnLogin{display:inline-block;*display:inline;*zoom:1;margin-left:10px;padding-top:20px;width:75px;height:30px;text-align:center;font-weight:bold;color:#FFF;background:#BBB;border:1px solid #CCC;}
+	div.popLoginForm .loginForm .memBtnWrap{margin-top:15px;text-align:center;}
+
+	div.popComtChkForm{padding:20px 10px;width:130px;border:1px solid #d9d9d9;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+	div.popComtChkForm .chkTxtBox{text-align:center;letter-spacing:-0.8px;line-height:18px;}
+	div.popComtChkForm .btnWrap{margin-top:10px;text-align:center;}
+	div.popComtChkForm .btnWrap a.btnLike,
+	div.popComtChkForm .btnWrap a.btnBad,
+	div.popComtChkForm .btnWrap a.btnCancel{display:inline-block;*display:inline;*zoom:1;padding:3px 8px 2px;letter-spacing:-1px;color:#777;border:1px solid #d9d9d9;}
+	div.popComtChkForm .btnWrap a.btnCancel{margin-left:6px;}
+
+	div.list-paginate{padding:10px 0;}
+/*
+
+
+table.tableForm tr.writerInfo th{width:10%;}
+
+table.tableForm td input{padding:3px;}
+table.tableForm td.bbsExplain{padding: 15px 10px;border-left:none;border-right:none;}
+table.tableForm td span.boardTxtInfo{display:block;margin-top:5px;color:#6c6c6c;font-size:11px;letter-spacing:-1px;vertical-align:top;}
+
+/**(3) 게시판 검색****/
+div.boardTopSearchWrap{float:right;padding:1px;border:1px solid #e6e6e6;}
+div.boardTopSearchWrap input,
+div.boardTopSearchWrap select{border:none;}
+div.boardTopSearchWrap input{width:150px;padding:4px;border-left:1px solid #e6e6e6;vertical-align:middle;}
+div.boardTopSearchWrap a.btnBoardSearch{display:inline-block;*zoom:1;*display:inline;width:22px;height:22px;background: url(/himg/common/ico_search.png) left top no-repeat;vertical-align:middle;}
+div.boardTopSearchWrap a.btnBoardSearch strong{display:none;}
+
+
+/**(4) 페이지 ****/
+.paginate{padding: 10px;text-align:center;}
+.paginate_left{float:left;margin-top:10px;}
+.paginate  span.chkPage, .paginate a span.pageCnt,
+.paginate_left  span.chkPage, .paginate_left a span.pageCnt{display:inline-block;*zoom:1;*display:inline;width:22px;padding:4px 0;text-align:center;border:1px solid #ccc;vertical-align:top;}
+.paginate span.chkPage,
+.paginate_left  span.chkPage{color:#f34747;border:1px solid #f34747;}
+.paginate a.btn_board_prev, .paginate a.btn_board_next,
+.paginate_left  a.btn_board_prev, .paginate_left a.btn_board_next{display:inline-block;*zoom:1;*display:inline;padding:4px 10px;text-align:center;border:1px solid #ccc;vertical-align:top;}
+
+
+/**(5) 댓글 ****/
+div.commentTableForm{margin-top:20px;padding:7px 0 20px;border-top:2px solid #bdbdbd;}
+div.commentTableForm textarea.commentWriteForm{float:left;width:84%;height:64px;padding:1%;border:1px solid #ccc;overflow:hidden;}
+div.commentTableForm  a.btnWriteComment{
+										float:left;width:13%;
+										height:45px;
+										padding-top:35px;
+										text-align:center;
+										color:#FFF;
+										border:1px solid #ccc;
+										border-right:1px solid #a6a6a6;
+										border-bottom:1px solid #a6a6a6;
+										background: url(/himg/board/A0002/bg_comment_write.gif) left top;
+										background-size : 100% 100%;
+										}
+div.commentTableForm  ul.nonMember  li{display:inline-block;*zoom:1;*display:inline;margin-right:7px;padding-bottom:10px;}
+div.commentTableForm  ul.nonMember  li label{display:inline-block;*zoom:1;*display:inline;padding-right:5px;color:#4b4b4b;}
+div.commentTableForm  ul.nonMember  li input{padding:3px;border:1px solid #ccc;}
+
+/*코멘트 리스트*/
+#commentListArea{border-top:1px solid #e5e5e5;}
+#commentListArea .commentListView{padding: 15px 0;border-bottom:1px solid #e5e5e5;}
+#commentListArea .commentListView ul li{padding-bottom:3px;}
+#commentListArea .commentListView ul li.commentTitle{padding-top:5px;line-height:18px;color:#414141;}
+#commentListArea .commentListView ul li span.date{color:#878787;}
+#commentListArea .commentListView .commentBtnWrap{margin-top:8px;}
+
+div.commentListArea{border-bottom:1px solid #bdbdbd;}
+
+/***(6) 블러그형 **********/
+.blogListWrap .titWrap span.title{display:block;color:#000;font-size:14px;font-weight:bold;}
+.blogListWrap .titWrap span.date{display:block;padding: 10px 0;color:#808080;}
+.blogListWrap .contentWrap{margin-bottom:20px;padding:20px 0;border-bottom:1px solid #dddddd;}
+.blogListWrap .contentWrap .snsIconWrap{margin-top:20px;}
+
+
+/** (7) 갤러리 *****/
+.galleryWraper table{width:100%;border-top:1px solid #e5e5e5;}
+
+
+
+/* 리뷰테이블 */
+.tableGrayList table{width:100%;border-top:2px solid #dddddd;}
+.tableGrayList table th{height:22px;padding: 2px 0;font-weight:normal;border:1px solid #dddddd;background: #f2f2f2;}
+.tableGrayList table td{height:22px;padding: 4px 0;text-align:center;border-bottom:1px solid #dddddd;}
+.tableGrayList table td.title{padding-left:10px;text-align:left;}
+
+
+/***** 리뷰게시판 *****/
+.tableGrayList table td.title img.prodImg{float:left;width:50px;height:60px;}
+.tableGrayList table td.title ul{float:left;margin-left:15px;}
+.tableGrayList table td.title ul li{padding-bottom: 5px;}
+.tableGrayList table td.title ul li.txtReview{line-height:16px;}
+.tableGrayList table td.title ul li.txtDateGray{color:#a7a7a7}
+.tableGrayList table td.cntStar img{margin-right:-4px;}
+
+
+/***** 비밀글 비밀번호 입력 팝업 *****/
+#passwordForm{padding:10px 20px 20px 20px;border:5px solid #ddd;background:#fff;}
+#passwordForm ul li{margin-top:10px;}
+#passwordForm ul li.title{font-weight:bold;}
+#passwordForm ul li a{padding:5px;width:40px;text-align:center;display:inline-block;*zoom:1;*display:inline;font-weight:bold;color:#fff;background:#545454;}
+#passwordForm ul li a.btnLayerOk{}
+
+/*** (0) 버튼 및 정렬/기타 공통********/
+a.btn_board_write,
+a.btn_board_ok{display:inline-block;*zoom:1;*display:inline;
+							padding:5px 15px;color:#FFF;
+							border:1px solid #a4a4a4;
+							background: url(/himg/board/A0002/bg_th.jpg) left top no-repeat;
+							background-size : 100% 100%;
+							-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;
+							zoom:1;
+							}
+a.btn_board_cancel, 
+a.btn_board_reply, 
+a.btn_board_modify, 
+a.btn_board_delete, 
+a.btn_board_list{
+							display:inline-block;*zoom:1;*display:inline;
+							padding:5px 15px;color:#FFF;
+							border:1px solid #a4a4a4;
+							background: url(/himg/board/A0002/bg_th.jpg) left top no-repeat;
+							background-size : 100% 100%;
+							-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;zoom:1;
+							}
+a.btn_board_write:hover{background: url(/himg/board/A0002/bg_th_on.gif) right top no-repeat;}
+a.btn_board_cancel:hover, 
+a.btn_board_reply:hover, 
+a.btn_board_modify:hover, 
+a.btn_board_delete:hover, 
+a.btn_board_list:hover{background: url(/himg/board/A0002/bg_th_on.gif) left top no-repeat;}
+
+a.btnCommentModify, a.btnCommentDel{display:inline-block;*zoom:1;*display:inline;padding: 1px 4px;color:#727272;border:1px solid #ccd0d1;}
+
+.btnRight{margin-top:10px;padding:0;text-align:right;}
+.btnCenter{margin-top:10px;padding:0;text-align:center;}

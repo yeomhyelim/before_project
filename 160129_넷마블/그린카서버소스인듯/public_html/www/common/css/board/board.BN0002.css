@@ -1,0 +1,50 @@
+/* 게시판 */
+/* Color: Gray(기본형 게시판) - 디자인 A타입은 검정, 그레이 스타일*/
+div.tableList table, div.tableForm table{width:100%;}
+
+
+
+.tableList table th{padding: 7px 0 7px;color:#FFF;background: url(/himg/board/A0002/bg_th.jpg) right top no-repeat;}
+.tableList table td{height:22px;padding: 5px 0;text-align:center;border-bottom:1px solid #e4e4e4;}
+.tableList table td.title{text-align:left;padding-left:10px;}
+.tableList table td.title a:hover{text-decoration:underline;}
+
+
+.tableForm table th.viewTitle{height:14px;padding: 7px 0 7px;margin-bottom:3px;text-align:center;color:#FFF;background: url(/himg/board/A0002/bg_th.jpg) right top no-repeat;}
+.tableForm table th{width:80px;padding: 7px 0;color:#898989;font-size:11px;letter-spacing:-1px;border:1px solid #e1e1e1;background:#f8f8f8;}
+.tableForm table td{padding:5px 10px;color:#333333;border:1px solid #e1e1e1;}
+.tableForm table td.bbsExplain{padding: 15px 10px;border-left:none;border-right:none;}
+
+
+
+
+/***** 검색 *****/
+div.bbsSearchWrap{padding:20px 10px;text-align:center;border:1px solid #e1e1e1;background:#f8f8f8;}
+
+
+
+
+
+
+
+
+.buttonWrapRight{padding:10px 0 50px;text-align:right;}
+.buttonWrapCenter{padding:10px 0 50px;text-align:center;}
+
+
+
+/* 리뷰테이블 */
+/* Color: Gray*/
+.tableGrayList table{width:100%;border-top:2px solid #dddddd;}
+.tableGrayList table th{height:22px;padding: 2px 0;font-weight:normal;border:1px solid #dddddd;background: #f2f2f2;}
+.tableGrayList table td{height:22px;padding: 4px 0;text-align:center;border-bottom:1px solid #dddddd;}
+.tableGrayList table td.title{padding-left:10px;text-align:left;}
+
+
+/***** 리뷰게시판 *****/
+.tableGrayList table td.title img.prodImg{float:left;width:50px;height:60px;}
+.tableGrayList table td.title ul{float:left;margin-left:15px;}
+.tableGrayList table td.title ul li{padding-bottom: 5px;}
+.tableGrayList table td.title ul li.txtReview{line-height:16px;}
+.tableGrayList table td.title ul li.txtDateGray{color:#a7a7a7}
+.tableGrayList table td.cntStar img{margin-right:-4px;}

@@ -1,0 +1,44 @@
+<html>
+  <title>
+  <!-- 메일 제목 -->
+    {{__사이트이름__}} - 고객님께 드리는 최고의 {{__사이트이름__}}입니다.
+  <!-- 메일 제목 -->
+  </title>
+  <meta http-equiv="Content-Type" content="application/xhtml xml; charset=utf-8" />
+  <body>
+  <!-- 메일 본문 -->
+  <div style="padding:20px;">
+	<span><em style='font-style:normal;font-weight:bold;font-size:11px;'>{{__주문번호__}}</em>
+	<span style='display:block;'>{{__주문상태표시__}}</span>	
+	<div style="margin-top:20px;">
+		<table style="width:100%;margin:0 auto;border-collapse: collapse;">
+			<colgroup>
+				<col style="width:100px;"/>
+				<col/>
+			</colgroup>
+			<tr>
+				<th style="padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;">주문번호</th>
+				<td style="padding: 5px;text-align:left;border:1px solid #c5c5c5">{{__주문번호__}}</td>
+			</tr>
+			<tr>
+				<th style="padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;">상품명</th>
+				<td style="padding: 5px;text-align:left;border:1px solid #c5c5c5">{{__주문상품명__}}</td>
+			</tr>
+			<tr>
+				<th style="padding: 5px;border:1px solid #c5c5c5;background: #f7f7f7;">취소일자></th>
+				<td style="padding: 5px;text-align:left;border:1px solid #c5c5c5">{{__주문취소일자__}}</td>
+			</tr>
+		</table>
+	</div>
+  </div>
+  <!-- 메일 본문 -->
+  <!-- 메일 하단 -->
+  <div style="padding:10px;border-top:1px solid  #e5e5e5;">
+    상호:(주)다인소재 /경기도 성남시 분당구 판교로 700 E-508(분당테크노파크) / 대표: 최태호<br/>
+    사업자번호: 129-81-64930 / 통신판매업신고: 2004 경기성남 746호 / 대표전화: 031-705-1700 <br/>
+    개인정보관리책임: 전장영 (webmaster@sntplus.co.kr )<br/>
+    Copyright ⓒ 2015 http;//www.136601.com All rights reserved.
+  </div>
+  <!-- 메일 하단 -->
+  </body>
+</html>

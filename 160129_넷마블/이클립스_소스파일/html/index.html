@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NERP - HTML List</title>
+<script type="text/javascript">
+	// 라인 배경색바꾸기
+	function rowHilite(name) {
+		var elem = "tr"; // Object you want to affect : TR or TD
+		var rClick;
+		if (document.getElementsByTagName) {
+			var el = document.getElementsByTagName(elem);
+			for (var i = 0; i < el.length; i++) {
+				if (el[i].childNodes[0].tagName != "th"
+						&& el[i].parentNode.parentNode.className.indexOf(name) != -1) {
+					if (i % 2 == 1) {
+						el[i].className = "on";
+						el[i].oldClassName = "on";
+						el[i].onmouseout = function() {
+							this.className = "on";
+						}
+					} else {
+						el[i].className = "off";
+						el[i].oldClassName = "off";
+						el[i].onmouseout = function() {
+							this.className = "off";
+						}
+					}
+					el[i].onmouseover = function() {
+						if (this.className == this.oldClassName) {
+							this.className = "hover";
+						}
+						if (this.onmouseout == null
+								&& this.className != "click") {
+							this.onmouseout = function() {
+								this.className = this.oldClassName;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+</script>
+
+<style type="text/css">
+	* {margin:0; padding:0;}
+	body {width:100%; height:100%; font-size:12px; color:#666; font-family:dottum,'돋움',verdana; padding-bottom:50px;}
+	.wrap {padding:0 20px 25px 20px;}
+	ul {list-style:none;}
+	h1 {display:block; font-size:1.7em; padding:20px 0 20px 10px; background:#eee; border-bottom:1px solid #555; color:#464c5d; margin-bottom:25px; text-align:center;}
+	.path {width:100%; border-collapse:collapse; margin-top:10px;}
+	.path tr th {background:#444; color:#fff; padding:13px 0; border:1px solid #ddd; border-bottom:1px solid #ddd; font-size:13px; font-weight:normal;}
+	.path tr th.depth1 {background:#e1d7be; color:#666;}
+	.path tr th.depth2 {background:#ccc0da; color:#666;}
+	.path tr th.depth3 {background:#fac090; color:#666;}
+	.path tr th.depth4 {background:#ccffcc; color:#666;}
+	.path tr th.depth5 {background:#c5be97; color:#666;}
+	.path tr th.depth6 {background:#e6b9b8; color:#666;}
+	.path tr th.depth7 {background:#d8d8d8; color:#666;}
+	.path tr th.depth8 {background:#95b7d2; color:#666;}
+	.path tr th.depth9 {background:#c6c0b6; color:#666}
+	.path tr th.depth10 {background:#b3efea; color:#666}
+	.path tr th.depth11 {background:#e8d57c; color:#666}
+	.path tr th.depth19 {background:#e8d57c; color:#666}
+	.path tr th.depth21 {background:#d7aa3d; color:#666}
+	.path tr th.depth22 {background:#ffcccc; color:#666}
+	.path tr th.depth24 {background:#a3dadf; color:#666}
+	.path tr th.headlink {background:#f3e2bb; color:#666;}
+	.path tr th.complete {background:#cc8370;}
+	.path tr th.guide {background:#0e8593;}
+	.path tr td {text-align:center; border:1px solid #ddd; border-bottom:1px solid #ddd; padding:6px; font-size:13px;}
+	.path tr td.l {text-align:left; padding-left:15px;}
+	.path tr td.url {text-align:left;}
+	.path tr td.print a {color:red; font-weight:bold;}
+	.path tr td.ing {color:#e25737;}
+	.path tr td.defer {color:#3d8e9a;}
+	.path tr td.update {color:#e96565; font-weight:bold;}
+	.path .on {background-color:#fff;}
+	.path .off {background-color:#f9f9f9;}
+	.path .hover {background-color:#fcf9e2;}
+	.update {text-align:right; padding-right:5px;}
+	.lang {text-align:right; margin-bottom:5px; padding-right:2px;}
+	.lang a {color:#549fbf; font-size:1.2em; text-decoration:none;}
+	.lang a:hover {color:#549fbf; text-decoration:underline;}
+	.footer {*zoom:1; padding:0 23px; margin-bottom:12px;}
+	.footer:after {content:""; display:block; clear:both;}
+	.footer span {text-decoration:underline; background:#f6f7f1;}
+	.footer em {font-family:verdana; margin-right:10px; font-style:normal; text-decoration:none; color:#c98571; letter-spacing:-1px;}
+	select {font-family:Tahoma; font-size:11px;}
+</style>
+
+
+
+<script type="text/javascript">
+	function lastModified() {
+		var moldiTime = new Date(document.lastModified);
+		var year = moldiTime.getYear();
+		var month = moldiTime.getMonth() + 1;
+		var date = moldiTime.getDate();
+		var time = moldiTime.getHours();
+		var minutes = moldiTime.getMinutes();
+		if (navigator.userAgent.indexOf('MSIE') == -1)
+			year = 1900 + year;
+		document.write(year + '년 ' + month + '월 ' + date + '일 ' + time + '시 '
+				+ minutes + '분');
+	}
+</script>
+
+</head>
+
+<body>
+
+	<h1>NERP - HTML List</h1>
+	<div class="footer">
+		<p class="update">
+			Last Updated : <em><script type="text/javascript">
+				lastModified();
+			</script></em><span>by
+				염혜림 대리</span>
+		</p>
+	</div>
+	<div class="wrap">
+
+		<p>
+			<a href="/sample/sampleMain.jsp" target="_blank">* 샘플예제</a>
+			<a href="/main.do" target="_blank" style="display:inline-block; margin-left:10px;">* 메인으로 가기</a>
+		</p>
+
+		<table class="path" style="margin-top: 10px;">
+			<colgroup>
+				<col width="5%" />
+				<col width="15%" />
+				<col width="15%" />
+				<col width="15%" />
+				<col width="10%" />
+				<col width="10%" />
+				<col width="10%" />
+				<col width="10%" />
+				<col width="10%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">1 Depth</th>
+					<th scope="col">2 Depth</th>
+					<th scope="col">3 Depth</th>
+					<th scope="col">URL</th>
+					<th scope="col">코딩수정</th>
+					<th scope="col">jsp담당자</th>
+
+					<th scope="col">jsp</th>
+					<th scope="col">jsp완료</th>
+
+					<th scope="col">Comment</th>
+				</tr>
+			</thead>
+			<tbody>
+
+
+				<tr>
+					<th scope="col" class="headlink">순서확인</th>
+					<td>순서확인</td>
+					<td>순서확인</td>
+					<td class="url"><a href="/html/portal/test.html" target="_blank">순서확인</a></td>
+					<td>2015-11-26</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<th scope="col" rowspan="5" class="headlink">메인</th>
+					<td rowspan="5">메인</td>
+					<td rowspan="5">메인</td>
+					<td class="url"><a href="/html/main/main.html" target="_blank">erp 메인</a></td>
+					<td>2015-11-10</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/main/main_cp.html" target="_blank">커뮤니케이션 메인</a></td>
+					<td>2015-11-10</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/sub.html" target="_blank">전체 erp 메인</a></td>
+					<td>2015-11-10</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/sub2.html" target="_blank">전체 커뮤니케이션 메인(자회사)</a></td>
+					<td>2015-11-10</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/sub3.html" target="_blank">전체 커뮤니케이션 메인(개발사)</a></td>
+					<td>2015-11-10</td>
+					<td>이명수</td>
+					<td><a href="/main/mainAdjustStatPage.do" target="_blank">전체 커뮤니케이션 메인(개발사)</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th scope="col" class="headlink">로딩중 </th>
+					<td>로딩중</td>
+					<td>로딩중</td>
+					<td class="url"><a href="/html/loding/loding.html" target="_blank">로딩중</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<th scope="col" class="headlink">help</th>
+					<td>help</td>
+					<td>help</td>
+					<td class="url"><a href="/html/popup/pop_help_view.html" target="_blank">도움이 필요하나요~</a></td>
+					<td>2016-01-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>				
+				
+				<tr>
+					<th scope="col" rowspan="3" class="headlink">세금계산서</th>
+					<td rowspan="3">세금계산서</td>
+					<td rowspan="3">세금계산서</td>
+					<td class="url"><a href="/html/popup/pop_tax_invoice_1.html" target="_blank">위수탁전자세금계산서</a></td>
+					<td>2016-01-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/popup/pop_tax_invoice_2.html" target="_blank">매출세금계산서</a></td>
+					<td>2016-01-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/popup/pop_tax_invoice_3.html" target="_blank">매입세금계산서</a></td>
+					<td>2016-01-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<th scope="col" rowspan="24" class="headlink">팝업</th>
+					<td rowspan="24">팝업</td>
+					<td>팝업</td>
+					<td class="url"><a
+						href="/html/expense/pop_department_search.html" target="_blank">팝업(w:635px)
+							작은사이즈</a></td>
+					<td class="l">150806_팝업_닫기버튼 추가</td>
+					<td>이재욱<br>
+					</td>
+
+					<td><a href="/cmmn/review.do" target="_blank">팝업 통합페이지</a> <br>
+					</td>
+					<td>작업중<br>
+					</td>
+					<td>.<br>
+					</td>
+				</tr>
+
+				<tr>
+					<td>팝업</td>
+					<td class="url"><a href="/html/expense/pop_statement_search.html" target="_blank">팝업(w:1075px) 큰사이즈</a></td>
+					<td class="l">150806_팝업_닫기버튼 추가</td>
+					<td>이재욱</td>
+					<td><a href="/cmmn/cmmnCustomerPop.do" target="_blank">거래처 조회 팝업</a> <br></td>
+					<td>작업중</td>
+					<td>거래처디비없읍</td>
+				</tr>
+
+
+				<tr>
+					<td>(pop) 예정원가 마스터 등록</td>
+					<td class="url"><a
+						href="/html/sales_admin/pop_cost_master.html" target="_blank">(pop)
+							예정원가 마스터 등록</a></td>
+					<td>2015-09-01</td>
+					<td>임동천</td>
+					<td><a href="/exps/expsEstmCostMstPop.do" target="_blank">(pop) 예정원가 마스터 등록</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>팝업</td>
+					<td class="url"><a href="/html/expense/pop_semple.html"
+						target="_blank">(pop) semple</a></td>
+					<td>2015-09-04</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>선급금정산대상 조회</td>
+					<td class="url"><a href="/html/popup/pop_advanced_pay.html" target="_blank">(pop) 선급금 요청번호 </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnAdvanApplTrgtPop.do" target="_blank">(pop) 선급금 요청번호</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>수정발행정보입력</td>
+					<td class="url"><a href="/html/popup/pop_common_modify.html" target="_blank">(pop) 수정발행정보입력  </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmEditIssuInfoReqPop.do" target="_blank">(pop) 수정발행정보입력</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>정기지급마스터 정보</td>
+					<td class="url"><a href="/html/popup/pop_master_info.html" target="_blank">(pop) 정기지급마스터 정보 </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnRglrPayMasterPop.do" target="_blank">(pop) 정기지급마스터 정보</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>구매(IT,SW,도서,경품) 요청정보</td>
+					<td class="url"><a href="/html/popup/pop_buy_request_1.html" target="_blank">(pop) 구매(IT,SW,도서,경품) 요청정보</a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnPchsReqInfoPop.do" target="_blank">(pop) 구매(IT,SW,도서,경품) 요청정보</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>구매(소모품) 요청정보</td>
+					<td class="url"><a href="/html/popup/pop_buy_request_2.html" target="_blank">(pop) 구매(소모품) 요청정보 </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnPchsSupplInfoPop.do" target="_blank">(pop) 구매(소모품) 요청정보</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>세금계산서수신자</td>
+					<td class="url"><a href="/html/popup/pop_tax_invoice_addr.html" target="_blank">(pop) 세금계산서수신자 </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnTaxInvcRcvrPop.do" target="_blank">(pop) 세금계산서수신자</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>경조사 신청 번호 정보</td>
+					<td class="url"><a href="/html/popup/pop_family_event.html" target="_blank">(pop) 경조사 신청 번호 정보 </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnFamilyEventReqInfoPop.do" target="_blank">(pop) 경조사 신청 번호 정보</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>출장 신청 정보</td>
+					<td class="url"><a href="/html/popup/pop_trip_request.html" target="_blank">(pop) 출장 신청 정보 </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnTripReqinfoPop.do" target="_blank">(pop) 출장 신청 정보</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+
+				<tr>
+					<td>화면별 계정관리 복사</td>
+					<td class="url"><a href="/html/popup/pop_screen_copy.html" target="_blank">(pop) 화면별 계정관리 복사</a></td>
+					<td>2015-09-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>교통비 내역등록</td>
+					<td class="url"><a href="/html/popup/pop_traffic_reg.html" target="_blank">(pop) 교통비 내역등록</a></td>
+					<td>2015-09-21</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>회사조회</td>
+					<td class="url"><a href="/html/popup/pop_customer_search.html" target="_blank">(pop) 회사조회</a></td>
+					<td>2015-10-21</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>소득세법</td>
+					<td class="url"><a href="/html/popup/pop_receipt_print.html" target="_blank"> (pop) 소득세법 </a></td>
+					<td>2015-10-27</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>전표조회</td>
+					<td class="url"><a href="/html/popup/pop_statement_search.html" target="_blank">(pop) 전표조회</a></td>
+					<td>2015-09-07</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>증빙</td>
+					<td class="url"><a href="/html/popup/pop_evidence.html" target="_blank">(pop) 증빙</a></td>
+					<td>2015-09-07</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>매출 세금계산서 조회</td>
+					<td class="url"><a href="/html/popup/pop_sales_tax.html" target="_blank">(pop) 매출 세금계산서 조회</a></td>
+					<td>2015-09-29</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>매입 세금계산서 조회</td>
+					<td class="url"><a href="/html/popup/pop_purchase_tax.html" target="_blank">(pop) 매입 세금계산서 조회</a></td>
+					<td>2015-09-29</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>예산신청 목록조회</td>
+					<td class="url"><a href="/html/popup/pop_budget_app.html" target="_blank">(pop) 예산신청 목록조회</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>퇴직 대상자 선택</td>
+					<td class="url"><a href="/html/popup/pop_retirement.html" target="_blank">(pop) 퇴직 대상자 선택</a></td>
+					<td>2015-11-27</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>전자결재번호 선택</td>
+					<td class="url"><a href="/html/popup/pop_electronic_set.html" target="_blank">(pop) 전자결재번호 선택</a></td>
+					<td>2015-11-30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td>예외국가선택</td>
+					<td class="url"><a href="/html/popup/pop_exception_nation.html" target="_blank">(pop) 예외국가선택</a></td>
+					<td>2015-11-30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<th scope="col" rowspan="78" class="depth2">품의서</th>
+					<td>기준정보</td>
+					<td>프로젝트 관리</td>
+					<td class="url"><a href="/html/round_robin/form_project_reg.html" target="_blank">등록</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td rowspan="18">계약관리</td>
+					<td rowspan="7">계약품의 등록</td>
+					<td class="url print"><a href="/html/round_robin/form_contract_1.html" target="_blank">(print) 계약 품의서(퍼블리싱)</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_contract_2.html" target="_blank">계약 품의서(해외수출)</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_contract_share.html" target="_blank">계약 품의서(지분투자)</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_contract_fund.html" target="_blank">계약 품의서(펀드투자)</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_contract_etc_1.html" target="_blank">계약 품의서(기타수익)</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_contract_etc_2.html" target="_blank">계약 품의서(기타매입)</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_invest_etc.html" target="_blank">계약 품의서(투자/기타)</a></td>
+					<td>2015-11-30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_contract_deposit_ko.html" target="_blank">계약지급(입금)요청 - 국내</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_contract_deposit_foreign.html" target="_blank">계약지급(입금)요청 - 해외</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_contract_deposit_export_1.html" target="_blank">계약지급(입금)요청 - 수출1</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_contract_deposit_export_2.html" target="_blank">계약지급(입금)요청 - 수출2</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_contract_deposit_invest.html" target="_blank">계약지급(입금)요청 - 투자</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url print" colspan="2"><a href="/html/round_robin/form_print_current_status.html" target="_blank">(print) 계약현황조회</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_service_close.html" target="_blank">서비스종료</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url" colspan="2"><a href="/html/round_robin/form_service_cancel.html" target="_blank">계약해지</a></td>
+					<td>2015-11-11</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+
+				<tr>
+					<td rowspan="3">계약 신청</td>
+					<td class="url"><a href="/html/round_robin/form_draufgabe_1.html" target="_blank">지급신청</a></td>
+					<td>2015-11-03</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_draufgabe_2.html" target="_blank">입금신청</a></td>
+					<td>2015-11-03</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_license.html" target="_blank">라이선스</a></td>
+					<td>2015-11-04</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="29">매출/정산관리</td>
+					<td rowspan="5">세무관리(공통)</td>
+					<td class="url"><a href="/html/round_robin/form_tax_view.html" target="_blank">인보이스_기본</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_tax_view.html" target="_blank">인보이스_통화추가</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_tax_view.html" target="_blank">인보이스_통화추가_1</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_tax_view.html" target="_blank">인보이스_원천세표기</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_tax_view.html" target="_blank">인보이스_원천세표기_1</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="5">매출신청/확정신청</td>
+					<td class="url"><a href="/html/round_robin/form_billing_confirm.html" target="_blank">빌링</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_internet_cafe.html" target="_blank">PC방</a></td>
+					<td>2015-11-04</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_moblie_profit.html" target="_blank">모바일</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_sales_general_etc.html" target="_blank">기타일반</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_other_charge.html" target="_blank">기타청구</a></td>
+					<td>2015-11-04</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>매출신청/예정신청</td>
+					<td class="url"><a href="/html/round_robin/form_moblie_sales.html" target="_blank">모바일</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td rowspan="2">환불신청</td>
+					<td class="url"><a href="/html/round_robin/form_onlinel_refund.html" target="_blank">온라인</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_pc_refund.html" target="_blank">PC</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="6">수익정산신청/확정신청</td>
+					<td class="url"><a href="/html/round_robin/form_profit_billing.html" target="_blank">빌링</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_profit_internet_cafe.html" target="_blank">PC방</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_channeling.html" target="_blank">채널링</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_profit_export.html" target="_blank">수출</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_profit_general_etc.html" target="_blank">기타일반</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_profit_mobile.html" target="_blank">모바일</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">수익정산신청/예정신청</td>
+					<td class="url"><a href="/html/round_robin/form_sch_export.html" target="_blank">수출</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_sch_mobile.html"  target="_blank">모바일</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>PG정산 신청</td>
+					<td class="url"><a href="/html/round_robin/form_pg.html" target="_blank">PG수수료</a></td>
+					<td>2015-11-09</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">채권 및 채무관리</td>
+					<td class="url"><a href="/html/round_robin/form_corporate.html" target="_blank">연체채권관리</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_exception_charge.html" target="_blank">예외지급신청</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="5">매출 및 정산 리포트</td>
+					<td class="url print"><a href="/html/round_robin/form_print_cal.html" target="_blank">(print) 정산서_국내</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_foreign_cal.html" target="_blank">(print) 정산서_해외</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<!--
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_sales_total.html"  target="_blank">(print) 매출 및 원가 비용 조회 리포트</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				-->
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_week_month.html"  target="_blank">(print) 매출보고서_주간,월간</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a target="_blank">MG,기타비용 상계처리 내역</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="round_robin/form_sales_report.html" target="_blank">매출 및 정산 비용 리포트</a></td>
+					<td>2016-01-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td rowspan="13">비용관리</td>
+					<td rowspan="3">비용신청</td>
+					<td class="url"><a href="/html/round_robin/form_expense_general.html" target="_blank">일반경비신청(일반, 전자세금계산서,원천세,선급금)</a></td>
+					<td>2015-11-09</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_general_advanced_pay.html" target="_blank">일반경비신청(선급금정산)</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_complex_app.html" target="_blank">복합처리신청</a></td>
+					<td>2015-11-13</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">법인카드 정산 신청</td>
+					<td class="url"><a href="/html/round_robin/form_debenture.html" target="_blank">법인카드 정산 신청</a></td>
+					<td>2015-10-29</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_budget_modify.html" target="_blank">예산조정신청서</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">출장비 관리</td>
+					<td class="url"><a href="/html/round_robin/form_trip.html" target="_blank">출장 품의 등록</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_trip_cal.html" target="_blank">출장비 정산품의</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>비용품의 등록</td>
+					<td class="url"><a href="/html/round_robin/form_marketing.html" target="_blank">마케팅 품의 등록</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>공통비</td>
+					<td class="url"><a href="/html/round_robin/form_common.html" target="_blank">배부처리</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="4">인건비 신청</td>
+					<td class="url"><a href="/html/round_robin/form_labor_cost.html" target="_blank">급여 신청</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_retirement_pay.html" target="_blank">퇴직급 신청</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_retirement_pay_inc.html" target="_blank">예정원가 신청</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a target="_blank">사내복지기금 신청</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="6">총무관리</td>
+					<td rowspan="2">총무품의등록</td>
+					<td class="url"><a href="/html/round_robin/form_general_affairs_4.html" target="_blank">구매</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_general_affairs_5.html" target="_blank">경조사 정산품의서</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td rowspan="4">총무정산신청</td>
+					<td class="url"><a href="/html/round_robin/form_general_affairs_1.html" target="_blank">퀵서비스</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a target="_blank">국제택배</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a target="_blank">등기우편</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/round_robin/form_family_event.html" target="_blank">경조금</a></td>
+					<td>2015-11-05</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="11">자회사</td>
+					<td rowspan="2">지분투자내역</td>
+					<td class="url print"><a href="/html/round_robin/form_print_invest_1.html" target="_blank">(print) 지분투자내역</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_invest_2.html" target="_blank">(print) 전환투자내역</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">자회사현황</td>
+					<td class="url print"><a href="/html/round_robin/form_print_state_1.html" target="_blank">(print) 회사일반현황등록</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_state_2.html" target="_blank">(print) 자회사투자이력등록</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="3">자회사재무제표</td>
+					<td class="url print"><a href="/html/round_robin/form_print_finance_1.html" target="_blank">(print) 자회사재무상태표 - 약식</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_finance_2.html" target="_blank">(print) 자회사재무상태표 - 연결</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_income.html" target="_blank">(print) 자회사손익계산서</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td rowspan="2">넷마블연결재무상태표</td>
+					<td class="url print"><a href="/html/round_robin/form_print_nmb_finance_1.html" target="_blank">(print) 넷마블연결재무상태표 - 약식</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url print"><a href="/html/round_robin/form_print_nmb_finance_2.html" target="_blank">(print) 넷마블연결재무상태표 - 연결</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>넷마블연결손익계산서</td>
+					<td class="url print"><a href="/html/round_robin/form_print_nmb_income.html" target="_blank">(print) 넷마블연결손익계산서</a></td>
+					<td>2015-11-16</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>지분투자내역</td>
+					<td class="url print"><a href="/html/round_robin/form_print_company.html" target="_blank">(print) 자회사현황</a></td>
+					<td>2015-11-23</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<th scope="col" class="headlink">ERP현황</th>
+					<td>ERP현황</td>
+					<td>ERP현황</td>
+					<td class="url"><a href="/html/erp/erp_tab_1.html"
+						target="_blank">신청기준/품의기준/ERP번호기준</a></td>
+					<td>2015-08-25</td>
+					<td>전근영</td>
+					<td><a href="/exps/expsErpListPage.do" target="_blank">ERP 현황</a>
+						<br></td>
+					<td>작업중</td>
+					<td>전자결재번호 팝업없음<br>ERP번호조회팝업없음<br>사용자조회팝업기능 수정중
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="col" rowspan="6" class="headlink">기준정보</th>
+					<td rowspan="3">거래처관리</td>
+					<td>등록/조회/빌링거래처</td>
+					<td class="url"><a href="/html/standard/customer_tab_1_1.html"
+						target="_blank">등록 (국가가 한국인경우)_(탭)</a></td>
+					<td>2015-08-24</td>
+					<td>정한성</td>
+					<td><a href="/cmmn/cmmnCustomerMng.do" target="_blank">거래처
+							관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>등록</td>
+					<td class="url"><a href="/html/standard/customer_tab_1_2.html"
+						target="_blank">등록 (국가가 해외인경우)_(탭1_2)</a></td>
+					<td>2015-08-24</td>
+					<td>정한성</td>
+					<td><a href="/cmmn/cmmnCustomerMng.do" target="_blank">거래처
+							관리</a> <br></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>비용 기준정보</td>
+					<td class="url"><a href="/html/standard/expense_tab_1.html"
+						target="_blank">주유비 기준관리/출장비 감액기준/국가별 원천세율관리/세금계산서유형관리</a></td>
+					<td>2015-09-14</td>
+					<td>정한성</td>
+					<td><a href="/cmmn/cmmnExpenseStandardMng.do" target="_blank">비용
+							기준정보</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>매출기준관리</td>
+					<td>매출기준관리</td>
+					<td class="url"><a href="/html/standard/standard_tab_1.html"
+						target="_blank">애플기준관리/국가별 모바일 세율관리/모바일 게임코드관리/해외법인 국가관리/애플매출인식기준관리</a></td>
+					<td>2015-09-25</td>
+					<td>정한성</td>
+					<td><a href="/cmmn/cmmnSalesStandardMng.do" target="_blank">매출
+							기준관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>정산기준관리</td>
+					<td>정산기준관리</td>
+					<td class="url"><a href="/html/standard/calculate_tab_1.html" target="_blank">정산조건 템플릿등록/정산조건등록/정산조건 적용기준등록/정산조건 내역조회/정산연계 프로젝트 등록/PG사 마스터관리</a></td>
+					<td>2015-10-05</td>
+					<td>김경진</td>
+					<td><a href="/sttl/sttlCalcStddMngPage.do" target="_blank">정산	기준관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>계정관리</td>
+					<td>계정관리</td>
+					<td class="url"><a href="/html/standard/account_tab_1.html"
+						target="_blank">계정관리/화면별 계정지정/화면별 분개유형지정</a></td>
+					<td>2015-09-15</td>
+					<td>정한성</td>
+					<td><a href="/cmmn/cmmnAccountMng.do" target="_blank">계정관리</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<th scope="col" rowspan="21" class="headlink">계약관리</th>
+					<td rowspan="18">계약관리</td>
+					<td rowspan="18">계약관리</td>
+					<td class="url"><a href="/html/contract/contract_1.html" target="_blank">계약 품의 등록 - 퍼블리싱</a></td>
+					<td>2015-10-23</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=10" target="_blank">계약 품의 등록 - 퍼블리싱</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/contract_2.html" target="_blank">계약 품의 등록 - 해외수출</a></td>
+					<td>2015-10-26</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=20" target="_blank">계약 품의 등록 - 해외수출</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/contract_share.html" target="_blank">계약 품의 등록 - 지분투자</a></td>
+					<td>2015-11-10</td>
+					<td>김영진</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=30" target="_blank">지분투자</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/contract_fund.html" target="_blank">계약 품의 등록 - 펀드투자</a></td>
+					<td>2015-11-10</td>
+					<td>김영진</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=30&ctrtDtlTy=32" target="_blank">펀드투자</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/contract_etc_1.html" target="_blank">계약 품의 등록 - 기타수익</a></td>
+					<td>2015-10-06</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=40" target="_blank">계약 품의 등록 - 기타수익</a></td>
+					<td>작업중</td>
+					<td>기타수익수정 화면도 있음</td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/contract_etc_2.html" target="_blank">계약 품의 등록 - 기타매입</a></td>
+					<td>2015-10-06</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=50" target="_blank">계약 품의 등록 - 기타매입</a></td>
+					<td>작업중</td>
+					<td>기타매입수정 화면도 있음</td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/contract_finance.html" target="_blank">계약 품의 등록 - 재무입력</a></td>
+					<td>2015-10-26</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractFincMng.do" target="_blank">계약 품의 등록 - 재무입력</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/contract_invest_etc.html" target="_blank">계약 품의 등록 - 투자/기타</a></td>
+					<td>2015-11-30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/current_search_tab_1.html" target="_blank">현황조회/상세조회/이력조회</a></td>
+					<td>2015-11-24</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/selectCtrt.do" target="_blank">계약현황조회</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/contract_1_search.html" target="_blank">계약조회_퍼블리싱</a></td>
+					<td>2015-10-26</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=10" target="_blank">계약 품의 등록 - 퍼블리싱</a></td>
+					<td>작업중</td>
+					<td>계약조회후 수정클릭 요망</td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/contract_2_search.html" target="_blank">계약조회_해외수출</a></td>
+					<td>2015-10-26</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractInfoMng.do?ctrtTy=20" target="_blank">계약 품의 등록 - 퍼블리싱</a></td>
+					<td>작업중</td>
+					<td>계약조회후 수정클릭 요망</td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/contract_deposit_ip_mg.html" target="_blank">계약지급(입금)요청 - IP,MG</a></td>
+					<td>2015-10-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/contract_deposit.html" target="_blank">계약지급(입금)요청 -	 수출</a></td>
+					<td>2015-10-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/pop_contract_cal.html" target="_blank">(pop) 계약조회 정산</a></td>
+					<td>2015-11-03</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url"><a href="/html/contract/service_close.html" target="_blank">서비스종료</a></td>
+					<td>2015-11-24</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractClsMng.do" target="_blank">서비스종료</a></td>
+					<td>작업중</td>
+					<td>계약조회후 수정클릭 요망</td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/service_cancel.html" target="_blank">계약해지</a></td>
+					<td>2015-11-24</td>
+					<td>최용석</td>
+					<td><a href="/ctrt/ctrtContractClsMng.do?ctrtEndTy=40" target="_blank">계약해지</a></td>
+					<td>계약조회후 수정클릭 요망</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/contract_invest.html" target="_blank">투자일정관리</a></td>
+					<td>2015-11-24</td>
+					<td>김영진</td>
+					<td><a href="/ctrt/ctrtIvstSchdMng.do" target="_blank">투자일정관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/popup/pop_kind_by_time.html" target="_blank">회차별 상세내역</a></td>
+					<td>2015-11-23</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td rowspan="3">계약취득</td>
+					<td rowspan="3">계약취득</td>
+					<td class="url"><a href="/html/contract/acquire_write_tab_1.html" target="_blank">등록/자산</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/contract/acquire_write_tab_1_2.html" target="_blank">등록/지분/전환사채</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/contract/acquire_write_tab_1_3.html" target="_blank">등록/선수수익/선급비용</a></td>
+					<td>2015-11-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<th scope="col" rowspan="36" class="headlink">매출 및<br />정산 관리
+					</th>
+					<td rowspan="3">원본데이타 관리</td>
+					<td rowspan="3">원본데이타 관리</td>
+					<td class="url"><a
+						href="/html/sales_admin/original_data_tab_1_1.html"
+						target="_blank"> 모바일매출업로드/빌링채권조정/마켓대사조회 </a></td>
+					<td>2015-09-08</td>
+					<td>박세원, 정한성</td>
+					<td><a href="/sale/saleOriginalData.do" target="_blank">원본데이타 관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/sales_admin/original_data_tab_1_2.html"
+						target="_blank">모바일매출업로드 - 예정매출</a></td>
+					<td>2015-09-08</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/sales_admin/original_data_tab_1_3.html"
+						target="_blank">모바일매출업로드 - 확정매출</a></td>
+					<td>2015-09-08</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="14">매출 신청</td>
+					<td>매출 신청</td>
+					<td class="url"><a href="/html/sales_admin/sales_tab_1_1.html" target="_blank">확정신청/모바일확정조회/예정신청/모바일예정조회</a></td>
+					<td>2015-09-24</td>
+					<td>박세원, 정한성</td>
+					<td nowrap="nowrap">
+						<!-- <a href="/sale/saleSalesRequest.do?schRadioSalesTy=SD11&schRadioSalesDtlTy=SD1110A" target="_blank">확정 모바일 직접서비스</a><P> -->
+						<!-- <a href="/sale/saleSalesRequest.do?schRadioSalesTy=SD21&schRadioSalesDtlTy=SD21201" target="_blank">확정 온라인 빌링</a><P> -->
+						<a href="/sale/saleSalesRequest.do?schRadioSalesTy=SD21&schRadioSalesDtlTy=SD21202" target="_blank">확정 온라인 PC방</a><P>
+						<!-- <a href="/sale/saleSalesRequest.do?schRadioSalesTy=SD21&schRadioSalesDtlTy=SD21999" target="_blank">확정 온라인 채널링</a><P> -->
+						<!-- <a href="/sale/saleSalesRequest.do?schRadioSalesTy=SDA2&schRadioSalesDtlTy=SDA2A02" target="_blank">확정 수출</a><P> -->
+						<a href="/sale/saleSalesRequest.do?schRadioSalesTy=SD91&schRadioSalesDtlTy=SD91399" target="_blank">확정 기타 일반</a><P>
+						<!-- <a href="/sale/saleSalesRequest.do?schRadioSalesTy=SD91&schRadioSalesDtlTy=SD91999" target="_blank">확정 기타 청구</a><P> -->
+						<!-- <a href="/sale/saleSalesRequest.do?schRadioSalesTy=SE11&schRadioSalesDtlTy=SE1110A" target="_blank">예정 모바일</a><P> -->
+						<a href="/sale/saleSalesRequest.do?schRadioSalesTy=SEA2&schRadioSalesDtlTy=SEA2A02" target="_blank">예정 수출</a><P>
+					</td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>예정신청</td>
+					<td class="url"><a href="/html/sales_admin/sales_tab_1_2.html" target="_blank">예정신청 - 수출</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td rowspan="6">확정신청</td>
+					<td class="url"><a href="/html/sales_admin/sales_tab_2_2_2.html" target="_blank">확정신청 - 온라인/빌링</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/sales_tab_2_2_3.html" target="_blank">확정신청 - 온라인/PC방</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/sales_tab_2_2_4.html" target="_blank">확정신청 - 온라인/채널링</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/sales_tab_2_3.html" target="_blank">확정신청 - 수출</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/sales_admin/sales_tab_2_4.html" target="_blank">확정신청 - 기타/일반</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/sales_admin/sales_tab_2_5.html" target="_blank">확정신청 - 기타청구매출</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>매출등록조회</td>
+					<td class="url"><a href="/html/sales_admin/pop_sales.html" target="_blank">(pop) 매출등록조회</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>예정원가 마스터 등록</td>
+					<td class="url"><a href="/html/sales_admin/pop_cost_master.html" target="_blank">(pop) 예정원가 마스터 등록</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>환불신청</td>
+					<td class="url"><a href="/html/sales_admin/refund_tab_1.html" target="_blank">환불신청</a></td>
+					<td>2015-09-24</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>조정매출등록</td>
+					<td class="url"><a href="/html/sales_admin/pop_adjustment.html" target="_blank">(pop) 조정매출등록</a></td>
+					<td>2015-09-29</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>애플환율리스트</td>
+					<td class="url"><a href="/html/sales_admin/pop_exchange_rate.html" target="_blank">(pop) 애플환율리스트</a></td>
+					<td>2015-09-29</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>매출 보고</td>
+					<td class="url"><a href="/html/sales_admin/sales_report.html" target="_blank">매출 보고</a></td>
+					<td>2015-11-17</td>
+					<td>김영진</td>
+					<td><a href="/sale/saleMbleSaleReportPage.do" target="_blank">모바일매출보고</a></td>
+					<td>완료</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>PG정산 신청</td>
+					<td>PG정산 신청</td>
+					<td class="url"><a href="/html/sales_admin/pg_tab_1.html" target="_blank">PG수수료/PG배부 </a></td>
+					<td>2015-10-05</td>
+					<td>김경진</td>
+					<td><a href="/sttl/sttlPgSttlReqPage.do" target="_blank">PG수수료/PG배부</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="9">수익정산신청</td>
+					<td rowspan="9">수익정산신청</td>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_1.html" target="_blank">정산현황관리/예정신청/확정신청/정산내역조회</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_2_2.html" target="_blank">예정신청 - 모바일/해외정산</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_2_3.html" target="_blank">예정신청(수기입력)</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_2_4.html" target="_blank">예정신청 - 온라인/빌링</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_2_5.html" target="_blank">예정신청 - 수출/수출</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_3_2.html" target="_blank">확정신청 - 모바일/해외정산</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_3_3.html" target="_blank">확정신청(수기입력)</a></td>
+					<td>2015-11-02</td>
+					<td>김경진</td>
+					<td><a href="/sttl/sttlRsCalcRegPage.do" target="_blank">확정신청(수기입력)</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_3_4.html" target="_blank">확정신청 - 온라인/빌링</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/profit_cal_tab_3_5.html" target="_blank">확정신청 - 수출/수출</a></td>
+					<td>2015-11-02</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">채권 및 채무관리</td>
+					<td rowspan="2">채권 및 채무관리</td>
+					<td class="url"><a href="/html/sales_admin/debenture_tab_1.html" target="_blank">채권조회/연체채권관리/MG상계처리</a></td>
+					<td>2015-10-05</td>
+					<td>정한성</td>
+					<td><a href="/sale/saleReceivablesDebtMngPage.do" target="_blank">채권 및 채무관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/exception_write.html" target="_blank">예외지급신청</a></td>
+					<td>2015-11-02</td>
+					<td>임동천</td>
+					<td><a href="/exps/expsExcpPayRegPage.do" target="_blank">예외지급신청</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td rowspan="6">세무관리</td>
+					<td rowspan="6">세무관리</td>
+					<td class="url"><a href="/html/sales_admin/tax_tab_1_1.html" target="_blank"> 세금계산서발행/인보이스발행/원천징수영수증발행</a></td>
+					<td>2015-09-07</td>
+					<td>남기효</td>
+					<td><a href="/exps/expsTaxMngPage.do" target="_blank">세금계산서발행[매출]</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/tax_tab_1_2.html"
+						target="_blank">세금계산서발행 - 매입</a></td>
+					<td>2015-09-07</td>
+					<td>남기효</td>
+					<td><a href="/exps/expsTaxMngPage.do" target="_blank">세금계산서발행[매입]</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/tax_tab_1_3.html"
+						target="_blank">세금계산서발행 - 관리</a></td>
+					<td>2015-09-07</td>
+					<td>남기효</td>
+					<td><a href="/exps/expsTaxMngPage.do" target="_blank">세금계산서발행[관리]</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/pop_tax_view.html"
+						target="_blank">(pop) 인보이스 상세</a></td>
+					<td>2015-09-07</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/pop_tax_print.html" target="_blank">(pop) 인보이스 출력</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/sales_admin/pop_tax_mail.html" target="_blank">(pop) 인보이스 메일발송</a></td>
+					<td>2015-11-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>매출 및 정산·비용 리포트</td>
+					<td>매출 및 정산·비용 리포트</td>
+					<td class="url"><a href="/html/sales_admin/sales_report_search.html" target="_blank">매출 및 정산·비용 리포트</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<th scope="col" class="headlink">프로젝트관리</th>
+					<td>프로젝트관리</td>
+					<td>프로젝트관리</td>
+					<td class="url"><a href="/html/project/project_tab_1.html"
+						target="_blank">등록/게임명변경/정보수정/조회</a></td>
+					<td>2015-11-29</td>
+					<td></td>
+					<td><a href="/cmmn/cmmnProjectMngPage.do" target="_blank">프로젝트 관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<th scope="col" rowspan="32" class="headlink">비용관리</th>
+					<td>ERP정산기준</td>
+					<td>ERP정산기준</td>
+					<td class="url"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td rowspan="8">비용신청</td>
+					<td rowspan="4">비용신청</td>
+					<td class="url"><a href="/html/expense/expense_reg_tab_1_1.html" target="_blank">일반경비신청/정기지급신청/복합처리신청</a>
+					</td>
+					<td>2015-10-15</td>
+					<td>전근영</td>
+					<td><a href="/exps/expsCostRequestViewPage.do" target="_blank">일반경비신청</a></td>
+					<td></td>
+					<td>일반/전자세금계산서 단위테스트 완료   나머지는 개발중</td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/expense/expense_reg_tab_1_2.html" target="_blank">일반경비신청
+							- 전자세금계산서</a></td>
+					<td>2015-09-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/expense/expense_reg_tab_1_3.html" target="_blank">일반경비신청
+							- 원천세</a></td>
+					<td>2015-09-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/expense/expense_reg_tab_1_4.html" target="_blank">일반경비신청
+							- 선급금 요청 및 정산</a></td>
+					<td>2015-09-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>정기지급</td>
+					<td class="url"><a
+						href="/html/expense/expense_reg_tab_2_2.html" target="_blank">정기지급신청
+							- 정기지급 조회 및 처리</a></td>
+					<td>2015-09-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>미결항목조회</td>
+					<td class="url"><a href="/html/expense/pop_expense_reg.html"
+						target="_blank">(pop) 미결항목조회 </a></td>
+					<td>2015-09-15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ERP번호 목록조회</td>
+					<td class="url"><a href="/html/popup/pop_erp_list.html" target="_blank">(pop) ERP번호 목록조회 </a></td>
+					<td>2015-09-15</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnErpNoCdGnrlExpsPop.do" target="_blank">(pop) ERP번호 목록조회</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>마케팅비 예산마스터 조회(상세내역)</td>
+					<td class="url"><a href="/html/expense/pop_marketing_search.html" target="_blank"> (pop) 마케팅비 예산마스터 조회(상세내역) </a></td>
+					<td>2015-10-07</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnMarketExpsReportPop.do" target="_blank">(pop) 마케팅비 예산마스터 조회(상세내역)</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+
+
+
+				<tr>
+					<td rowspan="5">법인카드 정산 신청</td>
+					<td>법인카드 정산 신청/예산신청 및 조회 </td>
+					<td class="url"><a href="/html/expense/corporate_card_tab_1.html" target="_blank">법인카드 정산 신청/예산신청 및 조회</a></td>
+					<td></td>
+					<td>전근영</td>
+					<td><a href="/exps/expsIncorporationCardPage.do" target="_blank">법인카드 비용처리</a></td>
+					<td>탭화면 추가및 DB변경으로 인한 재작업</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>주소검색</td>
+					<td class="url"><a href="/html/expense/pop_address_tab_1.html" target="_blank">(pop) 도로명주소/지번주소 </a></td>
+					<td>2015-10-07</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>예산 사용내역</td>
+					<td class="url"><a href="/html/expense/pop_corporate_card_1.html" target="_blank">(pop) 예산 사용내역 </a></td>
+					<td>2015-10-07</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnBdgtUseBrdnPop.do" target="_blank">(pop) 예산 사용내역</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>증액/계정전용/전용</td>
+					<td class="url"><a href="/html/expense/pop_corporate_card_2.html" target="_blank">(pop) 증액/계정전용/전용  </a></td>
+					<td>2015-10-13</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnBdgtAdjtReqPop.do" target="_blank">(pop) 증액/계정전용/전용</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>법인카드 사용내역</td>
+					<td class="url"><a href="/html/expense/pop_general_affairs_cal.html" target="_blank">(pop) 법인카드 사용내역 </a></td>
+					<td>2015-10-13</td>
+					<td>이명수</td>
+					<td><a href="/cmmn/cmmnCorpCardDetPop.do" target="_blank">(pop) 법인카드 사용내역</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>출장비 관리</td>
+					<td>출장비 관리</td>
+					<td class="url"><a
+						href="/html/expense/trip_round_robin_tab_1.html" target="_blank">출장
+							품의 등록/출장 정산 신청</a></td>
+					<td>2015-08-26</td>
+					<td>김경진</td>
+					<td><a href="/exps/ExpsBnsnTripMngPage.do" target="_blank">출장비
+							품의서</a></td>
+					<td>작업중</td>
+					<td>출장번호 팝업없음<br>사원정보 팝업없음
+					</td>
+				</tr>
+
+				<tr>
+					<td rowspan="2">비용품의 등록</td>
+					<td rowspan="2">비용품의 등록</td>
+					<td class="url"><a href="/html/" target="_blank"></a></td>
+					<td>2015-10-07</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/pop_marketing_choice.html" target="_blank">(pop) 마케팅 예산마스터 선택</a></td>
+					<td>2015-10-07</td>
+					<td>남기효</td>
+					<td><a href="/cmmn/cmmnMarketExpsBdgtListPop.do" target="_blank">(pop) 마케팅 예산마스터 선택</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td>정기지급</td>
+					<td>정기지급 조회 및 처리</td>
+					<td class="url"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td rowspan="5">공통비 신청</td>
+					<td rowspan="5">공통비 신청</td>
+					<td class="url"><a href="/html/expense/pop_common_plus.html"
+						target="_blank">(pop) 공통비배부 기준생성</a></td>
+					<td>2015-08-24</td>
+					<td>이재욱</td>
+					<td><a href="/exps/ExpsCreateDistributionView.do"
+						target="_blank">공통비배부 생성</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/pop_common_del.html"
+						target="_blank">(pop) 공통비배부 기준삭제</a></td>
+					<td>2015-08-24</td>
+					<td>이재욱</td>
+					<td><a href="/exps/ExpsDeleteDistribution.do" target="_blank">공통비배부
+							삭제</a><br></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/pop_common_copy.html"
+						target="_blank">(pop) 공통비배부 년월복사</a></td>
+					<td>2015-08-24</td>
+					<td>이재욱</td>
+					<td><a href="/exps/ExpsCopyDistribution.do" target="_blank">공통비배부
+							복사</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/expense/pop_common_traffic.html" target="_blank">(pop)
+							교통비</a></td>
+					<td>2015-08-24</td>
+					<td>이재욱</td>
+					<td><a href="/exps/ExpsTripDepartDestiPop.do" target="_blank">교통비내역등록</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a
+						href="/html/expense/pop_common_traffic.html" target="_blank">공통비(등록/설정/배부처리)</a></td>
+					<td>2015-09-10</td>
+					<td>전근영</td>
+					<td><a href="/exps/expsCommonCostPage.do" target="_blank">공통비</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td rowspan="4">총무신청</td>
+					<td rowspan="2">총무정산 신청</td>
+					<td class="url"><a
+						href="/html/portal/general_affairs_cal_tab_1.html" target="_blank">퀵서비스/택배/등기우편/구매/경조사</a></td>
+					<td>2015-09-04</td>
+					<td>김지환</td>
+					<td><a href="/exps/expsGeneralAffairRequestPage.do" target="_blank">총무품의 신청</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a
+						href="/html/portal/general_affairs_cal_tab_4_2.html"
+						target="_blank">구매 - IT/SW/도서/경품</a></td>
+					<td>2015-09-04</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">총무품의 등록</td>
+					<td class="url"><a
+						href="/html/portal/general_affairs_write_tab_1.html"
+						target="_blank">퀵서비스/국제택배/등기우편/구매/경조금</a></td>
+					<td>2015-09-04</td>
+					<td>김지환</td>
+					<td><a href="/exps/expsGeneralAffairRegPage.do" target="_blank">총무품의 등록</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a
+						href="/html/portal/general_affairs_write_tab_4_2.html"
+						target="_blank">구매 - IT/SW/도서/경품</a></td>
+					<td>2015-09-04</td>
+					<td></td>
+					<td><a href="/exps/expsGeneralAffairRegPage.do" target="_blank">총무품의 등록</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>예산관리</td>
+					<td>마케팅 품의서신청/마케팅비 예산마스터조회</td>
+					<td class="url"><a
+						href="/html/portal/marketing_round_robin.html" target="_blank">예산관리</a></td>
+					<td></td>
+					<td>전근영</td>
+					<td><a href="/exps/expsMarketRequestPage.do" target="_blank">마케팅
+							품의신청</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>품의서 현황</td>
+					<td>품의서 현황</td>
+					<td class="url"></td>
+					<td></td>
+					<td>전근영</td>
+					<td>
+						<!-- <a href="/exps/expsRprt.do" target="_blank">품의서 현황</a> -->
+					</td>
+					<td>화면 통합됨(ERP현황)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">인건비신청</td>
+					<td rowspan="2">인건비신청</td>
+					<td class="url"><a href="/html/expense/pay_tab_1_1.html" target="_blank">인사지급마스터/급여신청/퇴직금신청/예정원가신청/사내복지기금신청</a></td>
+					<td>2015-10-23</td>
+					<td>이재욱<br/>임동천</td>
+					<td><a href="/exps/expsPayMngPage.do" target="_blank">지급구분마스터</a><br/></td>
+					<td>완료</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/expense/pay_tab_1_2.html" target="_blank">인사지급마스터 - 지급항목마스터</a></td>
+					<td>2015-10-19</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>매출 및 정산·비용 리포트</td>
+					<td>매출 및 정산·비용 리포트</td>
+					<td class="url"><a href="/html/sales_admin/sales_report_search.html" target="_blank">매출 및 정산·비용 리포트</a></td>
+					<td>2015-11-18</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<th scope="col" rowspan="9" class="headlink">손익예측</th>
+					<td rowspan="9">손익예측</td>
+					<td>매출계획</td>
+					<td class="url"><a href="/html/predict/plan_tab_1.html" target="_blank">등록/조회</a></td>
+					<td>2015-09-25</td>
+					<td>김영진</td>
+					<td><a href="/rifc/rifcSalesPlanMng.do" target="_blank">매출계획</a></td>
+					<td>작업중</td>
+					<td>권한에 따른 작업(버튼컨트롤, 팝업)</td>
+				</tr>
+
+				<tr>
+					<td>광고선전비</td>
+					<td class="url"><a href="/html/predict/advertisement_tab_1.html" target="_blank">등록/조회</a></td>
+					<td>2015-09-25</td>
+					<td>김성미</td>
+					<td><a href="/rifc/rifcAdvrExpenseMng.do" target="_blank">광고선전비</a></td>
+                    <td>작업중</td>
+                    <td></td>
+				</tr>
+
+				<tr>
+					<td>자회사 손익예측</td>
+					<td class="url"><a href="/html/predict/subsidiary_tab_1.html" target="_blank">등록/조회</a></td>
+					<td>2015-10-08</td>
+					<td>김영진</td>
+					<td><a href="/rifc/rifcSubCpnyPrftPredMng.do" target="_blank">자회사손익예측</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>버전관리 및 정산</td>
+					<td class="url"><a href="/html/predict/calculate_version.html" target="_blank">버전관리 및 정산</a></td>
+					<td>2015-10-29</td>
+					<td>김성미</td>
+					<td><a href="/rifc/rifcVerMngnExec.do" target="_blank">버전관리 및 정산</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>버전복사</td>
+					<td class="url"><a href="/html/predict/calculate_copy.html" target="_blank">버전복사</a></td>
+					<td>2015-10-22</td>
+					<td>김성미</td>
+					<td><a href="/rifc/rifcVerCopyMng.do" target="_blank">버전복사</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>정산결과 조회</td>
+					<td class="url"><a href="/html/predict/calculate_result.html" target="_blank">정산결과 조회</a></td>
+					<td>2015-11-05</td>
+					<td>김성미</td>
+					<td><a href="/rifc/rifcCalcRslt.do" target="_blank">정산결과 조회</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>정산조건 누락분</td>
+					<td class="url"><a href="/html/predict/calculate_project.html" target="_blank">정산조건 누락분</a></td>
+					<td>2015-10-22</td>
+					<td>김성미</td>
+					<td><a href="/rifc/rifcCalcCdtnOmiss.do" target="_blank">정산조건 누락분</a></td>
+					<td>테스트중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>프로젝트투입비중</td>
+					<td class="url"><a href="/html/predict/project_people_tab_1.html" target="_blank">프로젝트투입비중</a></td>
+					<td>2015-10-19</td>
+					<td>김영진</td>
+					<td><a href="/rifc/rifcPrjtAtvtInputMng.do" target="_blank">프로젝트투입비중</a></td>
+					<td>작업중</td>
+					<td>권한에 따른 작업(버튼컨트롤,세션값)</td>
+				</tr>
+				<tr>
+					<td>정산조건등록</td>
+					<td class="url"><a href="/html/predict/condition_reg.html" target="_blank">정산조건등록</a></td>
+					<td>2015-11-02</td>
+					<td>김성미</td>
+					<td><a href="/rifc/rifcSttlCdtnReg.do" target="_blank">정산조건등록</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<th scope="col" rowspan="9" class="headlink">자회사관리</th>
+					<td rowspan="3">자회사현황</td>
+					<td rowspan="3">자회사현황</td>
+					<td class="url"><a href="/html/subsidiary/state_tab_1.html" target="_blank">회사일반현황등록/자회사투자이력등록</a></td>
+					<td>2015-10-06</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmSubCpnyStatMngPage.do" target="_blank">자회사현황</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/subsidiary/state_tab_1_2.html" target="_blank">회사일반현황등록 - 항목별</a></td>
+					<td>2015-10-06</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmSubCpnyStatMngPage.do" target="_blank">회사일반현황등록 - 항목별</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/subsidiary/state_tab_1_3.html" target="_blank">매출현황조회</a></td>
+					<td>2015-10-06</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="5">자회사재무제표</td>
+					<td rowspan="5">자회사재무제표</td>
+					<td class="url"><a href="/html/subsidiary/financial_tab_1.html" target="_blank">재무제표버전관리</a></td>
+					<td>2015-11-05</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmFstmVerMngPage.do" target="_blank">재무제표버전관리</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/subsidiary/financial_tab_2_1.html" target="_blank">넷마블 연결 재무제표</a></td>
+					<td>2015-10-13</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmNetFstmBsMngPage.do" target="_blank">넷마블 연결 재무제표</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/subsidiary/financial_tab_2_2.html" target="_blank">넷마블 연결 손익계산서</a></td>
+					<td>2015-10-13</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmNetFstmPlMngPage.do" target="_blank">넷마블 연결 손익계산서</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/subsidiary/financial_tab_3.html" target="_blank">자회사재무상태표</a></td>
+					<td>2015-11-05</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmSubFstmBsMngPage.do" target="_blank">자회사재무상태표</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/subsidiary/financial_tab_3.html" target="_blank">자회사손익계산서</a></td>
+					<td>2015-11-05</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmSubFstmPlMngPage.do" target="_blank">자회사손익계산서</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<td>지분투자내역</td>
+					<td>지분투자내역</td>
+					<td class="url"><a href="/html/subsidiary/invest_tab_1.html" target="_blank"> 자회사현황/지분투자내역/전환투자내역 </a></td>
+					<td>2015-10-06</td>
+					<td>이명수</td>
+					<td><a href="/simm/simmQuotaInvestMngPage.do" target="_blank"> 자회사현황/지분투자내역/전환투자내역</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+
+				<tr>
+					<th scope="col" rowspan="20" class="headlink">관리자</th>
+					<td>공통 코드 관리</td>
+					<td>공통 코드 관리</td>
+					<td class="url"><a href="/html/admin/common_code_set.html"
+						target="_blank">공통 코드 관리</a></td>
+					<td></td>
+					<td>김경진</td>
+					<td><a href="/sstm/SstmComCodeMngPage.do" target="_blank">공통코드관리</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>화면별 마감 관리</td>
+					<td>화면별 마감 관리</td>
+					<td class="url"><a href="/html/admin/screen_finish.html"
+						target="_blank">화면별 마감 관리</a></td>
+					<td>2015-12-08</td>
+					<td>김진석</td>
+					<td><a href="/sstm/sstmMenuClsMngmPage.do" target="_blank">화면별마감관리</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>조직기준정보</td>
+					<td>부서정보</td>
+					<td class="url"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">공지사항</td>
+					<td rowspan="2">공지사항</td>
+					<td class="url"><a href="/html/admin/notice_list.html" target="_blank">공지사항관리</a></td>
+					<td>2015-11-04</td>
+					<td>조다혜</td>
+					<td><a href="/sstm/sstmNoticeMngPage.do" target="_blank">공지사항 관리</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/admin/pop_notice_view.html" target="_blank">(pop) 공지사항 상세</a></td>
+					<td>2015-11-04</td>
+					<td>조다혜</td>
+					<td><a href="/main/mainNoticeListPage.do" target="_blank">메인 공지사항 리스트</a></td>
+					<td>작업중</td>
+					<td>메인페이지에 들어갈 공지사항 리스트페이지</td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="4">QnA 관리</td>
+					<td rowspan="4">QnA 관리</td>
+					<td class="url"><a href="/html/admin/qna_list.html" target="_blank">qna 리스트</a></td>
+					<td>2015-11-10</td>
+					<td>조다혜</td>
+					<td><a href="/sstm/sstmQnAListPage.do" target="_blank">QnA 리스트</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/admin/qna_write.html" target="_blank">qna 글쓰기</a></td>
+					<td>2015-11-10</td>
+					<td>조다혜</td>
+					<td><a href="/sstm/sstmQnARegPage.do" target="_blank">QnA 글쓰기</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/admin/qna_view.html" target="_blank">qna 상세페이지</a></td>
+					<td>2015-11-10</td>
+					<td>조다혜</td>
+					<td><a href="/sstm/sstmQnADtlPage.do" target="_blank">QnA 상세</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url">qna 메인 리스트</td>
+					<td>2015-11-10</td>
+					<td>조다혜</td>
+					<td><a href="/main/mainQnAList.do" target="_blank">QnA 메인 리스트</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="3">도움말 관리</td>
+					<td rowspan="3">도움말 관리</td>
+					<td class="url"><a href="/html/admin/help_tab_1.html" target="_blank">메뉴얼/Q&amp;A</a></td>
+					<td>2015-11-19</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/admin/help_tab_2_1.html" target="_blank">QnA 상세</a></td>
+					<td>2015-11-19</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/admin/help_tab_2_2.html" target="_blank">QnA 수정</a></td>
+					<td>2015-11-19</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="2">비용기준정보</td>
+					<td>국가별 일당기준관리</td>
+					<td class="url">페이지 삭제</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>주유비 기준관리</td>
+					<td class="url"><a href="/html/admin/gas_set.html"
+						target="_blank">주유비 기준관리</a></td>
+					<td></td>
+					<td>정한성</td>
+					<td><a href="/cmmn/cmmnGasStandardMng.do" target="_blank">주유비
+							기준관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="3">매출기준정보</td>
+					<td>애플매출회계달력</td>
+					<td class="url"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>해외법인별 매출국가 맵핑</td>
+					<td class="url"><a
+						href="/html/admin/nation_mapping_search.html" target="_blank">해외법인별
+							매출국가 맵핑</a></td>
+					<td></td>
+					<td>김경진</td>
+					<td><a href="/sttl/SttlNationMappingMng.do" target="_blank">해외법인별
+							매출국가 맵핑</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>국가별 원천세관리</td>
+					<td class="url"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>환경설정</td>
+					<td>환경설정</td>
+					<td class="url"><a href="/html/admin/setting_tab_1.html" target="_blank">메인아이템설정/메인컨텐츠 권한관리/즐겨찾기설정</a></td>
+					<td>2015-11-28</td>
+					<td>김성미</td>
+					<td><a href="/cmmn/cmmnEvmtStup.do" target="_blank">메인아이템설정/메인컨텐츠 권한관리/즐겨찾기설정</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>DB Log 관리</td>
+					<td>DB Log 관리</td>
+					<td class="url"><a href="/html/admin/db_log_list.html" target="_blank">DB Log 관리</a></td>
+					<td>2016-01-04</td>
+					<td>임동천</td>
+					<td><a href="/sstm/sstmDBLogMngPage.do" target="_blank">DB Log 관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>메뉴관리</td>
+					<td>메뉴관리</td>
+					<td class="url"><a href="/html/admin/menu_list.html" target="_blank">메뉴관리</a></td>
+					<td>2016-01-04</td>
+					<td>임동천</td>
+					<td><a href="/sstm/sstmMenuMngPage.do" target="_blank">메뉴관리</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="col" rowspan="8" class="headlink">communication <br />portal</th>
+					<td>손익예측</td>
+					<td>손익예측</td>
+					<td class="url"><a href="/html/cmp/predict_tab_1.html" target="_blank">등록/조회/보고형식</a></td>
+					<td>2015-10-30</td>
+					<td>김영진</td>
+					<td><a href="/ccpt/ccptSubCpnyPrftPredMng.do" target="_blank">손익예측</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td rowspan="7">정산</td>
+					<td rowspan="7">정산</td>
+					<td class="url"><a href="/html/cmp/potar_tab_1.html" target="_blank">정산리스트조회/정산서조회</a></td>
+					<td>2015-10-22</td>
+					<td>이광연</td>
+					<td><a href="/ccpt/ccptCalcListPage.do" target="_blank">정산리스트조회/정산서조회</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/cmp/mobile_detail_search.html" target="_blank">매출상세내역조회</a></td>
+					<td>2015-11-03</td>
+					<td>김성미</td>
+					<td><a href="/ccpt/ccptSaleDtlBrdn.do" target="_blank">매출상세내역조회</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/cmp/potar_confirm.html" target="_blank">정산확인</a></td>
+					<td>2015-10-22</td>
+					<td>김성미</td>
+					<td><a href="/ccpt/ccptCalcCfrm.do" target="_blank">정산확인</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="url"><a href="/html/cmp/potar_common.html" target="_blank">공통비배부결과</a></td>
+					<td>2015-10-22</td>
+					<td>김성미</td>
+					<td><a href="/ccpt/ccptCmmnExpsDistRslt.do" target="_blank">공통비배부결과</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url"><a href="/html/cmp/pop_potar_copy.html"	target="_blank">(pop) 정산조건복사</a></td>
+					<td>2015-09-25</td>
+					<td>김경진</td>
+					<td><a href="/sttl/sttlCalcCdtnCopyPopup.do" target="_blank">정산조건복사</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td class="url"><a href="/html/cmp/pop_potar_search.html" target="_blank">(pop) 정산대상조회</a></td>
+					<td>2015-09-21</td>
+					<td>김경진</td>
+					<td><a href="/sttl/sttlCalcTrgtSrchPopup.do" target="_blank">정산대상조회</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td class="url"><a href="/html/cmp/pop_potar_view.html"	target="_blank">(pop) 정산조건보기</a></td>
+					<td>2015-09-22</td>
+					<td>김경진</td>
+					<td><a href="/sttl/sttlCalcCdtnPopup.do" target="_blank">정산조건보기</a></td>
+					<td>작업중</td>
+					<td></td>
+				</tr>
+
+
+
+			</tbody>
+		</table>
+		<script type="text/javascript">
+			//<![CDATA[
+			rowHilite("path");
+			//]]>
+		</script>
+	</div>
+
+</body>
+</html>

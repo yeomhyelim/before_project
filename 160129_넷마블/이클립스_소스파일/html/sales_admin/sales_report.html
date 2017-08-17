@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">모바일 매출 보고</h1>
+		
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">조회</button>
+						</div>				
+					</div>
+
+					<div class="cont_gray_block">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="240" />
+								<col width="90" />
+								<col width="240" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">조회기간</label></th>
+									<td>
+										<span class="input_gray_fix input_ico w76">
+											<input type="text" id="" name="" title="" value="2015-10-01" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력"  /></a>
+										</span>		
+										<span class="txt_bar">-</span>
+										<span class="input_gray_fix input_ico w76">
+											<input type="text" id="" name="" title="" value="2015-10-31" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+									<th scope="row"><label for="">프로젝트</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+									</td>
+									<td />
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_white_fix">
+						<div class="stitbox01">
+							<div class="cont">
+								<h2>
+									매출 리스트
+									<span class="gray_txt color_red">* IAP매출: 최근2일, 마켓매출: 최근 2일 이전</span>
+								</h2>
+							</div>
+						</div>
+
+						<!-- [s]tbl-scroll-wrap -->
+						<div class="tbl-scroll-wrap  top_zero">
+
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_col" style="overflow: scroll;">
+								
+								<table>
+									<colgroup>
+										<col width="100" />
+										<col width="150" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+
+										<col width="80" />
+										<col width="80" />
+										<col width="80" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="3">총합</th>
+											<th scope="col" rowspan="3">프로젝트</th>
+
+											<th scope="col">&nbsp;</th>
+											<th scope="col"></th>
+
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col" colspan="2">IAP 매출</th>
+											<th scope="col"></th>
+											
+											
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col"></th>
+											<th scope="col" class="last"></th>
+										</tr>
+										<tr>
+											<th scope="col">1일</th>
+											<th scope="col">2일</th>
+											<th scope="col">3일</th>
+
+											<th scope="col">4일</th>
+											<th scope="col">5일</th>
+											<th scope="col">6일</th>
+											<th scope="col">7일</th>
+											<th scope="col">8일</th>
+
+											<th scope="col">9일</th>
+											<th scope="col">10일</th>
+											<th scope="col">11일</th>
+											<th scope="col">12일</th>
+											<th scope="col">13일</th>
+
+											<th scope="col">14일</th>
+											<th scope="col">15일</th>
+											<th scope="col">16일</th>
+											<th scope="col">17일</th>
+											<th scope="col">18일</th>
+
+											<th scope="col">19일</th>
+											<th scope="col">20일</th>
+											<th scope="col">21일</th>
+											<th scope="col">22일</th>
+											<th scope="col">23일</th>
+
+											<th scope="col">24일</th>
+											<th scope="col">25일</th>
+											<th scope="col">26일</th>
+											<th scope="col">27일</th>
+											<th scope="col">28일</th>
+
+											<th scope="col">29일</th>
+											<th scope="col">30일</th>
+											<th scope="col" class="last">31일</th>
+										</tr>
+										<tr>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right">1,800</th>
+											<th scope="col" class="th_right"></th>
+
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="th_right"></th>
+											<th scope="col" class="last th_right"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="td_bg td_right">2,300</td>
+											<td class="td_left">프로젝트명</td>
+											<td class="td_right">
+												<a href="#1">100</a>	
+											</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td class="td_bg td_right">2,300</td>
+											<td class="td_left">프로젝트명</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td class="td_bg td_right">2,300</td>
+											<td class="td_left">프로젝트명</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td class="td_bg td_right">2,300</td>
+											<td class="td_left">프로젝트명</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td class="td_bg td_right">2,300</td>
+											<td class="td_left">프로젝트명</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td class="td_bg td_right">2,300</td>
+											<td class="td_left">프로젝트명</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+
+											<td class="td_right">100</td>
+											<td class="td_right">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td class="td_right td_highlight">100</td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td class="last"></td>
+										</tr>
+									</tbody>
+								</table>		
+
+							</div>
+							<!-- //[e]그리드 테이블 -->
+										
+						</div>
+						<!-- //[e]tbl-scroll-wrap -->
+
+					</div>		
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+				
+				<div class="shadow_wrap"></div>
+
+				<div class="layer_pos_box">
+					<div class="layer_cont">
+						<div class="btn_clear">
+							<a href="#1"><img src="" alt="" /></a>
+						</div>
+
+						<div class="tbl-scroll-wrap  top_zero">
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_add_col">
+								
+								<table>
+									<colgroup>
+										<col width="140" />
+										<col width="139" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">마켓</th>
+											<th scope="col" class="last">금액</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>구글</td>
+											<td class="last">100</td>
+										</tr>
+										<tr>
+											<td>애플</td>
+											<td class="last">100</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td class="last">&nbsp;</td>
+										</tr>
+										<tr class="tr_total">
+											<td>합계</td>
+											<td class="last"><span class="point">200</span></td>
+										</tr>
+									</tbody>
+								</table>		
+
+							</div>
+							<!-- //[e]그리드 테이블 -->
+						</div>														
+					</div>
+				</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+// 주석
+{START:-}
+
+{ID:jeanstone}
+{URL:http://www.jeanstone.co.kr}
+
+{KEY:sizeOf_Page}
+{NAME:페이지수}
+{LINK:-}
+{LEVEL:DELT=/이전.*?다음/}
+//{LEVEL:HDEL=-}
+{LEVEL:HCHE=(<a href="|">.</a>|다음|이전|<span class=.*</span>| |\]|\[)+&nbsp;[CUT]}
+{LEVEL:LERE=[CUT]}
+{LEVEL:SPLI=\[CUT\]}
+{LEVEL:TEMS=sizeOf_Page}
+{LEVEL:COUT=-}
+{LEVEL:PLUS=1}
+{NEXT:-}
+
+
+{KEY:sizeOf_Link}
+{NAME:상품수}
+{LINK:http://www.jeanstone.co.kr}
+{LEVEL:DELT=/style=\"padding: 0, 0, 0, 0;\"><a href=\"\/front\/php\/product\.php\?product_no=.*?>/}
+{LEVEL:HCHE=(style="padding: 0, 0, 0, 0;">|<a href="|">)+&nbsp;[CUT]}
+{LEVEL:LERE=[CUT]}
+{LEVEL:SPLI=\[CUT\]}
+{LEVEL:TEMS=sizeOf_Link}
+{LEVEL:COUT=-}
+{NEXT:-}
+
+
+
+{END:-}

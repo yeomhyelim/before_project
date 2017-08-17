@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+
+html {height:100%;}
+body {
+	height:100%;
+	font-size:14px;
+	font-family:'AppleSDGothicNeo','맑은고딕','Malgun Gothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+	color:#666;
+	-webkit-text-size-adjust:none;
+}
+
+img					{border:0; vertical-align:top; font-size:0;}
+form, fieldset		{display:block; border:0;}
+ul,ol,li			{list-style:none;}
+
+legend,caption		{width:0; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden;}
+
+table				{border-collapse:collapse; border-spacing:0; width:100%; font-size:1em;}
+
+ul,ol,li,a,table,td,th,p,dl,dd,dt,strong,span,div {font-size:1em; line-height:1.5; word-spacing:1px; letter-spacing:-1px;}
+
+p, acronym, address, big, small, cite, code, dfn, em, kbd, pre, samp, sub, sup, tt, var {
+	font-weight:normal; font-style:normal;
+}
+
+h1, h2, h3, h4, h5, h6	{font-size:1em; letter-spacing:-1px; font-family:'AppleSDGothicNeo','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;}
+
+big						{font-size:1.125em;} /* 14px */
+small					{font-size:0.95em;} /* 11px */
+
+sub						{font-size:1.05em;}
+sup						{font-size:1.05em;}
+
+input, select {
+	vertical-align:middle; 
+	font-size:1em;
+	color:#666; 
+	font-family:'AppleSDGothicNeo','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+	border-radius:0;
+}
+input {
+	-webkit-appearance:none;
+}
+input[type="text"], input[type="checkbox"], input[type="radio"], select, textarea {-webkit-appearance:none;}
+input[type="password"] {font-family:Verdana;}
+
+textarea {
+	border:1px solid #ccc; 
+	font-size:12px; 
+	font-family:'AppleSDGothicNeo','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+	resize:none;
+	border-radius:0;
+}
+
+blockquote, q		{quotes:none;}
+ins {}
+del					{text-decoration:line-through;}
+
+hr {display:none;}
+
+iframe {border:0;}
+
+
+/* 기본 링크 스타일 */
+a 					{color:#666;}
+a:link 				{text-decoration:none;}
+a:visited			{text-decoration:none;}
+a:hover, a:focus	{text-decoration:none;}
+a:active			{text-decoration:none;}
+
+
+/* button */
+button {
+	background:transparent; 
+	margin:0; 
+	padding:0; 
+	border:0; 
+	cursor:pointer;
+	font-family:'AppleSDGothicNeo','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+}
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+
+
+/* clear */
+.clear {clear:both;}
+
+
+/* skip */
+.skip {position:absolute; top:-5000px; text-indent:-5000px; font-size:0; line-height:0; width:0; height:0;}/*내용과 영역 모두 숨김*/
+.skip_txt {display:block; overflow:hidden; font-size:0px; line-height:0; text-indent:-9999px}/*텍스트만 숨김*/

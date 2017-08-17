@@ -1,0 +1,1 @@
+<? include "{$_REQUEST['S_DOCUMENT_ROOT']}{$_REQUEST['S_SHOP_HOME']}/layout/html/community/board.{$_REQUEST['b_code']}.script.php"; ?>

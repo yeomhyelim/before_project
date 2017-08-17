@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">정산</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>정산리스트조회</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>정산서조회</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">확정</button>
+								<button type="button" class="btn_red_data">정산서출력</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="110" />
+									<col width="242" />
+									<col width="70" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">정산년월</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>정산내역</h2>	
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero"> 
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="126" />
+											<col width="126" />
+											<col width="126" />
+											<col width="126" />
+											<col width="126" />
+
+											<col width="126" />
+											<col width="126" />
+											<col width="132" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">게임명</th>
+												<th scope="col">정산유형</th>
+												<th scope="col">정산차수</th>
+												<th scope="col">정산금액</th>
+												<th scope="col">지급예정일</th>
+
+												<th scope="col">확정구분</th>
+												<th scope="col">확정일</th>
+												<th scope="col" class="last">비고</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+						</div>
+						
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">정산년월</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>	
+										</td>
+										<th scope="row"><label for="">게임명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<th scope="row"><label for="">정산유형</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>	
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">정산차수</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">정산마켓</label></th>
+										<td>
+											<span class="input_gray_block txt_none"></span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>세금계산서 정보</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="188" />
+										<col width="130" />
+										<col width="188" />
+										<col width="130" />
+										<col width="247" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">거래처</label></th>
+											<td>IZ소프트</td>
+											<th scope="row"><label for="">발행일자</label></th>
+											<td>2015-07-12</td>
+											<th scope="row"><label for="">발행항목</label></th>
+											<td>2015년 7월 행복한 피아니스트 수익정산</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">발행금액</label></th>
+											<td colspan="3">1,000,000 (USD:###,####)</td>
+											<th scope="row"><label for="">발행유형</label></th>
+											<td>
+												<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">정발행</label>
+												<input type="radio" id="" class="input_radio" value="" /> <label for="">역발행</label>
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>지급정보</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="188" />
+										<col width="130" />
+										<col width="188" />
+										<col width="130" />
+										<col width="247" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">지급계좌</label></th>
+											<td colspan="3">IZ소프트</td>
+											<th scope="row"><label for="">지급예정일</label></th>
+											<td>2015-07-12</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>정산내역</h2>	
+								</div>
+							</div>
+
+							<div class="tbl_height_box">	
+								<div class="tbl-scroll-wrap top_zero"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										<table>
+											<colgroup>
+												<col width="50" />
+												<col width="240" />
+												<col width="240" />
+												<col width="240" />
+												<col width="244" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">순번</th>
+													<th scope="col">구분</th>
+													<th scope="col">정산율</th>
+													<th scope="col">금액</th>
+													<th scope="col" class="last">내용작성</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>		
+									</div>
+									<!-- //[e]그리드 테이블 -->
+								</div>
+							</div>
+						</div>
+
+						<div class="stitbox05">
+							<h2>매출내역</h2>										
+						</div>
+
+						<div class="cont_white_fix">
+							<div class="stitbox02">
+								<h3>온라인</h3>
+							</div>
+
+							<div class="tbl_height_box">	
+								<div class="tbl-scroll-wrap top_mr01"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_add_col">
+										<table>
+											<colgroup>
+												<col width="144" />
+												<col width="144" />
+												<col width="144" />
+												<col width="144" />
+												<col width="144" />
+
+												<col width="144" />
+												<col width="150" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">충전캐쉬</th>
+													<th scope="col">외부이벤트캐쉬</th>		
+													<th scope="col">보상캐쉬</th>
+													<th scope="col">내부이벤트캐쉬</th>
+													<th scope="col">무료캐쉬</th>
+		
+													<th scope="col">테스트캐쉬</th>
+													<th scope="col" class="last">합계</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>		
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>	
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+
+							<div class="stitbox02">
+								<h3>모바일</h3>
+							</div>
+
+							<div class="tbl_height_box">	
+								<div class="tbl-scroll-wrap top_mr01"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_add_col">
+										<table>
+											<colgroup>
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+
+												<col width="169" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">애플</th>
+													<th scope="col">구글</th>		
+													<th scope="col">케이티</th>
+													<th scope="col">엘지유플러스</th>
+													<th scope="col">에스케이플래닛</th>
+		
+													<th scope="col" class="last">합계</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>	
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+
+							<div class="stitbox02">
+								<h3>해외</h3>
+							</div>
+
+							<div class="tbl_height_box">	
+								<div class="tbl-scroll-wrap top_mr01"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_add_col">
+										<table>
+											<colgroup>
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+												<col width="169" />
+
+												<col width="169" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">거래국가</th>
+													<th scope="col">거래처</th>		
+													<th scope="col">입금예정일</th>
+													<th scope="col">매출금액</th>
+													<th scope="col">매출금액(외화)</th>
+		
+													<th scope="col" class="last">적용환율</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>	
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+						</div>
+						
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">매출상세내역</label></th>
+										<td>
+											<button type="button" class="btn_gray_com">조회</button>
+											<button type="button" class="btn_gray_com">다운로드</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

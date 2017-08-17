@@ -1,0 +1,766 @@
+
+// 주석
+// ID				: 페이지ID
+// URL				: 스크립 웹 사이트
+// LEVEL 함수 설명
+//	- preg_match_all : 정규식을 이용하여 범위를 지정하여 값 반환.
+//	- _striptext : snoopy 함수, 텍스트 값만 반환
+//	- ereg_replace : 정규화 표현식을 이용하여 A를 B 로 변경 (여기서 구분자는 ▣▣SPLIT▣▣ 로 한다.)
+//	- split : 정규화 표현식을 이용하여 문자열 짜르기 (결과값은 배열)
+//	- RLtrimEx : 오른쪽 왼쪽 원하는 문자 짜르기
+//	- saveDataInArray : 배열 정보를 DATA 배열에 기록 (단, 공백은 제거됩니다.)
+//	- addDataInArray : 지정된 배열 변수에 데이터 추가
+//	- sizeof : 공백을 제거하고 배열 개수를 반환
+//	- plus : 변수만큼 값 더하기
+//	- addStringFront : 원하는 문장을 앞부분에 추가. (문장 버전)
+//	- addArrayFront : 원하는 문장을 앞부분에 추가. (배열 버전)
+//
+//
+//	키워드
+//		THIS_WEB_SITE	: 사용자가 입력한 웹 사이트 주소
+//		▣▣SPLIT▣▣		: 인자 값 구분자
+
+{START:-}
+	{ID:autocafe}
+	{URL:http://www.autocafe.co.kr}
+
+	{KEY:prodName}
+		{NAME:상품이름}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>차량모델<\/strong>.*?<\/tr>/}
+		{LEVEL:ereg_replace=차량모델▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:RLtrimEx=-}
+	{NEXT:-}
+
+	{KEY:sallingPrice}
+		{NAME:판매가}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>차량가격<\/strong>.*?↓/}
+		{LEVEL:ereg_replace=차량가격|↓|,| ▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:ereg_replace=만원▣▣SPLIT▣▣0000}
+	{NEXT:-}
+
+	{KEY:webText1}
+		{NAME:상품설명}
+		{LINK:-}
+		{LEVEL:preg_match_all=/class=\"top10_left15_right15_bottom10\" valign=\"top\">.*?<\/td>/}
+		{LEVEL:ereg_replace=class=\"top10_left15_right15_bottom10\" valign=\"top\">▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+	{NEXT:-}
+
+	{KEY:webText2}
+		{NAME:상품설명}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<iframe.*?<\/iframe>/}
+		{LEVEL:ereg_replace=src▣▣SPLIT▣▣ src}
+	{NEXT:-}
+
+
+////////////////////////////////////////////////////////////////////////////////// 이미지
+
+	{KEY:listImage}
+		{NAME:리스트이미지}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!-- 차량 이미지 -->.*?<\/a>/}
+		{LEVEL:preg_match_all=/<img src\=\".*?\"/}
+		{LEVEL:ereg_replace=<img src\=\"|\"|\.\.▣▣SPLIT▣▣}
+		{LEVEL:addStringFront=http://www.autocafe.co.kr}
+		{LEVEL:PM_TYPE=list}
+	{NEXT:-}
+
+	{KEY:detailImage}
+		{NAME:상세이미지}
+		{LINK:-}
+		{LEVEL:preg_match_all=/javascript:imageview\(.*?\)/}
+		{LEVEL:ereg_replace=javascript:imageview▣▣SPLIT▣▣[CUT]}
+		{LEVEL:ereg_replace=\(|\)|'▣▣SPLIT▣▣}
+		{LEVEL:RLtrimEx=[CUT]}
+		{LEVEL:split=\[CUT\]}
+		{LEVEL:httpUrl_A=http://www.autocafe.co.kr/CARPHOTO/▣▣2▣▣/▣▣0▣▣▣▣1▣▣_2.jpg}
+		{LEVEL:PM_TYPE=view}
+	{NEXT:-}
+
+////////////////////////////////////////////////////////////////////////////////// 기본옵션
+
+	{KEY:prodOpt_0}
+		{NAME:파워핸들}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?파워핸들/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_1}
+		{NAME:파워윈도우}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/파워핸들.*?파워윈도우/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_2}
+		{NAME:에어컨}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/파워윈도우.*?에어컨/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_3}
+		{NAME:풀오토에어컨}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/에어컨.*?풀오토에어컨/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_4}
+		{NAME:썬팅}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/풀오토에어컨.*?썬팅/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_5}
+		{NAME:썬루프}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/썬팅.*?썬루프/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_6}
+		{NAME:파노라마썬루}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/썬루프.*?파노라마썬루/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_7}
+		{NAME:알루미늄휠}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/파노라마썬루.*?알루미늄휠/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_8}
+		{NAME:전동백미러}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/알루미늄휠.*?전동백미러/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+
+
+	{KEY:prodOpt_9}
+		{NAME:전동접이백미}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/전동백미러.*?전동접이백미/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+
+	{KEY:prodOpt_10}
+		{NAME:ECM룸미러}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/전동접이백미.*?ECM룸미러/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_11}
+		{NAME:우드그레인}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/ECM룸미러.*?우드그레인/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_12}
+		{NAME:메탈그레인}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/우드그레인.*?메탈그레인/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_13}
+		{NAME:핸들리모컨}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/메탈그레인.*?핸들리모컨/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_14}
+		{NAME:원격시동장치}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/핸들리모컨.*?원격시동장치/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_15}
+		{NAME:스마트키}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/원격시동장치.*?스마트키/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_16}
+		{NAME:오토도어록}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/스마트키.*?오토도어록/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_17}
+		{NAME:도난경보기}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/오토도어록.*?도난경보기/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_18}
+		{NAME:가죽시트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/도난경보기.*?가죽시트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_19}
+		{NAME:전동시트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/가죽시트.*?전동시트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_20}
+		{NAME:메모리시트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/전동시트.*?메모리시트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_21}
+		{NAME:열선시트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/메모리시트.*?열선시트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_22}
+		{NAME:HID라이트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/열선시트.*?HID라이트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_23}
+		{NAME:제논라이트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/HID라이트.*?제논라이트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_24}
+		{NAME:블랙박스}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/제논라이트.*?블랙박스/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_25}
+		{NAME:하이패스}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기본옵션-->.*?<!--안정장치관련 옵션-->/}
+		{LEVEL:preg_match_all=/블랙박스.*?하이패스/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기본옵션}
+	{NEXT:-}
+
+////////////////////////////////////////////////////////////////////////////////////////////////// 안정장치관련 옵션
+	
+	{KEY:prodOpt_26}
+		{NAME:운전석에어백}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/<!--음향/옵션관련 옵션-->.*?운전석에어백/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_27}
+		{NAME:조수석에어백}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/운전석에어백.*?조수석에어백/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_28}
+		{NAME:사이드에어백}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/조수석에어백.*?사이드에어백/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_29}
+		{NAME:커튼에어백}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/사이드에어백.*?커튼에어백/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_30}
+		{NAME:ABS}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/커튼에어백.*?ABS/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_31}
+		{NAME:ECS}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/ABS.*?ECS/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_32}
+		{NAME:ESP}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/ECS.*?ESP/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_33}
+		{NAME:TCS}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/ESP.*?TCS/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_34}
+		{NAME:전후방감지기}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/TCS.*?전후방감지기/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_35}
+		{NAME:후방카메라}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/전후방감지기.*?후방카메라/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_36}
+		{NAME:하네비게이션}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/후방카메라.*?하네비게이션/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_37}
+		{NAME:GPS}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/네비게이션.*?GPS/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_38}
+		{NAME:공기청정기}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/GPS.*?공기청정기/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=안정장치관련 옵션}
+	{NEXT:-}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////// 음향/옵션관련 옵션
+
+	{KEY:prodOpt_39}
+		{NAME:CD플레이어}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/안정장치관련 옵션.*?CD플레이어/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_40}
+		{NAME:MP3플레이어}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/CD플레이어.*?MP3플레이어/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_41}
+		{NAME:CD체인저}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/MP3플레이어.*?CD체인저/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_42}
+		{NAME:VCD플레이어}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/CD체인저.*?VCD플레이어/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_43}
+		{NAME:DVD플레이어}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/VCD플레이어.*?DVD플레이어/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_44}
+		{NAME:앞좌석TV}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/DVD플레이어.*?앞좌석TV/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_45}
+		{NAME:뒷좌석TV}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/앞좌석TV.*?뒷좌석TV/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_46}
+		{NAME:AV시스템}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/뒷좌석TV.*?AV시스템/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_47}
+		{NAME:DMB}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/AV시스템.*?DMB/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_48}
+		{NAME:튜닝스피커}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/DMB.*?튜닝스피커/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_49}
+		{NAME:앰프}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/튜닝스피커.*?앰프/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_50}
+		{NAME:우퍼}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--안정장치관련 옵션-->.*?<!--음향/옵션관련 옵션-->/}
+		{LEVEL:preg_match_all=/앰프.*?우퍼/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=음향/옵션관련 옵션}
+	{NEXT:-}
+
+////////////////////////////////////////////////////////////////////////////////////////////////// 기타옵션-
+
+	{KEY:prodOpt_51}
+		{NAME:슈퍼비젼계기}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?슈퍼비젼계기/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_52}
+		{NAME:트립컴퓨터}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/슈퍼비젼계기.*?트립컴퓨터/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_53}
+		{NAME:스트럿바}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/트립컴퓨터.*?스트럿바/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_54}
+		{NAME:버켓시트}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/스트럿바.*?버켓시트/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_55}
+		{NAME:에어댐}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/버켓시트.*?에어댐/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_56}
+		{NAME:범퍼가드}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/에어댐.*?범퍼가드/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_57}
+		{NAME:?크롬휠}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/범퍼가드.*?크롬휠/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_58}
+		{NAME:4륜구동}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/크롬휠.*?4륜구동/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_59}
+		{NAME:광폭타이어}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/4륜구동.*?광폭타이어/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_60}
+		{NAME:리어스포일러}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/광폭타이어.*?리어스포일러/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_61}
+		{NAME:크루즈컨트롤}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/리어스포일러.*?크루즈컨트롤/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_62}
+		{NAME:루프캐리어}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/크루즈컨트롤.*?루프캐리어/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+	{KEY:prodOpt_63}
+		{NAME:냉장고}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<!--기타옵션-->.*?냉장고/}
+		{LEVEL:preg_match_all=/루프캐리어.*?냉장고/}
+		{LEVEL:ereg=smoll_05▣▣SPLIT▣▣1▣▣SPLIT▣▣0}
+		{LEVEL:PT_TYPE=기타옵션}
+	{NEXT:-}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+	{KEY:prodItem_0}
+		{NAME:차량모델}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>차량모델<\/strong>.*?<\/tr>/}
+		{LEVEL:ereg_replace=차량모델▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:RLtrimEx=-}
+		{LEVEL:PI_NAME=차량모델}
+	{NEXT:-}
+
+	{KEY:prodItem_1}
+		{NAME:세부모델}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>세부모델<\/strong>.*?<\/tr>/}
+		{LEVEL:ereg_replace=세부모델▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:RLtrimEx=-}
+		{LEVEL:PI_NAME=세부모델}
+	{NEXT:-}
+
+	{KEY:prodItem_2}
+		{NAME:연식/등록}
+		{LINK:-}
+		{LEVEL:preg_match_all=/연식\/등록.*?<\/tr>/}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=연식/등록}
+	{NEXT:-}
+
+
+	{KEY:prodItem_3}
+		{NAME:미션/연로}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>미션\/연료<\/strong>.*?<span class=\"smoll_03\">/}
+		{LEVEL:ereg_replace=미션\/연료▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=미션/연료}
+	{NEXT:-}
+
+
+	{KEY:prodItem_4}
+		{NAME차대번호}
+		{LINK:-}
+		{LEVEL:preg_match_all=/차대번호.*?<span class\=\"smoll_03\">/}
+		{LEVEL:ereg_replace=차대번호▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=차대번호}
+	{NEXT:-}
+
+	{KEY:prodItem_5}
+		{NAME:주행거리}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>주행거리<\/strong>.*?<span class\=\"smoll_03\">/}
+		{LEVEL:ereg_replace=주행거리▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=주행거리}
+	{NEXT:-}
+
+
+	{KEY:prodItem_6}
+		{NAME:차량색상}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>차량색상<\/strong>.*?<span class\=\"smoll_03\">/}
+		{LEVEL:ereg_replace=차량색상▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=차량색상}
+	{NEXT:-}
+
+
+	{KEY:prodItem_7}
+		{NAME:제시번호}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>제시번호<\/strong>.*?<span class\=\"smoll_03\">/}
+		{LEVEL:ereg_replace=제시번호▣▣SPLIT▣▣}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=제시번호}
+	{NEXT:-}
+
+
+	{KEY:prodItem_8}
+		{NAME:차량가격}
+		{LINK:-}
+		{LEVEL:preg_match_all=/<strong>차량가격<\/strong>.*?↓/}
+		{LEVEL:_striptext=-}
+		{LEVEL:PI_NAME=차량가격}
+	{NEXT:-}
+
+
+
+{END:-}

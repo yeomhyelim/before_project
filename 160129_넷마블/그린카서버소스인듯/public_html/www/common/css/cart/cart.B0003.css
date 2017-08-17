@@ -1,0 +1,57 @@
+/********* 쇼핑카트 ************/
+#contentWrap .cartWrap{float:left;width:790px;padding-bottom:50px;}
+#contentWrap .tableProdList table{width:100%;}
+#contentWrap .tableProdList table th{height:22px;padding: 3px 0;color:#737373;font-size:11px;letter-spacing:-1px;background: #efefef;border:1px solid #e6e6e6;}
+#contentWrap .tableProdList table  td{padding: 5px;text-align:center;border:1px solid #e6e6e6;}
+#contentWrap .tableProdList table  td.prodInfo{text-align:left;}
+#contentWrap .tableProdList table  td.prodInfo img{float:left;}
+#contentWrap .tableProdList table  td.prodInfo ul{float:left;margin-left:10px;}
+#contentWrap .tableProdList table  td.prodInfo ul li{padding: 2px 0;}
+#contentWrap .tableProdList table  td.prodInfo ul li a.optBtn{display:block;padding-right:5px;font-size:11px;color:#999999;letter-spacing:-2px;text-decoration:underline;}
+#contentWrap .tableProdList table  td.checkBtn{width:80px;padding-left:10px;text-align:left;border-right:none;}
+#contentWrap .tableProdList table  td.checkBtn a{display:block;margin: 1px;}
+#contentWrap .tableProdList table  td dl dd{display:inline-block;vertical-align:top;}
+#contentWrap .tableProdList table  td dl dd a{display:block;}
+#contentWrap .totalPriceWrap{padding: 15px;border-bottom:1px solid #e6e6e6;text-align:right;}
+#contentWrap .cartTabWrap{position:relative;height:30px;border-bottom:2px solid #645e5e;}
+#contentWrap .cartTabWrap .tabBtn1{position:absolute;left:0;top:0;height:14px;padding: 8px 20px;letter-spacing:-1px;font-weight:bold;border:2px solid #645e5e;border-bottom:none;background:#FFF;}
+#contentWrap .cartTabWrap .txtInfo{position:absolute;left:150px;top:0;margin-top:10px;color:#8e8e8e;font-size:11px;letter-spacing:-1px;}
+
+#contentWrap .cartTabWrap .tabAtvBtn{position:absolute;left:0;top:0;}
+#contentWrap .cartTabWrap .tabAtvBtn a{display:inline-block;height:14px;padding: 7px 20px;letter-spacing:-1px;font-weight:bold;border:2px solid #645e5e;background:#e5e5e5;vertical-align:top;}
+#contentWrap .cartTabWrap .tabAtvBtn a.selectedTab{padding: 8px 20px;border-bottom:none;background: #FFF;}
+
+
+
+/********** 주문서 ***********/
+#contentWrap .tableOrderForm table{width:100%;border-top:2px solid #645e5e;}
+#contentWrap .tableOrderForm table th{height:22px;padding: 3px 10px;color:#737373;text-align:left;font-size:11px;letter-spacing:-1px;background: #efefef;border:1px solid #e6e6e6;}
+#contentWrap .tableOrderForm table  td{padding: 5px;border:1px solid #e6e6e6;}
+#contentWrap .tableOrderForm table  td dl dd input{margin: 1px 0;}
+#contentWrap .tableOrderForm table  td ul.priceInfo li{padding: 5px 0;}
+#contentWrap .tableOrderForm table  td ul.priceInfo li span{display:inline-block;width:80px;color:#838383;}
+#contentWrap .tableOrderForm table  td ul li.totPayPrice{padding: 5px 0;border-top:1px solid #e5e5e5;}
+#contentWrap .paymentInfo{padding:15px 20px;;border:1px solid #c0c1c2;background: #f1f1f1;}
+#contentWrap .paymentInfo ul li{padding: 5px;}
+
+
+/** 회원가입 ***/
+#contentWrap .joinWrap span.txtInfo{display:block;padding-left:20px;letter-spacing:-1px;}
+#contentWrap .joinWrap span.txtInfo strong{color:#ff0000;}
+#contentWrap .joinWrap .regWrap{padding: 20px;}
+#contentWrap .joinWrap .regWrap table{width:100%;border-top:2px solid #dedede;}
+#contentWrap .joinWrap .regWrap table th{padding:15px 10px 14px 0;vertical-align:top;color:#5d5d5d;text-align:right;letter-spacing:-1px;border-bottom:1px solid #dedede;}
+#contentWrap .joinWrap .regWrap table th strong{color:#ff0000;}
+#contentWrap .joinWrap .regWrap table td{padding:10px;border-bottom:1px solid #dedede;}
+#contentWrap .joinWrap .regWrap table td span{display:block;padding-top:3px;font-size:11px;color:#b3b3b3;vertical-align:top;letter-spacing:-1px;}
+#contentWrap .joinWrap .regWrap table td dl dd{padding: 1px 0;}
+#contentWrap .joinWrap .regWrap table td ul li{display:inline-block;padding: 2px 0;width:30%;vertical-align:top;}
+#contentWrap .joinWrap .regWrap table td ul li input{margin-right:3px;}
+
+/**/
+#contentWrap .leftWrap{padding-bottom:150px;float:left;width:200px;}
+#contentWrap .leftWrap .subNavi{padding-bottom:20px;border:1px solid #dfdfdf;}
+#contentWrap .leftWrap .subNavi .title{padding: 2px 5px;background: #d0d1d2;}
+#contentWrap .leftWrap .subNavi ul{margin: 0 10px;}
+#contentWrap .leftWrap .subNavi ul li{border-bottom:1px solid #ebebeb;}
+#contentWrap .leftWrap .subNavi ul li a{display:inline-block;padding: 5px 0;}

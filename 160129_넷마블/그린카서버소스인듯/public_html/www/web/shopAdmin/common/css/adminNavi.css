@@ -1,0 +1,37 @@
+
+/* remove the list style */
+#nav {margin:0;padding:0;list-style:none;}   
+     
+    /* make the LI display inline */
+    /* it's position relative so that position absolute */
+    /* can be used in submenu */
+    #nav li { float:left;display:block;position:relative;z-index:500;}
+	#nav li .newCntIcon{position:absolute;left:20px;top:-13px;width:30px;height:17px;padding-top:4px;font-family:verdana;font-size:10px;font-weight:bold;color:#FFF;text-align:center;letter-spacing:-1px;background: url(/shopAdmin/himg/common/icon_new_cnt.png) 3px top no-repeat;}
+         
+    /* this is the parent menu */
+    #nav li a {display:block;margin: 0 10px;padding:10px 15px 0px 5px;height:18px;color:#d9d9d9;font-size:11px;}
+ 
+    #nav li:hover {color:#fff;background: url(/shopAdmin/himg/common/bg_mn_tab.gif) right top no-repeat;}
+     
+    /* you can make a different style for default selected value */
+
+     
+        /* submenu, it's hidden by default */
+        #nav ul {position:absolute;left:0;display:none;padding:0;background:#22222A;}
+         
+        #nav ul.subNav li {float:left;width:150px;}
+		#nav ul.subNav li:hover {float:left;width:150px;background:#181820;}
+         
+        /* display block will make the link fill the whole area of LI */
+        #nav ul a { display:block;height:15px;padding:  5px;color:#d9d9d9;}
+         
+        #nav ul.subNav a:hover { }
+ 
+/* fix ie6 small issue */
+/* we should always avoid using hack like this */
+/* should put it into separate file : ) */
+*html #nav ul {
+    margin:0 0 0 -2px;
+}
+
+

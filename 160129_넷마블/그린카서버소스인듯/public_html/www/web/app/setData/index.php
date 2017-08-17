@@ -1,0 +1,1 @@
+<?php include MALL_HOME . "/web/app/{$strAppMode}/setData.php";?>

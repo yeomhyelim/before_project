@@ -1,0 +1,741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/print.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+<!-- [s]w:1075, h:380 --> <!-- sub 컨텐츠 테이블 col width 넓이와 동일합니다, / 테이블 영역 전체는 1015px 입니다 -->
+
+	<!-- [s]팝업 -->
+	<div class="layer-wrap02 layer_area">
+		<!-- [s]layer-cont -->
+		<div class="layer-cont">
+
+
+			<div class="sub_top_content">
+				<h1 class="subtit">인보이스 메일발송</h1>
+				<div class="btn_right minus_t_btn">
+					<button type="button" class="btn_red_data">전송</button>
+					<button type="button" class="btn_red_data">닫기</button>
+				</div>
+			</div>
+
+			<div class="cont_white_fix">
+
+				<div class="tbl_height_box height_row">
+
+					<!-- [s]tbl-scroll-wrap -->
+					<div class="tbl-scroll-wrap  top_zero">
+
+						<div id="intitle0" style="position: relative;"> 
+
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_col">
+								
+								<table>
+									<colgroup>
+										<col width="50" />
+										<col width="221" />
+										<col width="221" />
+										<col width="522" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="col">순번</th>
+											<th scope="col">인보이스번호</th>
+											<th scope="col">거래처</th>
+											<th scope="col" class="last">수신메일</th>
+										</tr>
+									</tbody>
+								</table>		
+
+							</div>
+							<!-- //[e]그리드 테이블 -->
+						</div>
+
+						<div id="list0" onScroll=f_scroll(0) style="overflow-x: auto; overflow-y: auto;">
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_col top_zero">
+								<table class="border_none">
+									<colgroup>
+										<col width="50" />
+										<col width="221" />
+										<col width="221" />
+										<col width="522" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>999</td>
+											<td>7400028850</td>
+											<td class="td_left">가나다라마바사아자차카타</td>
+											<td class="last td_left">
+												<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<span class="input_gray_fix w100">
+													<input type="text" value="" title="" name="" id="" />
+												</span>
+												<span class="input_gray_fix w200">
+													<input type="text" value="" title="" name="" id="" />
+												</span>
+												<button type="button" class="btn_gray_com">다른메일선택</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>		
+
+							</div>
+							<!-- //[e]그리드 테이블 -->
+
+						</div>
+
+					</div>
+					<!-- //[e]tbl-scroll-wrap -->
+				</div>
+
+				<div class="stitbox01 top_mr02">
+					<div class="cont">
+						<h2>수익정산</h2>
+					</div>
+				</div>
+
+				<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+					<table class="tbl_white_row">
+						<colgroup>
+							<col width="130" />
+							<col width="883" />
+							<col width="" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><label for="">제목</label></th>
+								<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+								<td class="blank_last"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="">내용</label></th>
+								<td>
+									<div class="txtarea">
+										<textarea class="h100"></textarea>	
+									</div>									
+								</td>
+								<td class="blank_last"></td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+
+
+				<!-- [s]tax_mail_box -->
+				<div class="tax_mail_box">
+					<div class="cont">
+
+
+						<!-- [s]pop_print_gray -->
+						<div class="pop_print_gray">
+							<div class="inbox">
+
+								<table class="tit_tblbox">
+									<tbody>
+										<tr>
+											<td>
+												<div class="logo">
+													<img src="http://c1.img.netmarble.kr/web/netmarble/official/v/img/ko/company/ci1.jpg" alt="넷마블 로고" />
+												</div>
+											</td>
+											<td class="td_right"><h2><span>I N V O I C E</span></h2></td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="top_tblbox">
+									<tbody>
+										<tr>
+											<td>
+												<table class="tbl_cont">
+													<tbody>
+														<tr>
+															<td>
+																<p>NETMARBLE Games Corp.</p>
+																<p>20F, G-Valley biz plaza, 300, Digital-ro,</p>
+																<p>Guro-gu, Seoul, Korea	</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p class="tit"><strong>BILL TO</strong></p>
+																<p>SHENZHEN TENCENT COMPUTER SYSTEM</p>
+																<p>7/F, Malata Building, Kej</p>
+																<p>Midwest District  of Hi-tech p</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td class="td_top">
+												<table class="tbl_date">
+													<tbody>
+														<tr>
+															<th scope="row">Invoice No.</th>
+															<td>RS2015080008</td>
+														</tr>
+														<tr>
+															<th scope="row">Invoice Date</th>
+															<td>07/31/2015</td>
+														</tr>
+														<tr>
+															<th scope="row">Due Date</th>
+															<td>09/30/2015</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="tbl_height_box">
+									<tbody>
+										<tr>
+											<td>
+												<table class="tbl_desbox">
+													<thead>
+														<tr>
+															<th scope="col" class="per_w60">Description</th>
+															<th scope="col" class="per_w15">Amount</th>
+															<th scope="col" class="per_w25">Amount</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="td_left">
+																<p>Royalty for MODOO MARBLE April [Android + IOS]</p>
+																<p>in accordance with Article 5.4 of License Agreement</p>
+															</td>
+															<td class="per_w30">
+																<p><strong>USD</strong></p>
+																<p>CNY</p>
+															</td>
+															<td class="per_w70">
+																<p><strong>987.31</strong></p>
+																<p>6,069.53</p>
+																<p class="color_blue">(Exchange Rate : 6.1475)</p>
+															</td>
+														</tr>	
+													</tbody>
+												</table>							
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								
+
+								<table class="tbl_wirebox">
+									<tbody>
+										<tr>
+											<td>
+												<p class="tit"><strong>WIRE INSTRUCTION</strong></p>
+												<p>Bank Name : KB KooKmin Bank</p>
+												<p>Bank Adress : 84, Namdaemun-ro, Jung-gu, Seoul, 100-845 Korea</p>
+												<p>Account Name : NETMARBLE Games Corp.</p>
+												<p>Account Number : 123668-11-000767</p>
+												<p>Swift Code : CZNBKRSEXXX</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>If you have any question regarding wire instruction,</p>
+												<p>call Woo seongchul at +82-2-2271-7196</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<table class="tbl_president">
+													<tbody>
+														<tr>
+															<td class="per_w65 td_right"><p class="img_stamp"><img src="../../images/board/img_stamp.gif" alt="인장" /></p></td>
+															<td class="per_w35">
+																<p>(Guro-dong, G-valley biz Plasa),</p>
+																<p>300, Digital-ro, Guro-gu, Seoul, Korea</p>
+																<p><strong>NETMARLE Games Corporation,</strong></p>
+																<p>President Kwon Young Sig</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>							
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+						<!-- //[e]pop_print_gray -->
+
+
+
+						<!-- [s]pop_print_gray -->
+						<div class="pop_print_gray">
+							<div class="inbox">
+
+								<table class="tit_tblbox">
+									<tbody>
+										<tr>
+											<td>
+												<div class="logo">
+													<img src="http://c1.img.netmarble.kr/web/netmarble/official/v/img/ko/company/ci1.jpg" alt="넷마블 로고" />
+												</div>
+											</td>
+											<td class="td_right"><h2><span>I N V O I C E</span></h2></td>
+										</tr>
+									</tbody>
+								</table>
+
+
+								<table class="top_tblbox">
+									<tbody>
+										<tr>
+											<td>
+												<table class="tbl_cont">
+													<tbody>
+														<tr>
+															<td>
+																<p>NETMARBLE Games Corp.</p>
+																<p>20F, G-Valley biz plaza, 300, Digital-ro,</p>
+																<p>Guro-gu, Seoul, Korea	</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p class="tit"><strong>BILL TO</strong></p>
+																<p>SHENZHEN TENCENT COMPUTER SYSTEM</p>
+																<p>7/F, Malata Building, Kej</p>
+																<p>Midwest District  of Hi-tech p</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td class="td_top">
+												<table class="tbl_date">
+													<tbody>
+														<tr>
+															<th scope="row">Invoice No.</th>
+															<td>RS2015080008</td>
+														</tr>
+														<tr>
+															<th scope="row">Invoice Date</th>
+															<td>07/31/2015</td>
+														</tr>
+														<tr>
+															<th scope="row">Due Date</th>
+															<td>09/30/2015</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+
+								<table class="tbl_height_box">
+									<tbody>
+										<tr>
+											<td>
+												<table class="tbl_desbox">
+													<thead>
+														<tr>
+															<th scope="col" class="per_w60">Description</th>
+															<th scope="col" class="per_w15">Amount</th>
+															<th scope="col" class="per_w25">Amount</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td rowspan="2" class="td_left">
+																<p>Royalty for MODOO MARBLE April [Android + IOS]</p>
+																<p>in accordance with Article 5.4 of License Agreement</p>
+															</td>
+															<td rowspan="2" class="per_w30">
+																<p><strong>USD</strong></p>
+																<p>CNY</p>
+															</td>
+															<td class="per_w70">
+																<p><strong>987.31</strong></p>
+																<p>6,069.53</p>
+																<p class="color_blue">(Exchange Rate : 6.1475)</p>
+															</td>
+														</tr>	
+														<tr>
+															<td class="per_w70">
+																<p><strong>888.58</strong></p>
+															</td>
+														</tr>	
+													</tbody>
+												</table>		
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+
+
+								<table class="tbl_wirebox">
+									<tbody>
+										<tr>
+											<td>
+												<p class="tit"><strong>WIRE INSTRUCTION</strong></p>
+												<p>Bank Name : KB KooKmin Bank</p>
+												<p>Bank Adress : 84, Namdaemun-ro, Jung-gu, Seoul, 100-845 Korea</p>
+												<p>Account Name : NETMARBLE Games Corp.</p>
+												<p>Account Number : 123668-11-000767</p>
+												<p>Swift Code : CZNBKRSEXXX</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>If you have any question regarding wire instruction,</p>
+												<p>call Woo seongchul at +82-2-2271-7196</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<table class="tbl_president">
+													<tbody>
+														<tr>
+															<td class="per_w65 td_right"><p class="img_stamp"><img src="../../images/board/img_stamp.gif" alt="인장" /></p></td>
+															<td class="per_w35">
+																<p>(Guro-dong, G-valley biz Plasa),</p>
+																<p>300, Digital-ro, Guro-gu, Seoul, Korea</p>
+																<p><strong>NETMARLE Games Corporation,</strong></p>
+																<p>President Kwon Young Sig</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>							
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+							
+
+								<div class="company_info">
+
+								</div>
+
+							</div>
+						</div>
+						<!-- //[e]pop_print_gray -->
+
+
+
+
+						<!-- [s]pop_print_gray -->
+						<div class="pop_print_gray">
+							<div class="inbox_ko">
+
+								<h2><span>청  구  서</span></h2>
+
+
+								<table class="top_tblbox">
+									<tbody>
+										<tr>
+											<td>
+												<p class="tit"><strong>거래처:</strong></p>
+												<p>1. 귀사의 일억번창 하심을 진심으로 기원합니다.</p>
+												<p>2. 아래와 같이 청구 하오니 결제하여 주시기 바랍니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+								<table class="tbl_height_box">
+									<tbody>
+										<tr>
+											<td class="td_center">- 아  래 -</td>
+										</tr>
+										<tr>						
+											<td>
+												<p>● 청구내역</p>
+												<p class="txt_right">[단위: 원]</p>
+
+												<table class="tbl_desbox">
+													<tbody>
+														<tr>
+															<td>
+
+																<table class="tbl_view_html_col">
+																	<thead>
+																		<tr>
+																			<th scope="col" class="per_w20">구분</th>
+																			<th scope="col" class="per_w20">기간</th>
+																			<th scope="col" class="per_w35">청구금액</th>
+																			<th scope="col" class="per_w25 last">비고</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td rowspan="4"></td>
+																			<td>15.03.01~15.03.31</td>
+																			<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+																			<td class="last" rowspan="4"></td>
+																		</tr>
+																		<tr>
+																			<td>15.03.01~15.03.31</td>
+																			<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+																		</tr>
+																		<tr>
+																			<td>15.03.01~15.03.31</td>
+																			<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+																		</tr>
+																		<tr>
+																			<td>15.03.01~15.03.31</td>
+																			<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+																		</tr>
+																		<tr class="tr_total">
+																			<td colspan="2">합계</td>
+																			<td class="td_left"><span class="unit">USD</span> <span class="point">999,999,999,999,999,00000</span></td>
+																			<td class="last"></td>
+																		</tr>
+																	</tbody>
+																</table>	
+
+															</td>
+														</tr>
+													</tbody>
+												</table>						
+											
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="tbl_infobox">
+									<tbody>
+										<tr>
+											<td>
+												<p>- 적요: </p>
+												<p></p>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 입금계좌번호: 국민은행 123601-01-019679 넷마블게임즈㈜
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 입금일자:
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 기타 문의사항은 넷마블게임즈㈜ 000팀으로 문의 하시기 바랍니다.
+												<p>└ 담당자: 홍길동 (02-371-0000)</p>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 입금하실 때는 입금자 명은 [ 회사명 _ 00 ]로 보내주시기 바랍니다.
+											</td>
+										</tr>
+
+
+										<tr>
+											<td>감사합니다.</td>
+										</tr>
+										<tr>
+											<td>끝.</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<table class="tbl_wirebox">
+									<tbody>
+										<tr>
+											<td>넷마블게임즈주식회사</td>
+										</tr>
+										<tr>
+											<td><span class="name">대표이사 권영식</span></td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+						</div>
+						<!-- //[e]pop_print_gray -->
+
+
+						<!-- [s]pop_print_gray -->
+						<div class="pop_print_gray">
+							<div class="inbox_ko">
+
+								<h2><span>청  구  서</span></h2>
+
+
+								<table class="top_tblbox">
+									<tbody>
+										<tr>
+											<td>
+												<p class="tit"><strong>거래처:</strong></p>
+												<p>1. 귀사의 일억번창 하심을 진심으로 기원합니다.</p>
+												<p>2. 아래와 같이 청구 하오니 결제하여 주시기 바랍니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+								<table class="tbl_height_box">
+									<tbody>
+										<tr>
+											<td class="td_center">- 아  래 -</td>
+										</tr>
+										<tr>						
+											<td>
+												<p>● 청구내역</p>
+												<p class="txt_right">[단위: 원]</p>
+
+
+												<table class="tbl_view_html_col">
+													<thead>
+														<tr>
+															<th scope="col" class="per_w20">구분</th>
+															<th scope="col" class="per_w20">기간</th>
+															<th scope="col" class="per_w35">청구금액</th>
+															<th scope="col" class="per_w25 last">비고</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td rowspan="4"></td>
+															<td>15.03.01~15.03.31</td>
+															<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+															<td class="last" rowspan="4"></td>
+														</tr>
+														<tr>
+															<td>15.03.01~15.03.31</td>
+															<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+														</tr>
+														<tr>
+															<td>15.03.01~15.03.31</td>
+															<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+														</tr>
+														<tr>
+															<td>15.03.01~15.03.31</td>
+															<td class="td_left"><span class="unit">USD</span> 999,999,999,999,999,00000</td>
+														</tr>
+														<tr class="tr_total">
+															<td colspan="2">합계</td>
+															<td class="td_left"><span class="unit">USD</span> <span class="point">999,999,999,999,999,00000</span></td>
+															<td class="last"></td>
+														</tr>
+													</tbody>
+												</table>						
+											
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table class="tbl_infobox">
+									<tbody>
+										<tr>
+											<td>
+												<p>- 적요: </p>
+												<p></p>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 입금계좌번호: 국민은행 123601-01-019679 넷마블게임즈㈜
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 입금일자:
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 기타 문의사항은 넷마블게임즈㈜ 000팀으로 문의 하시기 바랍니다.
+												<p>└ 담당자: 홍길동 (02-371-0000)</p>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												- 입금하실 때는 입금자 명은 [ 회사명 _ 00 ]로 보내주시기 바랍니다.
+											</td>
+										</tr>
+
+
+										<tr>
+											<td>감사합니다.</td>
+										</tr>
+										<tr>
+											<td>끝.</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<table class="tbl_wirebox">
+									<tbody>
+										<tr>
+											<td>넷마블게임즈주식회사</td>
+										</tr>
+										<tr>
+											<td><span class="name">대표이사 권영식</span></td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+						</div>
+						<!-- //[e]pop_print_gray -->
+
+
+
+
+					</div>
+				</div>
+				<!-- //[e]tax_mail_box -->
+
+
+			</div>				
+			
+
+		</div>
+		<!-- [e]layer-cont -->
+	</div>
+	<!-- [e]팝업 -->
+	
+<!-- //[e]w:1075, h:380 -->
+
+
+</body>
+</html>

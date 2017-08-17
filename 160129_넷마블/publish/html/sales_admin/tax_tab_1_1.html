@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">세무관리</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>세금계산서발행</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>인보이스발행</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>원천징수영수증발행</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">출력</button>
+								<button type="button" class="btn_red_data">메일발송</button>
+								<button type="button" class="btn_red_data">우편발송확인</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">출력</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+						<div class="cont_gray_line01">
+							<table class="tbl_choice_row">
+								<colgroup>
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">매출</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">매입</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">관리</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">귀속일</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->	
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">작성자</label></th>
+										<td><span class="input_gray_block txt_none"></span></td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td><span class="input_gray_block txt_none"></span></td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<th scope="row"><label for="">매출구분</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">매출-일반</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">매출PC방</label>
+										</td>
+										<th scope="row"><label for="">과세/세금<br />계산서유형</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<select class="w107">
+												<option value="" selected="selected"></option>
+											</select>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix w110"><input type="text" id="" class="txt_c" name="" title="" value="" /></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>공급자정보</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero t_line_type01"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="208" />
+										<col width="130" />
+										<col width="207" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">거래처</label></th>
+											<td>넷마블</td>
+											<th scope="row"><label for="">사업자번호</label></th>
+											<td>123456789123456789</td>
+											<th scope="row"><label for="">대표자</label></th>
+											<td>홍길동</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>공급받는자 리스트</h2>
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">발행</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="box_gray_vs">
+								<div class="cont">
+									<table class="tbl_vs_col">
+										<colgroup>
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="">발행구분</label></th>
+												<td>
+													<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">개별발행</label>
+													<input type="radio" id="" class="input_radio" value="" /> <label for="">합산발행</label>				
+												</td>
+												<th scope="row"><label for="">발행일</label></th>
+												<td>
+													<!-- 2015-09-16 수정 style값 class로 변경 -->
+													<span class="input_gray_fix input_ico w73">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+													</span>
+												</td>
+												<th scope="row"><label for="">요청구분</label></th>
+												<td>
+													<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">청구</label>
+													<input type="radio" id="" class="input_radio" value="" /> <label for="">영수</label>														
+												</td>
+											</tr>
+										</tbody>
+									</table>										
+								</div>					
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero"> 
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="40" />
+											<col width="100" />
+											<col width="100" />
+											<col width="120" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="150" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+												<th scope="col" rowspan="2">작성일자</th>
+												<th scope="col" colspan="5">공급받는자 정보</th>
+												<th scope="col" colspan="7">세금계산서 발행정보</th>
+												<th scope="col" rowspan="2" class="last">전송<br />실패사유</th>
+											</tr>
+
+
+											<tr>
+												<th scope="col">거래처</th>
+												<th scope="col">사업자/주민번호</th>
+												<th scope="col">대표자</th>
+												<th scope="col">담당자</th>
+												<th scope="col">담당자이메일</th>
+
+												<th scope="col">품목</th>
+												<th scope="col">과세/세금계산서유형</th>
+												<th scope="col">공급가액</th>
+												<th scope="col">세액</th>
+												<th scope="col">합계</th>
+												<th scope="col">작성자</th>
+												<th scope="col" class="last">SAP번호</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>2015-07-01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>2015-07-01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>2015-07-01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>2015-07-01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>2015-07-01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>	
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>2015-07-01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>												
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+
+						</div>								
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="80" />
+									<col width="202" />
+									<col width="100" />
+									<col width="315" />
+									<col width="80" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">사업유형</label></th>
+										<td>
+											<input type="checkbox" id="" class="input_check left_zero" value="" /> <label for="" class="w30">전체</label>
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">모바일</label>	
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">PC</label>	
+										</td>
+										<th scope="row"><label for="">인보이스유형</label></th>
+										<td colspan="3">
+											<input type="checkbox" id="" class="input_check left_zero" value="" /> <label for="" class="w30">전체</label>
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">IP</label>	
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">MG</label>	
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">RS</label>	
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="">인센티브</label>	
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">계약명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">인보이스일자</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+
+										<th scope="row"><label for="">입금여부</label></th>
+										<td>
+											<input type="checkbox" id="" class="input_check left_zero" value="" /> <label for="" class="w30">전체</label>
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">입금</label>	
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">미입금</label>	
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">상태</label></th>
+										<td>
+											<input type="checkbox" id="" class="input_check left_zero" value="" /> <label for="" class="w30">전체</label>
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">작성</label>	
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">결제중</label>
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">발송</label>
+											<input type="checkbox" id="" class="input_check" value="" /> <label for="" class="w30">미발송</label>
+										</td>
+										<th scope="row"><label for="">회수일</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w55">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w55">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row"><label for="">귀속조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>인보이스 리스트</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap  top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="40" />
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+												<th scope="col">순서</th>
+												<th scope="col">사업유형</th>
+												<th scope="col">인보이스유형</th>
+												<th scope="col">인보이스일자</th>
+
+												<th scope="col">인보이스번호</th>
+												<th scope="col">거래처</th>
+												<th scope="col">계약명</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">귀속조직</th>
+
+												<th scope="col">상태</th>
+												<th scope="col">회수일</th>
+												<th scope="col">잔여일수</th>
+												<th scope="col" class="last">입금여부</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+						</div>			
+						
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont2">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="249" />
+									<col width="90" />
+									<col width="129" />
+									<col width="90" />
+									<col width="129" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">귀속일</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">원천세유형</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>
+										</td>
+										<th scope="row"><label for="">담당자</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">귀속조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">프로젝트</label></th>
+										<td colspan="3">
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">출력여부</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>
+										</td>
+									</tr>								
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>원천징수리스트</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap  top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="40" />
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+												<th scope="col">순번</th>
+												<th scope="col">ERP번호</th>
+												<th scope="col">귀속일</th>
+												<th scope="col">지급일</th>
+
+												<th scope="col">원천세유형</th>
+												<th scope="col">거래처</th>
+												<th scope="col">사업자번호</th>
+												<th scope="col">주민번호</th>
+												<th scope="col">비용항목</th>
+
+												<th scope="col">세율</th>
+												<th scope="col">통화</th>
+												<th scope="col">실지급액</th>
+												<th scope="col">필요경비</th>
+												<th scope="col">소득금액</th>
+
+												<th scope="col">소득세</th>
+												<th scope="col">주민세</th>
+												<th scope="col" class="last">출력여부</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+
+
+						</div>	
+					</div>
+
+
+					
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

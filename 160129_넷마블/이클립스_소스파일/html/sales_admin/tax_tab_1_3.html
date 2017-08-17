@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">세무관리</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1"><b>세금계산서발행</b></a></li>
+								<li><a href="#1"><b>인보이스발행</b></a></li>
+								<li><a href="#1"><b>원천징수영수증발행</b></a></li>
+							</ul>
+						</div>
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">조회</button>
+						</div>
+					</div>
+
+
+					<div class="cont_gray_line01">
+						<table class="tbl_choice_row">
+							<colgroup>
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">매출</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">매입</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">관리</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_gray_fix">
+						<table class="tbl_search_row">
+							<colgroup>
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="242" />
+								<col width="90" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="">귀속일</label></th>
+									<td>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<span class="input_gray_fix input_ico w73">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>		
+										<span class="txt_bar">-</span>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<span class="input_gray_fix input_ico w73">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+										</span>
+									</td>
+									<th scope="row"><label for="">작성자</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+									</td>
+									<th scope="row"><label for="">작성조직</label></th>
+									<td>
+										<span class="input_gray_block input_ico">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">매출/매입</label></th>
+									<td>
+										<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">매출-일반</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">매출PC방</label>
+										<input type="radio" id="" class="input_radio" value="" /> <label for="">매입</label>	
+									</td>
+									<th scope="row"><label for="">과세/세금<br />계산서유형</label></th>
+									<td>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<select class="w107">
+											<option value="" selected="selected"></option>
+										</select>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<span class="input_gray_fix txt_none w110"></span>
+									</td>
+									<th scope="row"><label for="">승인상태</label></th>
+									<td>
+										<select>
+											<option value="" selected="selected"></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">거래처</label></th>
+									<td>
+										<!-- 2015-09-16 수정 style값 class로 변경 -->
+										<span class="input_gray_fix input_ico w73">
+											<input type="text" id="" name="" title="" value="" />
+											<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+										</span>
+									</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="cont_white_fix">
+
+
+						<div class="stitbox01 top_mr02">
+							<div class="cont">
+								<h2>세금계산서 발행리스트</h2>
+								<div class="pos_btn_right">
+									<button type="button" class="btn_skyblue_data">재발행</button>
+									<button type="button" class="btn_skyblue_data">발행취소</button>
+									<button type="button" class="btn_skyblue_data">수정발행</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="tbl-scroll-wrap top_zero"> 
+							<!-- [s]그리드 테이블 -->
+							<div class="tbl_view_html_col">
+								<table>
+									<colgroup>
+										<col width="40" />
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+										<col width="150" />
+										<col width="100" />
+										<col width="100" />
+
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+										<col width="100" />
+
+										<col width="100" />
+										<col width="100" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+											<th scope="col" rowspan="2">작성일자</th>
+
+											<th scope="col" colspan="5">공급받는자 정보 / 공급자정보</th>
+											<th scope="col" colspan="8">세금계산서 발행정보</th>
+
+											<th scope="col" rowspan="2">위수탁</th>
+											<th scope="col" rowspan="2">승인상태</th>
+											<th scope="col" rowspan="2" class="last">국세청전송</th>
+										</tr>
+
+
+										<tr>
+											<th scope="col">거래처</th>
+											<th scope="col">사업자/주민번호</th>
+											<th scope="col">대표자</th>
+											<th scope="col">담당자</th>
+											<th scope="col">담당자이메일</th>
+
+											<th scope="col">품목</th>
+											<th scope="col">과세/세금계산서유형</th>
+											<th scope="col">공급가액</th>
+											<th scope="col">세액</th>
+											<th scope="col">합계</th>
+											<th scope="col">작성자</th>
+
+											<th scope="col">SAP번호</th>
+											<th scope="col" class="last">세금계산서번호</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>2015-07-01</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>2015-07-01</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>2015-07-01</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>2015-07-01</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>2015-07-01</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td class="last"></td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+											<td>2015-07-01</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+											<td></td>
+											<td class="last"></td>
+										</tr>										
+									</tbody>
+								</table>	
+							</div>
+							<!-- //[e]그리드 테이블 -->
+						</div>
+
+
+
+					</div>
+
+					
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

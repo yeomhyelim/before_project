@@ -1,0 +1,2734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+
+					<div class="sub_top_content">
+						<h1 class="subtit">정산기준관리</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>정산조건 템플릿등록</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>정산조건등록</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>정산조건 적용기준등록</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(3); return false"><b>정산조건 내역조회</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(4); return false"><b>정산연계 프로젝트 등록</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(5); return false"><b>PG사 마스터관리</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">저장</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">신규등록</button>
+								<button type="button" class="btn_red_data">변경</button>
+								<button type="button" class="btn_red_data">저장</button>
+								<button type="button" class="btn_red_data">미리보기</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">저장</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn3">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn4">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">저장</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn5">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">저장</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+						<div class="cont_white_fix">
+
+							<!-- [s]partition_box -->
+							<div class="partition_box04">
+
+								<!-- [s]f_left -->
+								<div class="f_left">
+
+									<div class="stitbox01">
+										<div class="cont">
+											<h2>매출유형(정산구분 기준등록)</h2>
+											<div class="pos_btn_right">
+												<button class="btn_skyblue_data" type="button">행추가</button>
+												<button class="btn_skyblue_data" type="button">행삭제</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="tbl_height_box">
+										
+										<div class="tbl-scroll-wrap top_zero"> 
+
+											<!-- [s]그리드 테이블 -->
+											<div class="tbl_view_html_col">
+												<table>
+													<colgroup>
+														<col width="194" />
+														<col width="102" />
+														<col width="103" />
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">매출유형</th>
+															<th scope="col">원가구분</th>
+															<th class="last" scope="col">국내/해외</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td class="last">
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>													
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td class="last">
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>													
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td class="last">
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>													
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td class="last">
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>													
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td class="last">
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>													
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>															
+															</td>
+															<td class="last">
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>													
+															</td>
+														</tr>
+													</tbody>
+												</table>	
+											</div>
+											<!-- //[e]그리드 테이블 -->			
+
+										</div>
+									</div>
+
+								</div>
+								<!-- //[e]f_left -->
+
+
+
+								<!-- [s]f_right -->
+								<div class="f_right">
+							
+									<div class="stitbox01">
+										<div class="cont">
+											<h2>정산식등록</h2>
+											<div class="pos_btn_right">
+												<button class="btn_skyblue_data" type="button">행추가</button>
+												<button class="btn_skyblue_data" type="button">행삭제</button>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="tbl_height_box">
+										<div class="tbl-scroll-wrap top_zero"> 
+
+											<!-- [s]그리드 테이블 -->
+											<div class="tbl_view_html_col">
+												<table>
+													<colgroup>
+														<col width="50" />
+														<col width="100" />
+														<col width="200" />
+														<col width="100" />
+														<col width="200" />
+
+														<col width="150" />
+														<col width="200" />
+														<col width="200" />
+														<col width="100" />
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">순번</th>
+															<th scope="col">정산서출력</th>
+															<th scope="col" colspan="2">구분</th>
+															<th scope="col" colspan="3">정산금액 계산식</th>
+
+															<th scope="col">정산율</th>
+															<th scope="col" class="last">내용작성</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>999</td>
+															<td><input type="checkbox" id="" name="" class="input_check01" /></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<span class="input_gray_fix input_close w120"><input type="text" id="" name="" title="" value="" /></span>
+															</td>
+															<td><button type="button" class="btn_gray_com">직접입력</button></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>														
+															</td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>													
+															</td>
+															<td class="td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+															<td class="last td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+														</tr>
+														<tr>
+															<td>999</td>
+															<td><input type="checkbox" id="" name="" class="input_check01" /></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<span class="input_gray_fix input_close w120"><input type="text" id="" name="" title="" value="" /></span>
+															</td>
+															<td><button type="button" class="btn_gray_com">직접입력</button></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>														
+															</td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>													
+															</td>
+															<td class="td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+															<td class="last td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+														</tr>
+														<tr>
+															<td>999</td>
+															<td><input type="checkbox" id="" name="" class="input_check01" /></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<span class="input_gray_fix input_close w120"><input type="text" id="" name="" title="" value="" /></span>
+															</td>
+															<td><button type="button" class="btn_gray_com">직접입력</button></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>														
+															</td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>													
+															</td>
+															<td class="td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+															<td class="last td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+														</tr>
+														<tr>
+															<td>999</td>
+															<td><input type="checkbox" id="" name="" class="input_check01" /></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<span class="input_gray_fix input_close w120"><input type="text" id="" name="" title="" value="" /></span>
+															</td>
+															<td><button type="button" class="btn_gray_com">직접입력</button></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>														
+															</td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>													
+															</td>
+															<td class="td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+															<td class="last td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+														</tr>
+														<tr>
+															<td>999</td>
+															<td><input type="checkbox" id="" name="" class="input_check01" /></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<span class="input_gray_fix input_close w120"><input type="text" id="" name="" title="" value="" /></span>
+															</td>
+															<td><button type="button" class="btn_gray_com">직접입력</button></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>														
+															</td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>													
+															</td>
+															<td class="td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+															<td class="last td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+														</tr>
+														<tr>
+															<td>999</td>
+															<td><input type="checkbox" id="" name="" class="input_check01" /></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<span class="input_gray_fix input_close w120"><input type="text" id="" name="" title="" value="" /></span>
+															</td>
+															<td><button type="button" class="btn_gray_com">직접입력</button></td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>
+															</td>
+															<td>
+																<select>
+																	<option selected="selected" value=""></option>
+																</select>														
+															</td>
+															<td class="td_left">
+																<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+																<!-- 2015-09-16 수정 style값 class로 변경 -->
+																<span class="input_gray_fix input_close w120">
+																	<input type="text" id="" name="" title="" value="" />
+																	<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+																</span>													
+															</td>
+															<td class="td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+															<td class="last td_left"><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+														</tr>
+													</tbody>
+												</table>	
+											</div>
+											<!-- //[e]그리드 테이블 -->								
+
+										</div>
+									</div>
+
+								</div>
+								<!-- [e]f_right -->
+
+							</div>
+						</div>			
+
+
+						<div class="cont_item_choice">
+							<div class="titlebox">
+								<span class="box_r">
+									<span class="box_l">
+										<b>정산항목을 선택해주세요.</b>
+									</span>
+								</span>								
+							</div>
+							
+							<!-- [s]item_choice_list -->
+							<div class="item_choice_list01">
+
+								<div class="f_left">
+
+									<div class="leftbox">
+										<p class="tit">정산구분항목</p>
+										<div class="scroll_box">
+											<table class="tblbox">
+												<colgroup>
+													<col width="50%" />
+													<col width="50%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<td><a href="#1" class="on"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1" class="on"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>									
+									</div>		
+
+									<div class="rightbox">
+										<p class="tit">정산계산항목</p>
+										<div class="scroll_box">
+											<table class="tblbox">
+												<colgroup>
+													<col width="50%" />
+													<col width="50%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<td><a href="#1" class="on"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1" class="on"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>									
+									</div>
+
+								</div>
+
+								<div class="f_right">
+									<p class="tit">정산식순번</p>
+									<div class="scroll_box">
+										<table class="tblbox">
+											<colgroup>
+												<col width="100%" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">1CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">2CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">3CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">4CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">5CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">6CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">7CP정산액(공급가액)</b></a></td>
+												</tr>
+											</tbody>
+										</table>								
+									</div>
+								</div>
+
+							</div>
+							<!-- //[e]item_choice_list -->
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="110" />
+									<col width="222" />
+									<col width="110" />
+									<col width="222" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">프로젝트코드</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">적용시작년월</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">확정/예정</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>정산대상 거래처 목록</h2>	
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">행추가</button>
+										<button type="button" class="btn_skyblue_data">행삭제</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tbl_height_box">
+								<div class="tbl-scroll-wrap top_zero"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										<table>
+											<colgroup>
+												<col width="50" />
+												<col width="100" />
+												<col width="250" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="200" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">순번</th>
+													<th scope="col">거래처</th>
+													<th scope="col">계약명</th>
+													<th scope="col">매출유형</th>
+													<th scope="col">원가구분</th>
+
+													<th scope="col">정산율(%)</th>
+													<th scope="col">국가</th>
+													<th scope="col">정산서구분</th>
+													<th scope="col">통화</th>
+													<th scope="col">외국납부세율</th>		
+													
+													<th scope="col">법인원천</th>
+													<th scope="col">환율적용기준</th>
+													<th scope="col">지급조건</th>
+													<th scope="col">은행명</th>
+													<th scope="col">예금주</th>
+
+													<th scope="col">계좌번호</th>
+													<th scope="col">연계프로젝트</th>
+													<th scope="col">대체지급처</th>
+													<th scope="col" class="last">정산담당자 e-Mail</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>999</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>
+													</td>
+													<td class="td_left">
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<select class="w130">
+															<option selected="selected" value=""></option>
+														</select>
+														<button type="button" class="btn_gray_com">보기</button>
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+
+
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td></td>
+													<td></td>	
+													
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>		
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>
+													</td>
+													<td class="td_left">
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<select class="w130">
+															<option selected="selected" value=""></option>
+														</select>
+														<button type="button" class="btn_gray_com">보기</button>
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+
+
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td></td>
+													<td></td>	
+													
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>		
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>
+													</td>
+													<td class="td_left">
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<select class="w130">
+															<option selected="selected" value=""></option>
+														</select>
+														<button type="button" class="btn_gray_com">보기</button>
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+
+
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td></td>
+													<td></td>	
+													
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>		
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>
+													</td>
+													<td class="td_left">
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<select class="w130">
+															<option selected="selected" value=""></option>
+														</select>
+														<button type="button" class="btn_gray_com">보기</button>
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+
+
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td></td>
+													<td></td>	
+													
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>		
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>
+													</td>
+													<td class="td_left">
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<select class="w130">
+															<option selected="selected" value=""></option>
+														</select>
+														<button type="button" class="btn_gray_com">보기</button>
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+
+
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td></td>
+													<td></td>	
+													
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>		
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>
+													</td>
+													<td class="td_left">
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<select class="w130">
+															<option selected="selected" value=""></option>
+														</select>
+														<button type="button" class="btn_gray_com">보기</button>
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+
+
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>											
+													</td>
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>
+													<td></td>
+													<td></td>	
+													
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>												
+													</td>		
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td>
+														<span class="input_gray_block input_ico">
+															<input type="text" id="" value="" title="" name="" />
+															<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+														</span>													
+													</td>
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>		
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>정산금액 계산식</h2>	
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">행추가</button>
+										<button type="button" class="btn_skyblue_data">행삭제</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="box_gray_vs">
+								<div class="cont">
+									<table class="tbl_vs_col">
+										<colgroup>
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="248" />
+											<col width="90" />
+											<col width="" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="">시뮬레이션</label></th>
+												<td colspan="5">
+													<!-- 2015-09-16 수정 style값 class로 변경 -->
+													<span class="input_gray_fix w125">
+														<input type="text" value="" title="" name="" id="" />
+													</span>
+													<button type="button" class="btn_gray_com">계산</button>
+													<span class="info_inline_txt">
+														<span class="blt">시뮬레이션은 정산계산식 1번항목에 입력된 금액으로 대체하여 계산됩니다.</span>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>										
+								</div>					
+							</div>
+
+							<div class="tbl_height_box">
+								<div class="tbl-scroll-wrap top_zero"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										<table>
+											<colgroup>
+												<col width="50" />
+												<col width="100" />
+												<col width="250" />
+												<col width="200" />
+
+												<col width="150" />
+												<col width="200" />
+												<col width="100" />
+												<col width="100" />
+												<col width="140" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">순번</th>
+													<th scope="col">정산서출력</th>
+													<th scope="col">구분</th>
+													<th scope="col" colspan="3">정산금액 계산식</th>
+
+													<th scope="col">정산율(%)</th>
+													<th scope="col">계산금액</th>
+													<th scope="col" class="last">내용작성</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>999</td>
+													<td>
+														<input type="checkbox" id="" name="" class="input_check01"  />
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix w125">
+															<input type="text" value="" title="" name="" id="" />
+														</span>
+														<button type="button" class="btn_gray_com">직접입력</button>												
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>												
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<input type="checkbox" id="" name="" class="input_check01"  />
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix w125">
+															<input type="text" value="" title="" name="" id="" />
+														</span>
+														<button type="button" class="btn_gray_com">직접입력</button>												
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>												
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<input type="checkbox" id="" name="" class="input_check01"  />
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix w125">
+															<input type="text" value="" title="" name="" id="" />
+														</span>
+														<button type="button" class="btn_gray_com">직접입력</button>												
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>												
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<input type="checkbox" id="" name="" class="input_check01"  />
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix w125">
+															<input type="text" value="" title="" name="" id="" />
+														</span>
+														<button type="button" class="btn_gray_com">직접입력</button>												
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>												
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<input type="checkbox" id="" name="" class="input_check01"  />
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix w125">
+															<input type="text" value="" title="" name="" id="" />
+														</span>
+														<button type="button" class="btn_gray_com">직접입력</button>												
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>												
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>
+														<input type="checkbox" id="" name="" class="input_check01"  />
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix w125">
+															<input type="text" value="" title="" name="" id="" />
+														</span>
+														<button type="button" class="btn_gray_com">직접입력</button>												
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+
+													<td>
+														<select>
+															<option selected="selected" value=""></option>
+														</select>													
+													</td>
+													<td class="td_left">
+														<input type="radio" value="" class="input_txt_radio left_zero" id="" />
+														<!-- 2015-09-16 수정 style값 class로 변경 -->
+														<span class="input_gray_fix input_close w120">
+															<input type="text" id="" name="" title="" value="" />
+															<a href="#1"><img src="../../images/button/btn_close.gif" alt="닫기" /></a>
+														</span>												
+													</td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>
+													<td class="last"><span class="input_gray_block"><input type="text" value="" title="" name=""  id="" /></span></td>												
+												</tr>												
+											</tbody>
+										</table>		
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+						</div>				
+
+
+						<div class="cont_item_choice">
+							<div class="titlebox">
+								<span class="box_r">
+									<span class="box_l">
+										<b>정산항목을 선택해주세요.</b>
+									</span>
+								</span>								
+							</div>
+							
+
+							<!-- [s]item_choice_list -->
+							<div class="item_choice_list02">
+
+								<div class="f_left">
+
+									<div class="leftbox">
+										<p class="tit">거래처별 정산액</p>
+										<div class="scroll_box">
+											<table class="tblbox">
+												<colgroup>
+													<col width="100%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="td_last"><a href="#1" class="on"><b class="txt">다음카카오-플랫폼</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">ECMO KOEI GAMES CO,.LTD</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액가)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>									
+									</div>		
+
+									<div class="centerbox">
+										<p class="tit">정산구분항목</p>
+										<div class="scroll_box">
+											<table class="tblbox">
+												<colgroup>
+													<col width="50%" />
+													<col width="50%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<td><a href="#1" class="on"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1" class="on"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>									
+									</div>
+
+
+									<div class="rightbox">
+										<p class="tit">정산계산항목</p>
+										<div class="scroll_box">
+											<table class="tblbox">
+												<colgroup>
+													<col width="100%" />
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="td_last"><a href="#1" class="on"><b class="txt">CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+													<tr>
+														<td class="td_last"><a href="#1"><b class="txt">CP정산액(공급가액)</b></a></td>
+													</tr>
+												</tbody>
+											</table>								
+										</div>
+									</div>
+
+
+								</div>
+
+								<div class="f_right">
+									<p class="tit">정산식순번</p>
+									<div class="scroll_box">
+										<table class="tblbox">
+											<colgroup>
+												<col width="100%" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">1CP정산액(공급가액)CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">2CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">3CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">4CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">5CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">6CP정산액(공급가액)</b></a></td>
+												</tr>
+												<tr>
+													<td class="td_last"><a href="#1"><b class="txt">7CP정산액(공급가액)</b></a></td>
+												</tr>
+											</tbody>
+										</table>								
+									</div>
+								</div>
+
+							</div>
+							<!-- //[e]item_choice_list -->
+						</div>
+					</div>		
+
+
+					<div class="sub_tab_cont tab_GrayCont2">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="182" />
+									<col width="120" />
+									<col width="242" />
+									<col width="120" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">정산년월</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>	
+										</td>
+										<th scope="row"><label for="">프로젝트코드</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>												
+										</td>
+										<th scope="row"><label for="">적용종료여부</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>	
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>상세내역</h2>
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">조회</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- [s]tbl-scroll-wrap -->
+							<div class="tbl-scroll-wrap  top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="70" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="94" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">거래처</th>
+												<th scope="col" colspan="2">계약명</th>
+
+												<th scope="col">원가구분</th>
+												<th scope="col">적용기준</th>
+												<th scope="col">당월</th>
+												<th scope="col">적용종료일</th>
+												<th scope="col">적용종료여부</th>
+
+												<th scope="col" class="last">파일첨부</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><button type="button" class="btn_gray_com">보기</button></td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><button type="button" class="btn_gray_com">보기</button></td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><button type="button" class="btn_gray_com">보기</button></td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><button type="button" class="btn_gray_com">보기</button></td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><button type="button" class="btn_gray_com">보기</button></td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><button type="button" class="btn_gray_com">보기</button></td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+							<!-- //[e]tbl-scroll-wrap -->
+
+						</div>		
+					</div>		
+
+
+					<div class="sub_tab_cont tab_GrayCont3">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="110" />
+									<col width="222" />
+									<col width="110" />
+									<col width="222" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">프로젝트코드</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">확정/예정</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_gray_line03 top_mr01">
+							<table class="tbl_type_row">
+								<colgroup>
+									<col width="130" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">매출유형</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">모바일</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">온라인</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">수출</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">기타</label>
+										</td>
+									</tr>
+									<tr class="tr_last">
+										<th scope="row"><label for="">상세유형</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">수출</label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>정산조건 리스트</h2>	
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="250" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">거래처</th>
+												<th scope="col">확정/예정</th>
+												<th scope="col">계약명</th>
+
+												<th scope="col">매출유형</th>
+												<th scope="col">원가구분</th>
+												<th scope="col">정산율</th>
+												<th scope="col">국가</th>													
+												<th scope="col">통화</th>
+
+												<th scope="col">외국납부세율</th>
+												<th scope="col">법인원천</th>
+												<th scope="col">환율적용기준</th>
+												<th scope="col">지급조건</th>
+												<th scope="col">은행명</th>
+
+												<th scope="col">예금주</th>
+												<th scope="col">계좌번호</th>
+												<th scope="col">정산연계 프로젝트</th>
+												<th scope="col">대체지급처</th>
+												<th scope="col" class="last">정산담당자 E-mail</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="td_left">
+													<select class="w130">
+														<option selected="selected" value=""></option>
+													</select>
+													<button type="button" class="btn_gray_com">보기</button>
+												</td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="td_left">
+													<select class="w130">
+														<option selected="selected" value=""></option>
+													</select>
+													<button type="button" class="btn_gray_com">보기</button>
+												</td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="td_left">
+													<select class="w130">
+														<option selected="selected" value=""></option>
+													</select>
+													<button type="button" class="btn_gray_com">보기</button>
+												</td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="td_left">
+													<select class="w130">
+														<option selected="selected" value=""></option>
+													</select>
+													<button type="button" class="btn_gray_com">보기</button>
+												</td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="td_left">
+													<select class="w130">
+														<option selected="selected" value=""></option>
+													</select>
+													<button type="button" class="btn_gray_com">보기</button>
+												</td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="td_left">
+													<select class="w130">
+														<option selected="selected" value=""></option>
+													</select>
+													<button type="button" class="btn_gray_com">보기</button>
+												</td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+								</div>
+								<!-- //[e]그리드 테이블 -->
+
+							</div>
+
+						</div>		
+
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont4">
+						<div class="cont_white_fix">
+
+							<!-- [s]partition_box -->
+							<div class="partition_box08">
+
+								<!-- [s]f_left -->
+								<div class="f_left">
+
+									<div class="stitbox01">
+										<div class="cont">
+											<h2>기준등록</h2>
+											<div class="pos_btn_right">
+												<button class="btn_skyblue_data" type="button">행추가</button>
+												<button class="btn_skyblue_data" type="button">행삭제</button>
+											</div>
+										</div>
+									</div>
+
+									
+									<div class="tbl-scroll-wrap top_zero"> 
+
+										<!-- [s]그리드 테이블 -->
+										<div class="tbl_view_html_col">
+											<table>
+												<colgroup>
+													<col width="50" />
+													<col width="100" />
+													<col width="130" />
+													<col width="130" />
+													<col width="160" />
+													<col width="79" />
+
+													<col width="100" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">순번</th>
+														<th scope="col">구분</th>
+														<th scope="col">거래처</th>
+														<th scope="col">기준프로젝트</th>
+														<th scope="col" colspan="2">계약명</th>
+
+														<th class="last" scope="col">적용시작월</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>999</td>
+														<td></td>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>														
+														</td>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>														
+														</td>
+														<td class="td_left">서비스운영계약</td>
+														<td><button type="button" class="btn_gray_com">보기</button></td>
+
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+															</span>																
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td><button type="button" class="btn_gray_com">보기</button></td>
+
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+															</span>																
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td><button type="button" class="btn_gray_com">보기</button></td>
+
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+															</span>																
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td><button type="button" class="btn_gray_com">보기</button></td>
+
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+															</span>																
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td><button type="button" class="btn_gray_com">보기</button></td>
+
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+															</span>																
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td><button type="button" class="btn_gray_com">보기</button></td>
+
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+															</span>																
+														</td>
+													</tr>
+												</tbody>
+											</table>	
+										</div>
+										<!-- //[e]그리드 테이블 -->			
+
+									</div>
+
+								</div>
+								<!-- //[e]f_left -->
+
+
+
+								<!-- [s]f_right -->
+								<div class="f_right">
+							
+									<div class="stitbox01">
+										<div class="cont">
+											<h2>연계프로젝트</h2>
+											<div class="pos_btn_right">
+												<button class="btn_skyblue_data" type="button">행추가</button>
+												<button class="btn_skyblue_data" type="button">행삭제</button>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="tbl-scroll-wrap top_zero"> 
+
+										<!-- [s]그리드 테이블 -->
+										<div class="tbl_view_html_col">
+											<table>
+												<colgroup>
+													<col width="50" />
+													<col width="100" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">순번</th>
+														<th scope="col" class="last">프로젝트</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>999</td>
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>															
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>															
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>															
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>															
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>															
+														</td>
+													</tr>
+													<tr>
+														<td>999</td>
+														<td class="last">
+															<span class="input_gray_block input_ico">
+																<input type="text" id="" name="" title="" value="" />
+																<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+															</span>															
+														</td>
+													</tr>
+												</tbody>
+											</table>	
+										</div>
+										<!-- //[e]그리드 테이블 -->								
+
+									</div>
+
+								</div>
+								<!-- [e]f_right -->
+
+							</div>
+						</div>			
+
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont5">
+						<div class="cont_gray_fix">
+
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>PG사 리스트</h2>
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">행추가</button>
+										<button type="button" class="btn_skyblue_data">행삭제</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="40" />
+											<col width="150" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"><input type="checkbox" id="" name="" class="input_check01"  /></th>
+												<th scope="col">거래처</th>
+												<th scope="col">서비스ID</th>
+												<th scope="col">상점ID</th>
+												<th scope="col">프로젝트</th>
+
+												<th scope="col">채권구분</th>
+												<th scope="col">수수료율</th>
+												<th scope="col">배부여부</th>
+												<th scope="col">사용여부</th>
+												<th scope="col">최초등록일</th>
+
+												<th scope="col">작성자</th>
+												<th scope="col">최종수정일</th>
+												<th scope="col"  class="last">수정자</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="" /></span></td>
+												<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="" /></span></td>
+												<td>
+													<span class="input_gray_block input_ico">
+														<input type="text" id="" name="" title="" value="" />
+														<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+													</span>												
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>											
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" class="txt_r" name="" title="" value="" /></span></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->								
+
+							</div>
+						</div>				
+					</div>		
+
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+
+</body>
+</html>

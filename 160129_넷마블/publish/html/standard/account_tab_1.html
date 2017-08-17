@@ -1,0 +1,917 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">계정관리</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>계정관리</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>화면별 계정지정</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>화면별 분개유형지정</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">저장</button>
+							</div>							
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">저장</button>
+								<button type="button" class="btn_red_data">복사</button>
+							</div>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+								<button type="button" class="btn_red_data">저장</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="120" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">계정명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>	
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							
+							<!-- [s]partition_box -->
+							<div class="partition_box06">
+								<!-- [s]f_left -->
+								<div class="f_left">
+
+									<div class="stitbox01">
+										<div class="cont">
+											<h2>상세내역</h2>
+										</div>
+									</div>
+	
+									<div class="tbl-scroll-wrap top_zero"> 
+										<!-- [s]그리드 테이블 -->
+										<div class="tbl_view_html_col">
+											<table>
+												<colgroup>
+													<col width="100" />
+													<col width="147" />
+													<col width="100" />
+													<col width="100" />
+													<col width="147" />
+
+													<col width="100" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">계정코드</th>
+														<th scope="col">계정명</th>
+														<th scope="col">예산마스터필수</th>
+														<th scope="col">교통비입력필수</th>
+														<th scope="col">ERP명칭</th>
+
+														<th class="last" scope="col">계정명칭수</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td></td>
+														<td></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td></td>
+
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td></td>
+
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td></td>
+
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td></td>
+
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td></td>
+
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td><input type="checkbox" id="" name="" class="input_check01"  /></td>
+														<td></td>
+
+														<td class="last"></td>
+													</tr>
+												</tbody>
+											</table>	
+										</div>
+										<!-- //[e]그리드 테이블 -->	
+									</div>
+
+								</div>
+								<!-- //[e]f_left -->
+
+
+								<!-- [s]f_right -->
+								<div class="f_right">
+							
+									<div class="stitbox01">
+										<div class="cont">
+											<div class="pos_btn_right">
+												<button class="btn_skyblue_data" type="button">행추가</button>
+												<button class="btn_skyblue_data" type="button">행삭제</button>
+											</div>											
+										</div>
+									</div>
+
+									<div class="tbl-scroll-wrap top_zero">
+										<!-- [s]그리드 테이블 -->
+										<div class="tbl_view_html_col">
+											<table>
+												<colgroup>
+													<col width="" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" class="last">ERP명칭</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="last td_left">화재보험료, 임원책임배상보험</td>
+													</tr>
+													<tr>
+														<td class="last td_left">단체상해보험</td>
+													</tr>
+													<tr>
+														<td class="last td_left"></td>
+													</tr>
+													<tr>
+														<td class="last td_left"></td>
+													</tr>
+													<tr>
+														<td class="last td_left"></td>
+													</tr>
+													<tr>
+														<td class="last td_left"></td>
+													</tr>
+												</tbody>
+											</table>	
+										</div>
+										<!-- //[e]그리드 테이블 -->	
+									</div>
+
+								</div>
+								<!-- [e]f_right -->
+
+							</div>
+
+
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="120" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">구분</label></th>
+										<td>
+											<select>
+												<option selected="selected" value=""></option>
+											</select>	
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+							
+							<!-- [s]partition_box -->
+							<div class="partition_box07">
+								<!-- [s]f_left -->
+								<div class="f_left">
+
+									<div class="stitbox01">
+										<div class="cont">
+											<h2>상세내역</h2>
+										</div>
+									</div>
+	
+									<div class="tbl-scroll-wrap top_zero"> 
+										<!-- [s]그리드 테이블 -->
+										<div class="tbl_view_html_col">
+											<table>
+													<colgroup>
+														<col width="" />
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col" class="last">화면명</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="last td_left">일반경비-일반</td>
+														</tr>
+														<tr>
+															<td class="last td_left">일반경비-전자세금계산서</td>
+														</tr>
+														<tr>
+															<td class="last td_left"></td>
+														</tr>
+														<tr>
+															<td class="last td_left"></td>
+														</tr>
+														<tr>
+															<td class="last td_left"></td>
+														</tr>
+														<tr>
+															<td class="last td_left"></td>
+														</tr>
+													</tbody>
+												</table>	
+										</div>
+										<!-- //[e]그리드 테이블 -->	
+									</div>
+
+								</div>
+								<!-- //[e]f_left -->
+
+
+								<!-- [s]f_right -->
+								<div class="f_right">
+							
+									<div class="stitbox01">
+										<div class="cont">
+											<div class="pos_btn_right">
+												<button class="btn_skyblue_data" type="button">행추가</button>
+												<button class="btn_skyblue_data" type="button">행삭제</button>
+											</div>											
+										</div>
+									</div>
+
+									<div class="tbl-scroll-wrap top_zero">
+										<!-- [s]그리드 테이블 -->
+										<div class="tbl_view_html_col">
+											<table>
+												<colgroup>
+													<col width="231" />
+													<col width="231" />
+													<col width="232" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">ERP명칭</th>
+														<th scope="col">SAP계정</th>
+														<th class="last" scope="col">계정명</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" value="" title="" name="" id="" />
+																<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+															</span>															
+														</td>
+														<td></td>
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" value="" title="" name="" id="" />
+																<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+															</span>															
+														</td>
+														<td></td>
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" value="" title="" name="" id="" />
+																<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+															</span>															
+														</td>
+														<td></td>
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" value="" title="" name="" id="" />
+																<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+															</span>															
+														</td>
+														<td></td>
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" value="" title="" name="" id="" />
+																<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+															</span>															
+														</td>
+														<td></td>
+														<td class="last"></td>
+													</tr>
+													<tr>
+														<td>
+															<span class="input_gray_block input_ico">
+																<input type="text" value="" title="" name="" id="" />
+																<a href="#1"><img alt="검색" src="../../images/button/btn_search.gif" /></a>
+															</span>															
+														</td>
+														<td></td>
+														<td class="last"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- //[e]그리드 테이블 -->	
+									</div>
+
+								</div>
+								<!-- [e]f_right -->
+
+							</div>
+
+
+						</div>
+					</div>	
+
+					<div class="sub_tab_cont tab_GrayCont2">
+
+						<div class="cont_gray_line03 top_mr01">
+							<table class="tbl_type_row">
+								<colgroup>
+									<col width="130" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">구분</label></th>
+										<td>
+											<input type="radio" id="" class="input_radio left_zero" value="" /> <label for="">계약관리</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">매출 및 정산관리</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">비용관리</label>
+											<input type="radio" id="" class="input_radio" value="" /> <label for="">총무신청</label>
+										</td>
+									</tr>
+									<tr class="tr_last">
+										<th scope="row"><label for="">상세구분</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<select class="w160">
+												<option value="" selected="selected"></option>
+											</select>	
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>상세내역</h2>
+									<div class="pos_btn_right">
+										<button class="btn_skyblue_data" type="button">행추가</button>
+										<button class="btn_skyblue_data" type="button">행삭제</button>
+									</div>											
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_zero">
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2">화면</th>
+												<th scope="col" rowspan="2">화면세부구분</th>
+												<th scope="col" rowspan="2">전표유형</th>
+												<th scope="col" colspan="3">차변</th>
+												<th scope="col" colspan="3">대변</th>
+
+												<th scope="col" rowspan="2">지급조건</th>
+												<th scope="col" rowspan="2" class="last">지급방법</th>
+											</tr>
+											<tr>
+												<th scope="col">차대변<br />지사자</th>
+												<th scope="col">계정1</th>
+												<th scope="col">계정2</th>
+												<th scope="col">차대변<br />지사자</th>
+												<th scope="col">계정1</th>
+												<th scope="col" class="last">계정2</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>										
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>
+											<tr>
+												<td class="td_bg" >
+													<select>
+														<option value="" selected="selected"></option>
+													</select>												
+												</td>
+												<td><span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span></td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option value="" selected="selected"></option>
+													</select>
+												</td>
+
+												<td class="last">
+													<select>
+														<option value="" selected="selected"></option>
+													</select>													
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //[e]그리드 테이블 -->	
+							</div>
+						</div>
+
+					</div>	
+
+					
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<? include "order_orderEnd.{$S_MEMBER_LOGIN_IMAGE_DESIGN}.skin.php"; ?>

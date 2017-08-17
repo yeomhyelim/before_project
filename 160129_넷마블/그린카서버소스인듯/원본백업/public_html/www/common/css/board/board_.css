@@ -1,0 +1,8 @@
+/* 리뷰테이블 */
+/* Color: Gray(기본형 게시판)*/
+div.blogList table{width:100%;}
+div.blogList table td{padding: 30px 0;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+div.blogList ul li.listImg{padding-bottom:30px;}
+div.blogList ul li.listTitle{padding: 5px 0;font-weight:bold;color:#000;}
+div.blogList ul li.listDate{color:#b9b9b9;}
+div.blogExpWrap{padding: 10px 0;}

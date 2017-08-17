@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+					
+					<div class="sub_top_content">
+						<h1 class="subtit">계약조회</h1>
+						<div class="tab_graybox">
+							<ul class="tablist">
+								<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>현황조회</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>상세조회</b></a></li>
+								<li><a href="#1" onclick="tabGrayMenu(2); return false"><b>이력조회</b></a></li>
+							</ul>
+						</div>
+
+						<div class="tab_cont_btn tab_GrayBtn0">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">임시저장조회</button>
+								<button type="button" class="btn_red_data">조회</button>
+							</div>						
+						</div>
+
+
+						<div class="tab_cont_btn tab_GrayBtn1">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>						
+						</div>
+
+
+						<div class="tab_cont_btn tab_GrayBtn2">
+							<div class="btn_right minus_t_btn">
+								<button type="button" class="btn_red_data">조회</button>
+							</div>						
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont0">
+						<div class="cont_white_fix">
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>계약정보</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="90" />
+										<col width="133" />
+										<col width="90" />
+										<col width="133" />
+										<col width="90" />
+										<col width="133" />
+										<col width="90" />
+										<col width="254" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">프로젝트</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>								
+											</td>
+											<th scope="row"><label for="">거래처</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>																		
+											</td>
+											<th scope="row"><label for="">담당자</label></th>
+											<td>
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>										
+											</td>
+											<th scope="row"><label for="">계약일</label></th>
+											<td>
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<span class="input_gray_fix input_ico w73">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>		
+												<span class="txt_bar">-</span>
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<span class="input_gray_fix input_ico w73">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>										
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+							<div class="stitbox01 top_mr02">
+								<div class="cont">
+									<h2>계약리스트</h2>
+									<div class="pos_btn_right">
+										<button type="button" class="btn_skyblue_data">행삭제</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap  top_zero">
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">계약코드</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">거래처</th>
+												<th scope="col">계약명</th>
+
+												<th scope="col">계약구분</th>
+												<th scope="col">계약일자</th>
+												<th scope="col">품의일자</th>
+												<th scope="col">전자결재번호</th>
+												<th scope="col">귀속조직</th>
+
+												<th scope="col">이력조회</th>
+												<th scope="col" class="last">수정</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td><button type="button" class="btn_gray_com">조회</button></td>
+												<td class="last"><button type="button" class="btn_gray_com">수정</button></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td><button type="button" class="btn_gray_com">조회</button></td>
+												<td class="last"><button type="button" class="btn_gray_com">수정</button></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td><button type="button" class="btn_gray_com">조회</button></td>
+												<td class="last"><button type="button" class="btn_gray_com">수정</button></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td><button type="button" class="btn_gray_com">조회</button></td>
+												<td class="last"><button type="button" class="btn_gray_com">수정</button></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td><button type="button" class="btn_gray_com">조회</button></td>
+												<td class="last"><button type="button" class="btn_gray_com">수정</button></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td><button type="button" class="btn_gray_com">조회</button></td>
+												<td class="last"><button type="button" class="btn_gray_com">수정</button></td>
+											</tr>
+										</tbody>
+									</table>		
+
+								</div>
+								<!-- //[e]그리드 테이블 -->
+											
+							</div>
+						</div>
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont1">
+
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="80" />
+									<col width="138" />
+									<col width="90" />
+									<col width="254" />
+									<col width="80" />
+									<col width="138" />
+									<col width="80" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>					
+										</td>
+										<th scope="row"><label for="">계약유형</label></th>
+										<td>
+											<select>
+												<option selected="selected" value=""></option>
+											</select>	
+										</td>
+										<th scope="row"><label for="">프로젝트</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">귀속조직</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>		
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">계약명</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>					
+										</td>
+										<th scope="row"><label for="">계약일</label></th>
+										<td>
+											<span class="input_gray_fix input_ico" style="width:73px;">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<span class="input_gray_fix input_ico" style="width:73px;">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>				
+										</td>
+										<th scope="row"><label for="">상용화</label></th>
+										<td>
+											<select>
+												<option selected="selected" value=""></option>
+											</select>		
+										</td>
+										<th scope="row"><label for="">계약종료</label></th>
+										<td>
+											<select>
+												<option selected="selected" value=""></option>
+											</select>			
+										</td>
+									</tr>
+								</tbody>
+							</table>	
+						</div>
+
+						<div class="cont_white_fix">
+
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>계약리스트</h2>
+								</div>
+							</div>
+
+							<div class="tbl-scroll-wrap top_mr01"> 
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2">계약코드</th>
+												<th scope="col" rowspan="2">계약유형</th>
+												<th scope="col" rowspan="2">계약명</th>
+												<th scope="col" rowspan="2">프로젝트</th>
+												<th scope="col" rowspan="2">거래처</th>
+
+												<th scope="col" rowspan="2">계약일</th>
+												<th scope="col" rowspan="2">계약기간</th>
+												<th scope="col" rowspan="2">통화</th>
+												<th scope="col" rowspan="2">IP</th>
+												<th scope="col" rowspan="2">IP지급액</th>
+
+												<th scope="col" rowspan="2">MG</th>
+												<th scope="col" rowspan="2">MG지급액</th>
+												<th scope="col" colspan="3">수익배분율</th>
+
+												<th scope="col" rowspan="2">슬라이딩</th>
+												<th scope="col" rowspan="2">인센티브조건</th>
+												<th scope="col" rowspan="2">독점구분</th>
+												<th scope="col" rowspan="2">퍼블리싱지역</th>
+												<th scope="col" rowspan="2">상용화예정일</th>
+
+												<th scope="col" rowspan="2">상용화일</th>
+												<th scope="col" rowspan="2" class="last">계약종료여부</th>
+											</tr>
+											<tr>
+												<th scope="col">국내</th>
+												<th scope="col">수출</th>
+												<th scope="col">해외직접</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="sub_tab_cont tab_GrayCont2">
+
+						<div class="cont_white_fix">
+						
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>계약정보</h2>
+									<div class="pos_btn_right">
+										<span class="dark_gray_txt"> 최근 업데이트날짜 : <strong>2015-08-31</strong></span>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="tbl-scroll-wrap t_line_type01 top_zero"> 
+								<table class="tbl_white_row">
+									<colgroup>
+										<col width="100" />
+										<col width="123" />
+										<col width="90" />
+										<col width="143" />
+										<col width="100" />
+										<col width="223" />
+										<col width="100" />
+										<col width="134" />
+										<col width="" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="">계약명</label></th>
+											<td colspan="3">
+												<span class="input_gray_block input_ico">
+													<input type="text" id="" name="" title="" value="" />
+													<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+												</span>	
+											</td>
+											<th scope="row"><label for="">프로젝트</label></th>
+											<td colspan="3">
+												<span class="input_gray_block txt_none"></span>											
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="">거래처</label></th>
+											<td>
+												<span class="input_gray_block txt_none"></span>											
+											</td>
+											<th scope="row"><label for="">계약일</label></th>
+											<td>
+												<span class="input_gray_block input_ico txt_none">
+													<input type="text" id="" name="" title="" value="" disabled="disabled"  />
+													<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+												</span>	
+											</td>
+											<th scope="row"><label for="">계약기간</label></th>
+											<td>
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+												<select class="w80" disabled="disabled">
+													<option value="" selected="selected"></option>
+												</select>
+												<span class="input_gray_fix w23 txt_none"></span>
+												<!-- 2015-09-16 수정 style값 class로 변경 -->
+											
+												<span class="txt_bar">개월</span>											
+											</td>
+											<th scope="row"><label for="">귀속조직</label></th>
+											<td>
+												<span class="input_gray_block txt_none"></span>	
+											</td>
+											<td class="blank_last"></td>
+										</tr>
+									</tbody>
+								</table>							
+							</div>
+
+
+							<div class="stitbox02">
+								<h3>변경이력</h3>
+							</div>
+
+							<div class="box_gray_vs">
+								<div class="cont">
+									<table class="tbl_vs_col">
+										<colgroup>
+											<col width="" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<td>
+													<select class="w160">
+														<option value="" selected="selected"></option>
+													</select>
+													<button type="button" class="btn_gray_com">정렬</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>										
+								</div>					
+							</div>
+
+							<div class="tbl-scroll-wrap top_mr01"> 
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_add_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="160" />
+											<col width="160" />
+											<col width="160" />
+											<col width="160" />
+
+											<col width="160" />
+											<col width="164" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">순차</th>
+												<th scope="col">영역구분</th>
+												<th scope="col">변경일자</th>
+												<th scope="col">담당자/담당부서</th>
+
+												<th scope="col">변경전 DATA</th>
+												<th scope="col" class="last">변경후DATA</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>	
+												<td></td>	
+
+												<td></td>	
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>	
+												<td></td>	
+
+												<td></td>	
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>	
+												<td></td>	
+
+												<td></td>	
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>	
+												<td></td>	
+
+												<td></td>	
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>	
+												<td></td>	
+
+												<td></td>	
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>	
+												<td></td>	
+
+												<td></td>	
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<!-- //[e]그리드 테이블 -->
+							</div>
+						</div>
+						
+					</div>
+
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

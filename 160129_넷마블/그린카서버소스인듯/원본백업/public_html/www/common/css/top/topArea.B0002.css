@@ -1,0 +1,15 @@
+/**************** Top Wrap *********************/
+#topWrap{width:980px;margin:0 auto;padding-top:10px;}
+#topWrap .topGrobalWrap span.imgHidden{display:none;}
+#topWrap .topGrobalWrap{float:right;margin-top:10px;}
+
+/** 관리자에서 변경할 부분 **/
+																														/* (1) 회색 백그라운드 */
+#mainNavi{margin-top:10px;text-align:center;background: url(/himg/top/B0001/bg_main_navi.gif) left bottom repeat-x;}	/* (2) 배너기본배경색 좌측정렬 */
+#mainNavi .mnWrap{clear:both;float:left;margin-left:20px;}
+
+#topWrap .searchWrap{float:right;margin-top:5px;background:#f0f0f0;}													/* (3) 검색영역 우측정렬 */
+#topWrap .searchWrap input{width:200px;padding:2px 2px 3px;background:#f0f0f0;border:1px solid #f0f0f0;}
+
+#mainNavi img{margin-right:-4px;}
+/****************************/

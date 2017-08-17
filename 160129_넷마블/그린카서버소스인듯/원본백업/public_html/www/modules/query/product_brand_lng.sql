@@ -1,0 +1,11 @@
+## 2013.04.26
+## 브랜드관리 다국어 버전 생성
+
+CREATE TABLE `linksjeans`.`PRODUCT_BRAND_LNG` (
+  `PL_NO` BIGINT NOT NULL AUTO_INCREMENT COMMENT '번호',
+  `PL_PR_NO` BIGINT COMMENT '상품브랜드관리 번호',
+  `PL_LNG` VARCHAR(2) COMMENT '언어',
+  `PL_PR_HTML` TEXT COMMENT '상품브랜드관리 - 설명(HTML)',
+  PRIMARY KEY(PL_NO)
+) ENGINE=MyISAM
+COMMENT='상품브랜드관리 다국어';

@@ -1,0 +1,4 @@
+<tr class="item1"><th><input type="checkbox" name=""/></th><th>번호</th><th>상품명</th><th>판매가</th><th>가져온일자</th></tr><tr id='TrNo_'><td><input type='checkbox' name=''/> 0</td><td>1</td><td>[매그너스]L6 2.0</td><td><input type='text' name=''   value='5800000' style='width:80px;'/></td><td>2012-09-11 09:35:10</td></tr>
+<tr id='TrNo_'><td><input type='checkbox' name=''/> 1</td><td>2</td><td>[뉴체어맨]600S 마제스티</td><td><input type='text' name=''   value='9450000' style='width:80px;'/></td><td>2012-09-11 09:35:10</td></tr>
+<tr id='TrNo_'><td><input type='checkbox' name=''/> 2</td><td>3</td><td>[프라이드신형]4DR 1.4 DOHC</td><td><input type='text' name=''   value='8200000' style='width:80px;'/></td><td>2012-09-11 09:35:10</td></tr>
+<tr id='TrNo_'><td><input type='checkbox' name=''/> 3</td><td>4</td><td>[토러스]3.5</td><td><input type='text' name=''   value='11950000' style='width:80px;'/></td><td>2012-09-11 09:35:10</td></tr>

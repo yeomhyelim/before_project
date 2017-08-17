@@ -1,0 +1,48 @@
+<?
+	$sliderWidth	= $D_PRODUCT_OP[$strTag]['W_SIZE'];
+	$sliderHeight	= $D_PRODUCT_OP[$strTag]['H_SIZE'];
+?>
+
+<style>
+	div.wrap {width:980px;margin:0 auto;text-align:left;}
+	div#header div#slide-holder {z-index:40;position:absolute;}
+
+	/** 슬라이드 이미지 **/
+	div#header div#slide-holder div#slide-runner{top:0px;left:0px;overflow:hidden;position:absolute;}
+	div#header div#slide-holder img {margin : 0;display : none;position : absolute;}
+
+	/** 텍스트 배경 **/
+	div#header div#slide-holder div#slide-controls {left:0;bottom:0px;width:980px;height:46px;display:none;position:absolute;background : url(/himg/slider/A0001/slide-bg.png) 0 0;}
+	div#header div#slide-holder div#slide-controls p.text{float:left;color:#fff;display:inline;font-size:11px;line-height:16px;margin:15px 0 0 20px;text-transform:uppercase;}
+	div#header div#slide-holder div#slide-controls p#slide-nav{float:right;height: 24px;display: inline;margin: 11px 15px 0 0;}
+	div#header div#slide-holder div#slide-controls p#slide-nav a{float:left;width:24px;height:24px;display: inline;font-size: 11px;margin: 0 5px 0 0;line-height: 24px;font-weight: bold;text-align: center;text-decoration: none;background-position: 0 0;background-repeat: no-repeat;}
+
+	/** 버튼 숫자 **/
+	div#header div#slide-holder div#slide-controls p#slide-nav a.on {background-position : 0 -24px;}
+	div#header div#slide-holder div#slide-controls p#slide-nav a{color:#FFF;background-image : url(/himg/slider/A0001/silde-nav.png);}
+	div#nav ul li a{color:#FFF;background : url(/himg/slider/A0001/nav.png) no-repeat;}
+
+	div#header div#slide-holder div#slide-runner{width:<?=$sliderWidth?>px;height:<?=$sliderHeight?>px;} /* 이미지 크기 지정*/
+	div#header div.wrap{height:<?=$sliderHeight?>px;}
+	div#header div#slide-holder {width:<?=$sliderWidth?>px;height:<?=$sliderHeight?>px;}
+</style>
+<!--/top-->
+  <div id="header">
+	<div class="wrap">
+	   <div id="slide-holder">
+			<div id="slide-runner">
+				<!-- 해당샵의 등록된 이미지 -->
+					<?include "./layout/slider/slider_banner.inc.php";?>
+				<!-- 해당샵의 등록된 이미지 -->
+				<div id="slide-controls">
+				 <p id="slide-desc" class="text"></p>
+				 <p id="slide-nav"></p>
+				</div>
+			</div>	
+		<!--content featured gallery here -->
+	   </div><!-- slide-holder -->
+	   <script type="text/javascript">
+		if(!window.slider) var slider={};slider.data=[{"id":"slide-img-1","client":"eumshop","desc":"아름다운 당신의 청춘을 위하여 <s>45,000원</s> → <b>15,000원</b>"},{"id":"slide-img-2","client":"eumshop","desc":"아름다운 당신의 청춘을 위하여 <s>45,000원</s> → <b>15,000원</b>"},{"id":"slide-img-3","client":"eumshop","desc":"add your description here"},{"id":"slide-img-4","client":"eumshop","desc":"add your description here"},{"id":"slide-img-5","client":"eumshop","desc":"add your description here"}];
+	   </script>
+  </div><!-- wrap -->
+</div><!--/header-->

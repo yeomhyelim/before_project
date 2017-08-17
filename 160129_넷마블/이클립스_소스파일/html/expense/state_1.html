@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Ko" lang="Ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>NERP</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../../css/master.css" />
+<script type="text/javascript" src="../../js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../js/design.common.js"></script>
+<!--[if IE 8]> <link rel='stylesheet' href='../../css/ie8.css' type=text/css><![endif]--> 
+<!--[if IE 9]> <link rel='stylesheet' href='../../css/ie9.css' type=text/css><![endif]-->
+</head>
+<body class="body_bg_none">
+
+				<!-- [s]아이 프레임 -->
+				<div class="bodystart">
+<!-- bodystart -->
+
+					<div class="sub_top_content">
+						<h1 class="subtit">비용 현황</h1>
+						<div class="btn_right minus_t_btn">
+							<button type="button" class="btn_red_data">조회</button>
+						</div>
+					</div>
+
+
+					<div class="tab_graybox">
+						<ul class="tablist">
+							<li class="on"><a href="#1" onclick="tabGrayMenu(0); return false"><b>ERP정산기준</b></a></li>
+							<li><a href="#1" onclick="tabGrayMenu(1); return false"><b>전표기준</b></a></li>
+						</ul>
+					</div>
+
+					<div class="tab_GrayCont0">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="110" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix txt_none w115"></span>
+										</td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix txt_none w115"></span>		
+										</td>
+										<th scope="row"><label for="">경비구분</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">전자결재번호</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>							
+										</td>
+										<th scope="row"><label for="">귀속일</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>
+										</td>
+										<th scope="row"><label for="">진행상태</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>	
+						</div>
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>세부내역</h2>		
+								</div>
+							</div>
+							<div class="tbl-scroll-wrap top_zero"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="464" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">귀속일</th>
+												<th scope="col">경비구분</th>
+												<th scope="col">ERP번호</th>
+												<th scope="col">전자결재번호</th>
+												<th scope="col">승인일시</th>
+												<th scope="col" class="last">진행상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>2015.06.01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>2015.06.01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>2015.06.01</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>		
+								</div>
+								<!-- //[e]그리드 테이블 -->
+
+							</div>
+						</div>						
+					</div>
+
+					<div class="tab_GrayCont1" style="display:none;">
+						<div class="cont_gray_fix">
+							<table class="tbl_search_row">
+								<colgroup>
+									<col width="90" />
+									<col width="242" />
+									<col width="90" />
+									<col width="242" />
+									<col width="110" />
+									<col width="" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">작성자</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix txt_none w115"></span>
+										</td>
+										<th scope="row"><label for="">작성조직</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix txt_none w115"></span>		
+										</td>
+										<th scope="row"><label for="">전자결재번호</label></th>
+										<td>
+											<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">귀속일</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+											<span class="txt_bar">-</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w73">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>							
+										</td>
+										<th scope="row"><label for="">경비구분</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>
+										</td>
+										<th scope="row"><label for="">SAP번호</label></th>
+										<td>
+											<span class="input_gray_block"><input type="text" id="" name="" title="" value="" /></span>	
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">거래처</label></th>
+										<td>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix input_ico w70">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_search.gif" alt="검색" /></a>
+											</span>
+											<!-- 2015-09-16 수정 style값 class로 변경 -->
+											<span class="input_gray_fix txt_none w115"></span>
+										</td>
+										<th scope="row"><label for="">지급일</label></th>
+										<td>
+											<span class="input_gray_block input_ico">
+												<input type="text" id="" name="" title="" value="" />
+												<a href="#1"><img src="../../images/button/btn_cal.gif" alt="달력" /></a>
+											</span>		
+										</td>
+										<th scope="row"><label for="">진행상태</label></th>
+										<td>
+											<select>
+												<option value="" selected="selected"></option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>	
+						</div>
+
+						<div class="cont_white_fix">
+							<div class="stitbox01">
+								<div class="cont">
+									<h2>세부내역</h2>		
+								</div>
+							</div>
+
+
+							<div class="tbl_height_box">	
+								<div class="tbl-scroll-wrap top_zero"> 
+
+									<!-- [s]그리드 테이블 -->
+									<div class="tbl_view_html_col">
+										<table>
+											<colgroup>
+												<col width="50" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+												<col width="100" />
+
+												<col width="100" />
+												<col width="100" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">순번</th>
+													<th scope="col">귀속일</th>
+													<th scope="col">비용번호</th>
+													<th scope="col">경비구분</th>
+													<th scope="col">거래처</th>
+
+													<th scope="col">지급액</th>
+													<th scope="col">전자결재번호</th>
+													<th scope="col">진행상태</th>
+													<th scope="col">ERP번호</th>
+													<th scope="col">SAP전표번호</th>
+
+													<th scope="col">증빙</th>
+													<th scope="col" class="last">SAP처리상태</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+												<tr>
+													<td>999</td>
+													<td>2015.06.01</td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+
+													<td></td>
+													<td class="last"></td>
+												</tr>
+											</tbody>
+										</table>		
+									</div>
+									<!-- //[e]그리드 테이블 -->
+
+								</div>
+							</div>
+
+							<div class="stitbox02">
+								<h3>선택 전표 상세내역</h3>
+							</div>
+
+							<div class="tbl-scroll-wrap top_mr01"> 
+
+								<!-- [s]그리드 테이블 -->
+								<div class="tbl_view_html_add_col">
+									<table>
+										<colgroup>
+											<col width="50" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+
+											<col width="100" />
+											<col width="100" />
+											<col width="100" />
+											<col width="264" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">순번</th>
+												<th scope="col">비용항목</th>
+												<th scope="col">작성조직</th>
+												<th scope="col">프로젝트</th>
+												<th scope="col">금액</th>
+
+												<th scope="col">적요</th>
+												<th scope="col">SAP처리상태</th>
+												<th scope="col">SAP처리일자</th>
+												<th scope="col" class="last">SAP처리전표번호</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+											<tr>
+												<td>999</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+
+												<td></td>
+												<td></td>
+												<td></td>
+												<td class="last"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //[e]그리드 테이블 -->								
+
+							</div>
+						</div>									
+					</div>
+			
+					
+<!-- //bodyend -->
+				</div>
+				<!-- //[e]아이 프레임 -->
+
+</body>
+</html>

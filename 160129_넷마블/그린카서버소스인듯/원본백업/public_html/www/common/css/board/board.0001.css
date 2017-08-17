@@ -1,0 +1,46 @@
+/* LIST/FROM*/
+#contentArea .tableDelList table,
+#contentArea .tableForm table,
+#contentArea .tableList table{width:100%;clear:both;}
+
+#contentArea .tableList table{border:1px solid #828282;}
+#contentArea .tableList table th{height:20px;padding:5px 0;font-size:11px;color:#c1c4d1;font-weight:normal;background: url(/shopAdmin/himg/common/table_th_bg.gif) right bottom no-repeat;}	/* th*/
+#contentArea .tableList table th.lowTh{background: url(/shopAdmin/himg/common/table_th_bg2.gif) right bottom repeat;}
+#contentArea .tableList  tr:hover td{background-color: #e7edf2;border:1px solid #a1bdd5;} 
+#contentArea .tableList  tr:active td{background-color: #e7edf2;border:1px solid #a1bdd5;} 
+
+
+#contentArea .tableDelList table th,
+#contentArea .tableForm table th{padding:5px 0;font-size:11px;font-weight:normal;border:1px solid #dcdcdc;background:#f6f6f6;}
+#contentArea .tableDelList table td,
+#contentArea .tableForm table td,
+#contentArea .tableList table td{padding:5px;height:20px;text-align:center;border:1px solid #d2d0d0;}
+#contentArea .tableList table td.title{text-align:left;}
+#contentArea .tableList table td.title img{float:left;margin-right:20px;}
+#contentArea .tableList table td.title ul li{padding-bottom:5px;}
+#contentArea .tableList table td.alignLeft{text-align:left;}
+
+#contentArea .tableForm table th span.mustItem{display:inline-block;padding-right:35px;background: url(/shopAdmin/himg/common/ico_must.gif) right top no-repeat;}
+
+#contentArea .tableList table td.prodListInfo{text-align:left;}
+#contentArea .tableList table td img.prodPhoto{float:left;width:50px;height:50px;border:1px solid #CCCCCC;}
+#contentArea .tableList table td.prodListInfo ul{float:left;margin-left:10px;}
+#contentArea .tableList table td.prodListInfo ul li{padding-bottom:3px;}
+#contentArea .tableList table td.prodListInfo ul li.title{font-weight:bold;}
+#contentArea .tableList table td.prodListInfo ul li span{display:inline-block;width:50px;letter-spacing:-1px;font-size:11px;color:#aeaeae;}
+
+#contentArea .tableList table td.prodInfo{text-align:left;}
+#contentArea .tableList table td.prodInfo img{margin-left:-4px;}
+#contentArea .tableList table td.prodInfo ul li{padding: 2px 0;}
+
+.txtRedPrice{font-family:verdana;font-weight:bold;color:#ff2a00;text-align:right;}
+
+#contentArea .tableList table td strong.orderNum{font-family:verdana;color:#006cff;}
+#contentArea .tableList table td span.orderDate{color:#888888;}
+
+/* TABLE FROM */
+#contentArea .tableForm table th{width:130px;padding-left:6px;letter-spacing:-1px;text-align:left;}
+#contentArea .tableForm table td{height:20px;text-align:left;}
+#contentArea .tableForm table td span{letter-spacing:-1px;}
+#contentArea .tableForm table td radio{vertical-align:middle;}
+#contentArea .tableForm table td ul li{padding: 1px 0;}

@@ -1,0 +1,4 @@
+INSERT INTO `PRODUCT_IMG_TEMP` (`P_CODE`, `PM_TYPE`, `PM_REAL_NAME`) VALUES ('▣▣0▣▣', 'list', 'http://www.autocafe.co.kr/CARPHOTO/20120803/2012301488861_2.jpg')
+INSERT INTO `PRODUCT_IMG_TEMP` (`P_CODE`, `PM_TYPE`, `PM_REAL_NAME`) VALUES ('▣▣1▣▣', 'list', 'http://www.autocafe.co.kr/CARPHOTO/20120303/2012300388571_2.jpg')
+INSERT INTO `PRODUCT_IMG_TEMP` (`P_CODE`, `PM_TYPE`, `PM_REAL_NAME`) VALUES ('▣▣2▣▣', 'list', 'http://www.autocafe.co.kr/CARPHOTO/20120822/2012301600101_2.jpg')
+INSERT INTO `PRODUCT_IMG_TEMP` (`P_CODE`, `PM_TYPE`, `PM_REAL_NAME`) VALUES ('▣▣3▣▣', 'list', 'http://www.autocafe.co.kr/CARPHOTO/20120711/2012301326091_2.jpg')
